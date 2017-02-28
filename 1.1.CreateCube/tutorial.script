@@ -1,0 +1,19 @@
+bg bg.png
+t 5 1.1. Create a cube
+v 10 install_blender.mp4
+t 5 1.1.1. Install Blender
+v +20 install_blender.mp4
+t 5 1.1.2. Create a deformed cube
+
+t 5 1.1.3. Triangulate the cube: CRITICAL for mobile/web
+
+t 5 1.1.4. UV unwrap the cube for later texturing
+
+t 5 1.1.5. Save the model
+
+t 5 1.1.6. Install Blender-to-OpenSceneGraph exporter
+
+t 5 1.1.7. Export Blender model to OpenSceneGraph format
+
+t 5 1.1. That's it for creating a cube
+
