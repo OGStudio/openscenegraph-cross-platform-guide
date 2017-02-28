@@ -16,23 +16,23 @@ class Parser(object):
         self.background = bg
     def parseLine(self, ln):
         sln = ln.strip()
-        if (ln.startswith(BACKGROUND)):
-            self.parseBackground(ln)
-        elif (ln.startswith(TEXT)):
-            self.parseText(ln)
-        elif (ln.startswith(VIDEO)):
-            self.parseVideo(ln)
+        if (sln.startswith(BACKGROUND)):
+            self.parseBackground(sln)
+        elif (sln.startswith(TEXT)):
+            self.parseText(sln)
+        elif (sln.startswith(VIDEO)):
+            self.parseVideo(sln)
     def parseLines(self, lines):
         for ln in lines:
             self.parseLine(ln)
     def parseText(self, ln):
         durationText = ln.replace(TEXT, "")
         duration, text = durationText.split(" ", 1)
-        self.items.append(Item("text", duration, text))
+        self.items.append(Item(ITEM_TYPE_TEXT, duration, text))
     def parseVideo(self, ln):
         durationVideo = ln.replace(VIDEO, "")
         duration, video = durationVideo.split(" ", 1)
-        self.items.append(Item("video", duration, video))
+        self.items.append(Item(ITEM_TYPE_VIDEO, duration, video))
     def printTree(self):
         print "Background: '{0}'".format(self.background)
         for item in self.items:

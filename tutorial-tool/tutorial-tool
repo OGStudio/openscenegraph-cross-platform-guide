@@ -1,6 +1,7 @@
 #!/usr/bin/python2
 
 import os, sys
+from Formatter import *
 from Parser import *
 
 if (len(sys.argv) != 2):
@@ -18,3 +19,9 @@ with (open(fileIn, "r")) as f:
     parser.parseLines(linesIn)
 
 parser.printTree()
+
+formatter = Formatter()
+formatter.format(parser.background, parser.items)
+
+print "Bake commands: ", formatter.bakeCmds
+
