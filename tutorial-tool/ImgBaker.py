@@ -16,7 +16,7 @@ CMD = (
 class ImgBaker(object):
     def __init__(self):
         self.cmds = []
-    def bake(self, background, items, dstDir):
+    def bake(self, background, items, dstDir, fileInDir):
         self.cmds = []
         i = 0
         for item in items:
@@ -25,7 +25,7 @@ class ImgBaker(object):
                 filePath = dstDir + fileName
                 self.cmds.append(
                     CMD.format(
-                        src = background,
+                        src = fileInDir + background,
                         color = TEXT_COLOR,
                         size = TEXT_SIZE,
                         text = item.content,

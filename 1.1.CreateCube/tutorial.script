@@ -4,16 +4,20 @@ video 0:6 install_blender.mp4
 text 5 1.1.1. Install Blender
 video 6:54 install_blender.mp4
 text 5 1.1.2. Create a deformed cube
-
+video 0:10 create_cube.mp4
+video 37:190 create_cube.mp4
 text 5 1.1.3. Triangulate the cube: CRITICAL for mobile/web
-
+video 190:208 create_cube.mp4
 text 5 1.1.4. UV unwrap the cube for later texturing
-
+video 208:228 create_cube.mp4
 text 5 1.1.5. Save the model
-
+video 228:245 create_cube.mp4
 text 5 1.1.6. Install Blender-to-OpenSceneGraph exporter
-
+video 260:272 create_cube.mp4
+video 287:340 create_cube.mp4
 text 5 1.1.7. Export Blender model to OpenSceneGraph format
-
-text 5 1.1. That's it for creating a cube
+video 340:354 create_cube.mp4
+text 5 1.1.8. Take a look at 'box.osgt' file
+video 3:45 box_osgt.mp4
+text 5 1.1. That's it for creating the cube
 

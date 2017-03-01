@@ -29,7 +29,7 @@ with (open(fileIn, "r")) as f:
 #parser.printTree()
 
 imgBaker = ImgBaker()
-imgBaker.bake(parser.background, parser.items, dstDir)
+imgBaker.bake(parser.background, parser.items, dstDir, fileInDir)
 
 mltBaker = MLTBaker(dstDir)
 mltBaker.bake(parser.items, fileInDir)

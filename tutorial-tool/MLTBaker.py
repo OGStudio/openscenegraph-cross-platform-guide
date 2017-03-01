@@ -2,11 +2,8 @@
 from Common import *
 from Item import *
 
-#    img-01.png out=75 \
-#    video-02.mp4 out=75 -mix 25 -mixer luma \
-#    img-02.png out=75 -mix 25 -mixer luma \
-#    video-02.mp4 in=75 out=175 -mix 25 -mixer luma \
-#    img-03.png out=75 -mix 25 -mixer luma \
+# Command to convert to 25 fps:
+# melt -verbose -profile atsc_720p_25 SRC -consumer avformat:DST vcodec=libx264
 
 CMD = """
     melt -verbose \\
