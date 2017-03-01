@@ -2,9 +2,9 @@
 from Item import *
 
 # Language keywords.
-BACKGROUND = "bg "
-TEXT = "t "
-VIDEO = "v "
+BACKGROUND = "background "
+TEXT = "{0} ".format(ITEM_TYPE_TEXT)
+VIDEO = "{0} ".format(ITEM_TYPE_VIDEO)
 
 class Parser(object):
     def __init__(self):

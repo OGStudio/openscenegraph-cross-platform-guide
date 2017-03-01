@@ -1,7 +1,9 @@
 #!/usr/bin/python2
 
-import os, sys
-from Formatter import *
+import os
+import sys
+import tempfile
+from ImgBaker import *
 from Parser import *
 
 if (len(sys.argv) != 2):
@@ -11,7 +13,12 @@ if (len(sys.argv) != 2):
 fileIn = sys.argv[1]
 #binDir = os.path.dirname(sys.argv[0])
 #fileName = os.path.splitext(os.path.basename(fileIn))[0]
-dstDir = os.path.dirname(fileIn)
+#dstDir = os.path.dirname(fileIn)
+dstDir = tempfile.gettempdir() + "/tutorial-tool-cache/"
+
+# Create dst dir.
+if (not os.path.exists(dstDir)):
+    os.mkdir(dstDir)
 
 parser = Parser()
 with (open(fileIn, "r")) as f:
@@ -20,8 +27,8 @@ with (open(fileIn, "r")) as f:
 
 parser.printTree()
 
-formatter = Formatter()
-formatter.format(parser.background, parser.items)
+imgBaker = ImgBaker()
+imgBaker.bake(parser.background, parser.items, dstDir)
 
-print "Bake commands: ", formatter.bakeCmds
+print "Img bake script:\n{0}\n".format(imgBaker.script())
 
