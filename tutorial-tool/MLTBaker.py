@@ -14,11 +14,11 @@ CMD = """
     {items} -consumer avformat:{dst}.{ext} vcodec={vcodec}
 """
 CMD_IMG = "{img} out={len} -mix {mix_len} -mixer luma \\\n"
-# CMD_VID = "video-02.mp4 in=75 out=175 -mix 25 -mixer luma"
+CMD_VID = "{vid} in={start} out={end} -mix {mix_len} -mixer luma \\\n"
 EXT = "mp4"
 MIX_LEN = 1
 FILE_NAME = "video"
-FPS = 30
+FPS = 25
 VCODEC = "libx264"
 
 def frameSec(sec):
@@ -28,7 +28,7 @@ class MLTBaker(object):
     def __init__(self, dstDir):
         self.items = []
         self.dstDir = dstDir
-    def bake(self, items):
+    def bake(self, items, videoDir):
         self.items = []
         i = 0
         for item in items:
@@ -43,7 +43,17 @@ class MLTBaker(object):
                     )
                 )
             elif (item.type == ITEM_TYPE_VIDEO):
-                print "TODO: mlt baker video"
+                startEnd = item.duration.split(":")
+                start = int(startEnd[0])
+                end = int(startEnd[1])
+                self.items.append(
+                    CMD_VID.format(
+                        vid = videoDir + item.content,
+                        start = frameSec(start),
+                        end = frameSec(end),
+                        mix_len = frameSec(MIX_LEN)
+                    )
+                )
             i = i + 1
     def script(self):
         itemsScript = " ".join(self.items)

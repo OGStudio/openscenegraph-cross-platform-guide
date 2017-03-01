@@ -14,7 +14,7 @@ if (len(sys.argv) != 2):
 fileIn = sys.argv[1]
 #binDir = os.path.dirname(sys.argv[0])
 #fileName = os.path.splitext(os.path.basename(fileIn))[0]
-#dstDir = os.path.dirname(fileIn)
+fileInDir = os.path.dirname(fileIn) + "/"
 dstDir = tempfile.gettempdir() + "/tutorial-tool-cache/"
 
 # Create dst dir.
@@ -34,7 +34,7 @@ imgBaker.bake(parser.background, parser.items, dstDir)
 print "Img bake script:\n{0}\n".format(imgBaker.script())
 
 mltBaker = MLTBaker(dstDir)
-mltBaker.bake(parser.items)
+mltBaker.bake(parser.items, fileInDir)
 
 print "MLT bake script:\n{0}\n".format(mltBaker.script())
 
