@@ -1,7 +1,7 @@
 
+from Common import *
 from Item import *
 
-IMG_EXT = "png"
 TEXT_COLOR = "white"
 TEXT_SIZE = "40"
 CMD = (
@@ -12,9 +12,6 @@ CMD = (
     "-annotate 0 \"{text}\" "
     "{dst}"
     )
-
-def imgFileName(type, id):
-    return "{0}-{1:02d}.{2}".format(type, id, IMG_EXT)
 
 class ImgBaker(object):
     def __init__(self):

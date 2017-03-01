@@ -4,6 +4,7 @@ import os
 import sys
 import tempfile
 from ImgBaker import *
+from MLTBaker import *
 from Parser import *
 
 if (len(sys.argv) != 2):
@@ -25,10 +26,15 @@ with (open(fileIn, "r")) as f:
     linesIn = f.readlines()
     parser.parseLines(linesIn)
 
-parser.printTree()
+#parser.printTree()
 
 imgBaker = ImgBaker()
 imgBaker.bake(parser.background, parser.items, dstDir)
 
 print "Img bake script:\n{0}\n".format(imgBaker.script())
+
+mltBaker = MLTBaker(dstDir)
+mltBaker.bake(parser.items)
+
+print "MLT bake script:\n{0}\n".format(mltBaker.script())
 
