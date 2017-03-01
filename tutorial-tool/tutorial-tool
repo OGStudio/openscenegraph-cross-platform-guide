@@ -31,10 +31,11 @@ with (open(fileIn, "r")) as f:
 imgBaker = ImgBaker()
 imgBaker.bake(parser.background, parser.items, dstDir)
 
-print "Img bake script:\n{0}\n".format(imgBaker.script())
-
 mltBaker = MLTBaker(dstDir)
 mltBaker.bake(parser.items, fileInDir)
 
-print "MLT bake script:\n{0}\n".format(mltBaker.script())
+print "# BASH script begins"
+print imgBaker.script()
+print mltBaker.script()
+print "# BASH script ends"
 

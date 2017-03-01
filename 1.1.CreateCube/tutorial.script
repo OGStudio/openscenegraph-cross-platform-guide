@@ -1,8 +1,8 @@
 background bg.png
 text 5 1.1. Create a cube
-video 0:10 install_blender.mp4
+video 0:6 install_blender.mp4
 text 5 1.1.1. Install Blender
-video 10:20 install_blender.mp4
+video 6:54 install_blender.mp4
 text 5 1.1.2. Create a deformed cube
 
 text 5 1.1.3. Triangulate the cube: CRITICAL for mobile/web
