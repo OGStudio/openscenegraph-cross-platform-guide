@@ -62,6 +62,11 @@ Example workflow
    you should run it like this:
    > /path/to/tutorial-tool /path/to/script **| sh**
 
-1. You get the following video as a result
+1. You get the following video as a result in your temporary directory
+
+   Under Linux the final video is in
+   > /tmp/tutorial-tool-cache/video.mp4
+
+   Here is how it looks like:
 
 
