@@ -4,12 +4,13 @@ from Item import *
 
 TEXT_COLOR = "white"
 TEXT_SIZE = "40"
+TEXT_OFFSET= "+0+100"
 CMD = (
     "convert {src} "
     "-fill {color} "
     "-pointsize {size} "
     "-gravity center "
-    "-annotate 0 \"{text}\" "
+    "-annotate {offset} \"{text}\" "
     "{dst}"
     )
 
@@ -28,6 +29,7 @@ class ImgBaker(object):
                         src = fileInDir + background,
                         color = TEXT_COLOR,
                         size = TEXT_SIZE,
+                        offset = TEXT_OFFSET,
                         text = item.content,
                         dst = filePath
                     )
