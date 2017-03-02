@@ -3,6 +3,10 @@ Overview
 
 **tutorial-tool** automates creation of video tutorials by combining text and video
 
+Here's a preview:
+
+![Preview](example/video.gif)
+
 Dependencies
 ============
 
@@ -67,10 +71,5 @@ Example workflow
    Under Linux the final video is in
    > /tmp/tutorial-tool-cache/video.mp4
 
-   Here is how it looks like:
-
-   ![Preview](example/video.gif)
-
-   [YouTube video](https://youtu.be/ScwXSJpIXpQ)
-
+   Here is how it looks like: [YouTube video](https://youtu.be/ScwXSJpIXpQ)
 
