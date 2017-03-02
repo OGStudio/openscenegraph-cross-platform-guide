@@ -58,8 +58,9 @@ Example workflow
 
 1. Bake the video
 
-   Since **tutorial-tool** itself only prints BASH commands to execute, you should run it like this:
-   > /path/to/tutorial-tool /path/to/script | sh
+   Since **tutorial-tool** itself only prints BASH commands for you to execute,
+   you should run it like this:
+   > /path/to/tutorial-tool /path/to/script **| sh**
 
 1. You get the following video as a result
 
