@@ -32,7 +32,7 @@ Example workflow
 1. Prepare the script to build final video
 
    We will use this script:
-   `
+   ```
    background bg.png
    text 5 Let's install Blender
    video 0:6 install_blender.mp4
@@ -41,7 +41,7 @@ Example workflow
    text 5 We're still installing it
    video 26:56 install_blender.mp4
    text 5 Congratulations! We just finished installng Blender
-   `
+   ```
    This script contains all supported language constructs:
 
    * `background [image]`

@@ -1,0 +1,8 @@
+background bg.png
+text 5 Let's install Blender
+video 0:6 install_blender.mp4
+text 5 Installing it with apt
+video 6:26 install_blender.mp4
+text 5 We're still installing it
+video 26:56 install_blender.mp4
+text 5 Congratulations! We just finished installng Blender
