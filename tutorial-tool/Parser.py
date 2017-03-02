@@ -34,10 +34,10 @@ class Parser(object):
         duration, video = durationVideo.split(" ", 1)
         self.items.append(Item(ITEM_TYPE_VIDEO, duration, video))
     def printTree(self):
-        print "Background: '{0}'".format(self.background)
+        print("Background: '{0}'".format(self.background))
         for item in self.items:
-            print "Item. Type: '{0}' Duration: '{1}' Content: '{2}'".format(
+            print("Item. Type: '{0}' Duration: '{1}' Content: '{2}'".format(
                 item.type,
                 item.duration,
-                item.content)
+                item.content))
 
