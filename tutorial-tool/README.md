@@ -68,5 +68,6 @@ Example workflow
    > /tmp/tutorial-tool-cache/video.mp4
 
    Here is how it looks like:
+   [YouTube video](https://youtu.be/ScwXSJpIXpQ)
 
 
