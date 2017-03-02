@@ -68,6 +68,7 @@ Example workflow
    > /tmp/tutorial-tool-cache/video.mp4
 
    Here is how it looks like:
+   ![Preview](example/video.gif)
    [YouTube video](https://youtu.be/ScwXSJpIXpQ)
 
 
