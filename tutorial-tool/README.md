@@ -46,7 +46,7 @@ Example workflow
 
    * `background [image]`
 
-     Specifies background image to use for text
+     Specifies background **image** to use for text
 
    * `text [seconds] [text]`
 
