@@ -9,6 +9,7 @@ It uses OpenGL (including ES) to perform 3D rendering.
 
 This guide explains how to render a simple 3D model using OpenSceneGraph
 under the following platforms:
+
 1. Linux
 1. macOS
 1. Windows
@@ -24,6 +25,7 @@ This guide uses continuous numbering with topics denoted as
 **Number1**.**Number2**.**Number3** (e.g., **1.1.1**).
 
 Here's what each number means:
+
 1. **Number1** is the guide number. In our case, it's the first guide, so it's **1**.
 1. **Number2** is a specific topic. In the case of creating a cube, it's **1.1**.
 1. **Number3** is a concrete step of the topic. In the case of installing Blender, it's **1.1.1**.
