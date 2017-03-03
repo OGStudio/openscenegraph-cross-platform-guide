@@ -10,15 +10,15 @@ Here's a preview:
 Dependencies
 ============
 
-* Image magick
-* MLT
-* Python 2/3
+* [Image magick](http://imagemagick.org)
+* [MLT](http://mltframework.org)
+* [Python](http://python.org)
 
 Example workflow
 ================
 1. Create one or several videos of something you want to teach
 
-   You can do it with software like Open broadcast studio or Fraps.
+   You can do it with software like [OBS Studio](https://obsproject.com).
 
 2. Convert the video with MLT to 25 FPS
 
@@ -29,7 +29,7 @@ Example workflow
 
 1. Create background image with 1280x720 resolution
 
-   You can do it with software like GIMP or Photoshop.
+   You can do it with software like [GIMP](http://gimp.org).
    
    We will use this [sample image](example/bg.png).
 
