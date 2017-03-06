@@ -1,9 +1,9 @@
 1.1. Create a cube
 ==================
 
-This article is part of [OpenSceneGraph cross platform guide](http://github.com/OGStudio/openscenegraph-cross-platform-guide).
+This tutorial is part of [OpenSceneGraph cross platform guide](http://github.com/OGStudio/openscenegraph-cross-platform-guide).
 
-In this article we create a simple cube in [Blender](http://blender.org) that
+In this tutorial we create a simple cube in [Blender](http://blender.org) that
 OpenSceneGraph will render later.
 
 Video
