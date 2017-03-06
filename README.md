@@ -35,6 +35,8 @@ Table of contents
 
 * [1.1. Create a cube](1.1.CreateCube)
 
+  ![Screenshot](readme/1.1.cube.png)
+
   We create a simple cube that OpenSceneGraph will render later.
 
 * 1.2. Install OpenSceneGraph under Linux

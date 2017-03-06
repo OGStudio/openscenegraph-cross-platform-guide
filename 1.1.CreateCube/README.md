@@ -80,7 +80,7 @@ Steps
 1.1.8. Take a look at 'box.osgt' file
 -------------------------------------
 
-  ![Screenshot](readme/1.1.7.box_osgt.png)
+  ![Screenshot](readme/1.1.8.box_osgt.png)
 
   Exported OpenSceneGraph format (`*.osgt`) is a text file.
 
