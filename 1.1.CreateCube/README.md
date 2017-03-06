@@ -14,7 +14,8 @@ Video
 Steps
 =======
 
-* *1.1.1. Install Blender*
+1.1.1. Install Blender
+----------------------
 
   ![Screenshot](readme_files/1.1.1.install_blender.png)
 
@@ -27,14 +28,16 @@ Steps
 
   If you're on macOS or Windows, you can get Blender from its homepage: http://blender.org
 
-* *1.1.2. Create a deformed cube*
+1.1.2. Create a deformed cube
+-----------------------------
 
   ![Screenshot](readme_files/1.1.2.create_deformed_cube.png)
 
   We create the deformed cube so that it's easy to know which side we're looking
   at when we see it rendered later.
 
-* *1.1.3. Triangulate the cube: CRITICAL for mobile/web*
+1.1.3. Triangulate the cube: CRITICAL for mobile/web
+----------------------------------------------------
 
   ![Screenshot](readme_files/1.1.3.tringulate.png)
 
@@ -45,23 +48,28 @@ Steps
   By default, Blender uses quads. That's why we manually triangulate
   our model to make sure it can be displayed on all platforms.
 
-* *1.1.4. UV unwrap the cube for later texturing*
+1.1.4. UV unwrap the cube for later texturing
+---------------------------------------------
 
   ![Screenshot](readme_files/1.1.4.uv_unwrap.png)
 
-* *1.1.5. Save the model*
+1.1.5. Save the model
+---------------------
 
   ![Screenshot](readme_files/1.1.5.save.png)
 
-* *1.1.6. Install Blender-to-OpenSceneGraph exporter*
+1.1.6. Install Blender-to-OpenSceneGraph exporter
+-------------------------------------------------
 
   ![Screenshot](readme_files/1.1.6.install_exporter.png)
 
-* *1.1.7. Export Blender model to OpenSceneGraph format*
+1.1.7. Export Blender model to OpenSceneGraph format
+----------------------------------------------------
 
   ![Screenshot](readme_files/1.1.7.export.png)
 
-* *1.1.8. Take a look at 'box.osgt' file*
+1.1.8. Take a look at 'box.osgt' file
+-------------------------------------
 
   ![Screenshot](readme_files/1.1.7.box_osgt.png)
 
