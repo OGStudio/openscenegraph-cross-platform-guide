@@ -78,12 +78,12 @@ Tips and tricks
 
 1. Save video frames, one for each second
 
-`
-mkdir frames
-ffmpeg -i video.mp4 -vf scale=640:-1:flags=lanczos,fps=1 frames/f%03d.png
-`
+   `
+   mkdir frames
+   ffmpeg -i video.mp4 -vf scale=640:-1:flags=lanczos,fps=1 frames/f%03d.png
+   `
 
 1. Convert video frames to GIF
 
-`convert -loop 0 frames/f*.png output.gif`
+   `convert -loop 0 frames/f*.png output.gif`
 
