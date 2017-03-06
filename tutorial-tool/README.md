@@ -80,6 +80,9 @@ Tips and tricks
 
    `
    mkdir frames
+   `
+
+   `
    ffmpeg -i video.mp4 -vf scale=640:-1:flags=lanczos,fps=1 frames/f%03d.png
    `
 
