@@ -40,7 +40,10 @@ Table of contents
 
   We create a simple cube that OpenSceneGraph will render later.
 
-1.2. Install OpenSceneGraph under Linux
+[1.2. Install OpenSceneGraph under Linux](1.2.InstallUnderLinux)
 ---------------------------------------
 
-  We install OpenSceneGraph under Linux and render the cube with standard **osgviewer** tool.
+  ![Screenshot](readme/1.2.install_under_linux.png)
+
+  We install OpenSceneGraph under Linux and take a look at the cube
+  with standard **osgviewer** tool.

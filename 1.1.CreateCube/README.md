@@ -11,8 +11,7 @@ Video
 
 [YouTube](https://youtu.be/A2AvLLgJq18) | [Download](readme/video.mp4)
 
-Video depicts Blender installation under Debian based distribution
-(specifically Xubuntu 16.04).
+Video depicts Blender installation under Xubuntu 16.04.
 
 Steps
 =====
