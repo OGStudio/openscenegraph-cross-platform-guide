@@ -79,8 +79,9 @@ Steps
 
   Configure OpenSceneGraph build with the following commands:
  
-  `cd /path/to/build/dir
-   cmake /path/to/source/dir`
+  `cd /path/to/build/dir`
+
+   `cmake /path/to/source/dir`
 
   We use default configuration without specifying anything.
 
