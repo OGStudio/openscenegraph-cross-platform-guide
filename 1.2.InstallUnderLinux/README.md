@@ -146,15 +146,16 @@ Steps
   ![Screenshot](readme/1.2.14.try_check.png)
   
   Try to take a look at the cube with standard **osgviewer** tool.
-  It cannot find OpenSceneGraph libraries.
+
+  Turns out, it cannot find OpenSceneGraph libraries.
 
 1.2.15. Locate OpenSceneGraph libraries
 ---------------------------------------
 
   ![Screenshot](readme/1.2.15.locate.png)
 
-  By default, OpenSceneGraph is installed into `/usr/local/lib64` on 64-bit
-  Linux distributions. This location is not a standard library path.
+  By default, OpenSceneGraph libraries are installed into `/usr/local/lib64`
+  on 64-bit Linux distributions. This location is not standard.
 
 1.2.16. Tell dynamic linker where to find OpenSceneGraph libraries
 ------------------------------------------------------------------
