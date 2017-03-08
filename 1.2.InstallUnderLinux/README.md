@@ -4,12 +4,12 @@
 This tutorial is part of [OpenSceneGraph cross-platform guide](http://github.com/OGStudio/openscenegraph-cross-platform-guide).
 
 In this tutorial we install OpenSceneGraph under Linux and take a look
-at the cube with standard **osgviewer** tool.
+at the cube with **osgviewer** tool.
 
 Video
 =====
 
-[YouTube](https://youtu.be/4w0tAicl_70) | [Download](readme/video.mp4)
+[YouTube](https://youtu.be/3LF0mvrQ0iE) | [Download](readme/video.mp4)
 
 Video depicts OpenSceneGraph installation under Xubuntu 16.04.
 
@@ -145,7 +145,7 @@ Steps
 
   ![Screenshot](readme/1.2.14.try_check.png)
   
-  Try to take a look at the cube with standard **osgviewer** tool.
+  Try to take a look at the cube with **osgviewer** tool.
 
   Turns out, it cannot find OpenSceneGraph libraries.
 
@@ -174,7 +174,7 @@ Steps
 
   ![Screenshot](readme/1.2.17.viewer.png)
 
-  Finally, take a look at the cube with standard **osgviewer** tool:
+  Finally, take a look at the cube with **osgviewer** tool:
 
   `osgviewer /path/to/box.osgt`
 

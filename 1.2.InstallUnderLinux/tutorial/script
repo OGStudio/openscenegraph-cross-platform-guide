@@ -1,6 +1,6 @@
 background bg.png
 text 5 1.2. Install OpenSceneGraph under Linux
-video 3:10 install_under_linux-01.mp4
+video 6:10 install_under_linux-01.mp4
 text 5 1.2.1. Find OpenSceneGraph repository
 video 10:85 install_under_linux-01.mp4
 text 5 1.2.2. Install git to get OpenSceneGraph
