@@ -14,18 +14,18 @@ text 5 1.2.5. Try to configure OpenSceneGraph with CMake
 video 184:194 install_under_linux-01.mp4
 text 5 1.2.6. Install CMake to configure OpenSceneGraph
 video 194:214 install_under_linux-01.mp4
-text 5 1.2.6. Try to configure OpenSceneGraph once again
+text 5 1.2.7. Try to configure OpenSceneGraph once again
 video 218:230 install_under_linux-01.mp4
-text 5 1.2.7. Observe configuration errors
+text 5 1.2.8. Observe configuration errors
 video 230:237 install_under_linux-01.mp4
 video 247:257 install_under_linux-01.mp4
-text 5 1.2.8. Install missing OpenGL libraries
+text 5 1.2.9. Install missing OpenGL libraries
 video 260:315 install_under_linux-01.mp4
-text 5 1.2.9. Configure OpenSceneGraph
+text 5 1.2.10. Configure OpenSceneGraph
 video 315:323 install_under_linux-01.mp4
-text 5 1.2.10. Observe found OpenGL library location
+text 5 1.2.11. Observe found OpenGL library location
 video 323:338 install_under_linux-01.mp4
-text 5 1.2.11. Build OpenSceneGraph
+text 5 1.2.12. Build OpenSceneGraph
 video 344:371 install_under_linux-01.mp4
 video 406:416 install_under_linux-01.mp4
 video 436:446 install_under_linux-01.mp4
@@ -36,15 +36,15 @@ video 60:64 install_under_linux-02.mp4
 video 191:195 install_under_linux-02.mp4
 video 311:315 install_under_linux-02.mp4
 video 455:486 install_under_linux-02.mp4
-text 5 1.2.12. Install OpenSceneGraph
+text 5 1.2.13. Install OpenSceneGraph
 video 486:500 install_under_linux-02.mp4
-text 5 1.2.13. Try to check 'box.osgt' with 'osgviewer'
+text 5 1.2.14. Try to check 'box.osgt' with 'osgviewer'
 video 502:514 install_under_linux-02.mp4
-text 5 1.2.14. Locate OpenSceneGraph libraries
+text 5 1.2.15. Locate OpenSceneGraph libraries
 video 520:531 install_under_linux-02.mp4
-text 5 1.2.15. Tell dynamic linker where to find OpenSceneGraph libraries
+text 5 1.2.16. Tell dynamic linker where to find OpenSceneGraph libraries
 video 531:575 install_under_linux-02.mp4
-text 5 1.2.16. Check 'box.osgt' with 'osgviewer'
+text 5 1.2.17. Check 'box.osgt' with 'osgviewer'
 video 578:611 install_under_linux-02.mp4
 text 5 1.2. That's it for installing OpenSceneGraph under Linux
 

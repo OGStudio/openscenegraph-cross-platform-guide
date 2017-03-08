@@ -17,120 +17,148 @@ Steps
 =====
 
 1.2.1. Find OpenSceneGraph repository
-----------------------
+-------------------------------------
 
   ![Screenshot](readme/1.2.1.find.png)
 
-  To install Blender on Debian based distributions, run the following command:
+  Find OpenSceneGraph repository at the website.
 
-  `sudo apt install blender`
+1.2.2. Install git to get OpenSceneGraph
+----------------------------------------
 
-  If you're on macOS or Windows, you can get Blender from its homepage: http://blender.org
+  ![Screenshot](readme/1.2.2.install_git.png)
 
-1.1.2. Create a deformed cube
+  Since [OpenSceneGraph is hosted at GitHub](https://github.com/openscenegraph/OpenSceneGraph),
+  we need to install git.
+
+  To install git on Debian based distributions, run the following command:
+
+  `sudo apt install git`
+
+1.2.3. Get latest OpenSceneGraph
+--------------------------------
+
+  ![Screenshot](readme/1.2.3.get_osg.png)
+
+  Get the latest copy of OpenSceneGraph with the following command:
+
+  `git clone https://github.com/openscenegraph/OpenSceneGraph.git`
+
+1.2.4. Create build directory
 -----------------------------
 
-  ![Screenshot](readme/1.1.2.create_deformed_cube.png)
+  ![Screenshot](readme/1.2.4.build_dir.png)
+  
+  OpenSceneGraph uses CMake build system, which supports out-of-source builds.
+  We create a build directory to keep generated (built) content separate
+  from the original source.
 
-  We create the deformed cube so that it's easy to know which side we're looking
-  at when we see it rendered later.
 
-1.1.3. Triangulate the cube: CRITICAL for mobile/web
-----------------------------------------------------
-
-  ![Screenshot](readme/1.1.3.triangulate.png)
-
-  Both mobile and web platforms use OpenGL ES to perform 3D rendering,
-  which is different from OpenGL used on desktops. One specific aspect
-  is that mobile and web only render triangles, not quads.
-
-  By default, Blender uses quads. That's why we manually triangulate
-  our model to make sure it can be displayed on all platforms.
-
-1.1.4. UV unwrap the cube for later texturing
----------------------------------------------
-
-  ![Screenshot](readme/1.1.4.uv_unwrap.png)
-
-  This is necessary for correct texturing and calculating visual effects
-  in shaders later.
-
-1.1.5. Save the model
----------------------
-
-  ![Screenshot](readme/1.1.5.save.png)
-
-  Save the model for later reference.
-
-1.1.6. Install Blender-to-OpenSceneGraph exporter
+1.2.5. Try to configure OpenSceneGraph with CMake
 -------------------------------------------------
 
-  ![Screenshot](readme/1.1.6.install_exporter.png)
+  ![Screenshot](readme/1.2.5.try_cfg.png)
 
-  Install exporter to produce OpenSceneGraph models from within Blender.
+  Before we can build OpenSceneGraph, we need to configure the build.
 
-1.1.7. Export Blender model to OpenSceneGraph format
-----------------------------------------------------
+  However, CMake is not yet installed.
 
-  ![Screenshot](readme/1.1.7.export.png)
+1.2.6. Install CMake to configure OpenSceneGraph
+-------------------------------------------------
 
-  Export the model to OpenSceneGraph format.
+  ![Screenshot](readme/1.2.6.install_cmake.png)
 
-1.1.8. Take a look at 'box.osgt' file
+  To install CMake on Debian based distributions, run the following command:
+
+  `sudo apt install cmake`
+
+1.2.7. Try to configure OpenSceneGraph once again
+-------------------------------------------------
+
+  ![Screenshot](readme/1.2.7.cfg.png)
+
+  Configure OpenSceneGraph build with the following commands:
+ 
+  `cd /path/to/build/dir
+   cmake /path/to/source/dir`
+
+  We use default configuration without specifying anything.
+
+1.2.8. Observe configuration errors
 -------------------------------------
 
-  ![Screenshot](readme/1.1.8.box_osgt.png)
+  ![Screenshot](readme/1.2.8.cfg_errors.png)
 
-  Exported OpenSceneGraph format (`*.osgt`) is a text file.
+  As you see, configuration process could not resolve `OPENGL_INCLUDE_DIR`
+  variable. This means CMake could not find OpenGL libraries.
 
-  There also exist binary (`*.osg`, `*.osgb`) and xml (`*.osgx`) formats.
-  You might want to use them to speed up loading times.
+1.2.9. Install missing OpenGL libraries
+---------------------------------------
 
-Resources
-=========
+  ![Screenshot](readme/1.2.9.install_gl.png)
 
-* [Blender file](result/box.blend)
-* [OpenSceneGraph file](result/box.osgt)
+  The easiest way to install OpenGL libraries is to install GLUT development package,
+  which will bring OpenGL libraries in as a dependency.
 
-video 10:85 install_under_linux.mp4
-text 5 1.2.2. Install git to get OpenSceneGraph
-video 85:108 install_under_linux.mp4
-text 5 1.2.3. Get latest OpenSceneGraph
-video 108:118 install_under_linux.mp4
-video 140:150 install_under_linux.mp4
-text 5 1.2.4. Create build directory
-video 170:184 install_under_linux.mp4
-text 5 1.2.5. Try to configure OpenSceneGraph with CMake
-video 184:194 install_under_linux.mp4
-text 5 1.2.6. Install CMake to configure OpenSceneGraph
-video 194:214 install_under_linux.mp4
-text 5 1.2.6. Try to configure OpenSceneGraph once again
-video 218:230 install_under_linux.mp4
-text 5 1.2.7. Observe configuration errors
-video 230:237 install_under_linux.mp4
-video 247:257 install_under_linux.mp4
-text 5 1.2.8. Install missing OpenGL libraries
-video 260:315 install_under_linux.mp4
-text 5 1.2.9. Configure OpenSceneGraph
-video 315:323 install_under_linux.mp4
-text 5 1.2.10. Observe found OpenGL library location
-video 323:338 install_under_linux.mp4
-text 5 1.2.11. Build OpenSceneGraph
-video 344:371 install_under_linux.mp4
-video 406:416 install_under_linux.mp4
-video 436:446 install_under_linux.mp4
-video 458:468 install_under_linux.mp4
-video 566:570 install_under_linux.mp4
-video 660:664 install_under_linux.mp4
-video 791:795 install_under_linux.mp4
-video 911:915 install_under_linux.mp4
-video 1055:1090 install_under_linux.mp4
-text 5 1.2.12. Install OpenSceneGraph
-video 1090:1102 install_under_linux.mp4
-text 5 1.2.13. Try to check 'box.osgt' with 'osgviewer'
-video 1104:1116 install_under_linux.mp4
-text 5 1.2.14. Locate OpenSceneGraph libraries
-video 1124:1135 install_under_linux.mp4
-text 5 1.2.15. Tell dynamic linker where to find OpenSceneGraph libraries
-video 1135:1177 install_under_linux.mp4
-text 5 1.2.16. Check 'box.osgt' with 'osgviewer'
+  To install GLUT development package on Debian based distributions,
+  run the following command:
+
+  `sudo apt install freeglut3-dev`
+
+1.2.10. Configure OpenSceneGraph
+--------------------------------
+
+  ![Screenshot](readme/1.2...png)
+
+-------------------------------------
+
+  ![Screenshot](readme/1.2...png)
+
+-------------------------------------
+
+  ![Screenshot](readme/1.2...png)
+
+-------------------------------------
+
+  ![Screenshot](readme/1.2...png)
+
+-------------------------------------
+
+  ![Screenshot](readme/1.2...png)
+
+-------------------------------------
+
+  ![Screenshot](readme/1.2...png)
+
+-------------------------------------
+
+  ![Screenshot](readme/1.2...png)
+
+-------------------------------------
+
+  ![Screenshot](readme/1.2...png)
+
+
+
+
+
+
+
+
+
+text 5 1.2.11. Observe found OpenGL library location
+
+text 5 1.2.12. Build OpenSceneGraph
+
+text 5 1.2.13. Install OpenSceneGraph
+
+text 5 1.2.14. Try to check 'box.osgt' with 'osgviewer'
+
+video 502:514 install_under_linux-02.mp4
+text 5 1.2.15. Locate OpenSceneGraph libraries
+video 520:531 install_under_linux-02.mp4
+text 5 1.2.16. Tell dynamic linker where to find OpenSceneGraph libraries
+video 531:575 install_under_linux-02.mp4
+text 5 1.2.17. Check 'box.osgt' with 'osgviewer'
+video 578:611 install_under_linux-02.mp4
+text 5 1.2. That's it for installing OpenSceneGraph under Linux
