@@ -109,57 +109,71 @@ Steps
 1.2.10. Configure OpenSceneGraph
 --------------------------------
 
-  ![Screenshot](readme/1.2...png)
+  ![Screenshot](readme/1.2.10.cfg_osg.png)
 
+  Configure OpenSceneGraph once again. There are no OpenGL errors anymore.
+
+1.2.11. Observe found OpenGL library location
+---------------------------------------------
+
+  ![Screenshot](readme/1.2.11.gl_path.png)
+
+  As you see, configuration process has successfully found OpenGL libraries.
+
+1.2.12. Build OpenSceneGraph
+----------------------------
+
+  ![Screenshot](readme/1.2.12.build.png)
+
+  We are finally ready to build OpenSceneGraph with the following command:
+
+  `make -j10`
+
+  We use `-j10` to run 10 parallel jobs. This makes building faster.
+
+1.2.13. Install OpenSceneGraph
+------------------------------
+
+  ![Screenshot](readme/1.2.13.install.png)
+
+  Install OpenSceneGraph with the following command:
+
+  `sudo make install`
+
+1.2.14. Try to check 'box.osgt' with 'osgviewer'
+------------------------------------------------
+
+  ![Screenshot](readme/1.2.14.try_check.png)
+  
+  Try to take a look at the cube with standard **osgviewer** tool.
+  It cannot find OpenSceneGraph libraries.
+
+1.2.15. Locate OpenSceneGraph libraries
+---------------------------------------
+
+  ![Screenshot](readme/1.2.15.locate.png)
+
+  By default, OpenSceneGraph is installed into `/usr/local/lib64` on 64-bit
+  Linux distributions. This location is not a standard library path.
+
+1.2.16. Tell dynamic linker where to find OpenSceneGraph libraries
+------------------------------------------------------------------
+
+  ![Screenshot](readme/1.2.16.linker.png)
+
+  Specify `/usr/local/lib64` inside `/etc/ld.so.conf` to make sure
+  dynamic linker is aware of the directory with OpenSceneGraph libraries.
+
+  Then refresh the linker cache with the following command:
+
+  `sudo ldconfig`
+
+1.2.17. Check 'box.osgt' with 'osgviewer'
 -------------------------------------
 
-  ![Screenshot](readme/1.2...png)
+  ![Screenshot](readme/1.2.17.viewer.png)
 
--------------------------------------
+  Finally, take a look at the cube with standard **osgviewer** tool:
 
-  ![Screenshot](readme/1.2...png)
+  `osgviewer /path/to/box.osgt`
 
--------------------------------------
-
-  ![Screenshot](readme/1.2...png)
-
--------------------------------------
-
-  ![Screenshot](readme/1.2...png)
-
--------------------------------------
-
-  ![Screenshot](readme/1.2...png)
-
--------------------------------------
-
-  ![Screenshot](readme/1.2...png)
-
--------------------------------------
-
-  ![Screenshot](readme/1.2...png)
-
-
-
-
-
-
-
-
-
-text 5 1.2.11. Observe found OpenGL library location
-
-text 5 1.2.12. Build OpenSceneGraph
-
-text 5 1.2.13. Install OpenSceneGraph
-
-text 5 1.2.14. Try to check 'box.osgt' with 'osgviewer'
-
-video 502:514 install_under_linux-02.mp4
-text 5 1.2.15. Locate OpenSceneGraph libraries
-video 520:531 install_under_linux-02.mp4
-text 5 1.2.16. Tell dynamic linker where to find OpenSceneGraph libraries
-video 531:575 install_under_linux-02.mp4
-text 5 1.2.17. Check 'box.osgt' with 'osgviewer'
-video 578:611 install_under_linux-02.mp4
-text 5 1.2. That's it for installing OpenSceneGraph under Linux
