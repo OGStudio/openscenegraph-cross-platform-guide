@@ -1,7 +1,7 @@
 1.2. Install OpenSceneGraph under Linux
 =======================================
 
-This tutorial is part of [OpenSceneGraph cross platform guide](http://github.com/OGStudio/openscenegraph-cross-platform-guide).
+This tutorial is part of [OpenSceneGraph cross-platform guide](http://github.com/OGStudio/openscenegraph-cross-platform-guide).
 
 In this tutorial we install OpenSceneGraph under Linux and take a look
 at the cube with standard **osgviewer** tool.
