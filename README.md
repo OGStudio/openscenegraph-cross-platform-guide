@@ -51,7 +51,7 @@ Tutorials
 
 <a name="tutorials-cube"/>
 
-## [1.1. Create a cube](1.1.CreateCube)
+### [1.1. Create a cube](1.1.CreateCube)
 
   ![Screenshot](readme/1.1.cube.png)
 
@@ -59,7 +59,7 @@ Tutorials
 
 <a name="tutorials-install-linux"/>
 
-## [1.2. Install OpenSceneGraph under Linux](1.2.InstallUnderLinux)
+### [1.2. Install OpenSceneGraph under Linux](1.2.InstallUnderLinux)
 
   ![Screenshot](readme/1.2.install_under_linux.png)
 
@@ -68,7 +68,7 @@ Tutorials
 
 <a name="tutorials-install-windows"/>
 
-## [1.3. Install OpenSceneGraph under Windows](1.3.InstallUnderWindows)
+### [1.3. Install OpenSceneGraph under Windows](1.3.InstallUnderWindows)
 
   ![Screenshot](readme/1.3.install_under_windows.png)
 
