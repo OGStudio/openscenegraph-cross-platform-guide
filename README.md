@@ -1,10 +1,18 @@
-#### Table of contents
-[Overview](#overview)
-[Continuous numbering convention](#numbering)
-[Tutorials](#tutorials)
+Table of contents
+=================
+
+* [Overview](#overview)
+
+* [Continuous numbering convention](#numbering)
+
+* [Tutorials](#tutorials)
+
+  * [1.1. Create a cube](#tutorials-cube)
 
 <a name="overview"/>
-## Overview
+
+Overview
+========
 
 [OpenSceneGraph](http://openscenegraph.org) is an open source high performance
 3D graphics toolkit, used by application developers in fields such as visual
@@ -23,7 +31,9 @@ under the following platforms:
 1. Web
 
 <a name="numbering"/>
-## Continuous numbering convention
+
+Continuous numbering convention
+===============================
 
 This guide uses continuous numbering with topics denoted as
 **Number1**.**Number2** (e.g., **1.1**) and concrete steps denoted as
@@ -35,15 +45,12 @@ Here's what each number means:
 1. **Number2** is a specific topic. In the case of creating a cube, it's **1.1**.
 1. **Number3** is a concrete step of the topic. In the case of installing Blender, it's **1.1.1**.
 
-Tutorials
-=========
-
 <a name="tutorials"/>
 
-## Tutorials
-
 Tutorials
 =========
+
+<a name="tutorials-cube"/>
 
 [1.1. Create a cube](1.1.CreateCube)
 ------------------------------------
@@ -52,6 +59,8 @@ Tutorials
 
   We create a simple cube that OpenSceneGraph will render later.
 
+<a name="tutorials-install-linux"/>
+
 [1.2. Install OpenSceneGraph under Linux](1.2.InstallUnderLinux)
 ----------------------------------------------------------------
 
@@ -59,6 +68,8 @@ Tutorials
 
   We install OpenSceneGraph under Linux and take a look at the cube
   with **osgviewer** tool.
+
+<a name="tutorials-install-windows"/>
 
 [1.3. Install OpenSceneGraph under Windows](1.3.InstallUnderWindows)
 --------------------------------------------------------------------
