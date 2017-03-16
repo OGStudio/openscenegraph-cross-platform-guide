@@ -4,8 +4,8 @@
 [Tutorials](#tutorials)
 
 <a name="overview"/>
-Overview
-========
+#Overview
+=========
 
 [OpenSceneGraph](http://openscenegraph.org) is an open source high performance
 3D graphics toolkit, used by application developers in fields such as visual
