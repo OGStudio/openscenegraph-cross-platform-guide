@@ -59,7 +59,7 @@ Steps
   ![Screenshot](readme/1.3.2.download_msys2.png)
 
   Choose package suitable for your version of Windows.
-  In case of 64-bit Windows, it's MSYS2 *x86_64*.
+  In case of 64-bit Windows, it's MSYS2 **x86_64**.
 
 <a name="step-install-msys2"/>
 
@@ -104,7 +104,7 @@ Steps
   ![Screenshot](readme/1.3.6.find_cmake.png)
 
   In order to build Windows applications, we need to use MinGW-w64 tools.
-  [MinGW-w64](http://http://mingw-w64.org) is an advancement of the original
+  [MinGW-w64](http://mingw-w64.org) is an advancement of the original
   [MinGW](http://mingw.org) project, created to support the GCC compiler on
   Windows.
 
