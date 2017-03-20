@@ -3,6 +3,7 @@ from Item import *
 
 # Language keywords.
 BACKGROUND = "background "
+COMMENT = "#"
 TEXT = "{0} ".format(ITEM_TYPE_TEXT)
 VIDEO = "{0} ".format(ITEM_TYPE_VIDEO)
 
@@ -16,6 +17,10 @@ class Parser(object):
         self.background = bg
     def parseLine(self, ln):
         sln = ln.strip()
+        # Ignore comments.
+        if (sln.startswith(COMMENT)):
+            return
+        # Parse real data.
         if (sln.startswith(BACKGROUND)):
             self.parseBackground(sln)
         elif (sln.startswith(TEXT)):

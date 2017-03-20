@@ -1,0 +1,22 @@
+background bg.png
+text 5 1.3. Install OpenSceneGraph under Windows
+video 4:9 install_under_windows-01.mp4
+text 5 1.3.1. Find MSYS2
+video 9:17 install_under_windows-01.mp4
+text 5 1.3.2. Download MSYS2
+video 17:28 install_under_windows-01.mp4
+text 5 1.3.3. Install MSYS2
+video 63:87 install_under_windows-01.mp4
+video 132:142 install_under_windows-01.mp4
+text 5 1.3.4. Update MSYS2 core packages
+video 171:230 install_under_windows-01.mp4
+
+text 5 1.3.5. Update MSYS2 system packages
+video 4:133 install_under_windows-02.mp4
+text 5 1.3.6. Find MinGW-w64 CMake
+video 153:177 install_under_windows-02.mp4
+text 5 1.3.7. Install build tools
+video 182:338 install_under_windows-02.mp4
+text 5 1.3.8. Find OpenSceneGraph repository
+#video 350: install_under_windows-02.mp4
+
