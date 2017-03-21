@@ -91,7 +91,6 @@ Steps
   We create a build directory to keep generated (built) content separate
   from the original source.
 
-
 <a name="step-try-cfg"/>
 
 1.2.5. Try to configure OpenSceneGraph with CMake
@@ -125,7 +124,7 @@ Steps
  
   `cd /path/to/build/dir`
 
-   `cmake /path/to/source/dir`
+  `cmake /path/to/source/dir`
 
   We use default configuration without specifying anything.
 
