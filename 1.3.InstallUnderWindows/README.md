@@ -346,3 +346,9 @@ Steps
 
   ![Screenshot](readme/1.3.24.install.png)
 
+  Restart MSYS2 with Administrator privelegies and run the following commands:
+
+  `cd /path/to/build/dir`
+
+  `mingw32-make install`
+
