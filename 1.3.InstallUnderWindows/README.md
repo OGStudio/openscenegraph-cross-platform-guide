@@ -209,9 +209,9 @@ Steps
   CMake is not yet reachable, because it's a MinGW package. MinGW
   packages reside in a non-standard path.
 
-  To make MinGW CMake (and other MinGW executables accessible), we need to
-  add MinGW bin directory to PATH environment variable by adding the following
-  line:
+  To make MinGW CMake (and other MinGW executables) accessible, we need to
+  add MinGW bin directory to PATH environment variable.
+  Do it by appending the following line:
 
   `export PATH=$PATH:/mingw32/bin`
 
