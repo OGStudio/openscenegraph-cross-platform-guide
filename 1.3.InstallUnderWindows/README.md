@@ -27,7 +27,15 @@ Table of contents
   * [1.3.21. Update CMake MinGW script](#step-update-cmake-script)
   * [1.3.22. Configure OpenSceneGraph](#step-cfg)
   * [1.3.23. Build OpenSceneGraph](#step-build)
-  * [1.3.24. Install OpenSceneGraph](#step-install)
+  * [1.3.24. Try to install OpenSceneGraph](#step-try-install)
+  * [1.3.25. Observe installation error](#step-observe-install)
+  * [1.3.26. Install OpenSceneGraph](#step-install)
+  * [1.3.27. Try to run 'osgviewer'](#step-try-osgviewer)
+  * [1.3.28. Observe missing library](#step-missing-library)
+  * [1.3.29. Find MinGW libraries](#step-find-libraries)
+  * [1.3.30. Copy MinGW libraries](#step-copy-libraries)
+  * [1.3.31. Go to the directory with 'osgviewer'](#step-go-osgviewer)
+  * [1.3.32. Check 'box.osgt' with 'osgviewer'](#step-check)
 
 <a name="overview"/>
 
@@ -339,16 +347,114 @@ Steps
 
   We use `-j10` to run 10 parallel jobs. This makes building faster.
 
-<a name="step-install"/>
+<a name="step-try-install"/>
 
-1.3.24. Install OpenSceneGraph
+1.3.24. Try to install OpenSceneGraph
 ------------------------------
 
-  ![Screenshot](readme/1.3.24.install.png)
+  ![Screenshot](readme/1.3.24.try_install.png)
 
-  Restart MSYS2 with Administrator privelegies and run the following commands:
+  Try to install with the following commands:
 
   `cd /path/to/build/dir`
 
   `mingw32-make install`
+
+<a name="step-observe-install"/>
+
+1.3.25. Observe installation error
+----------------------------------
+
+  ![Screenshot](readme/1.3.25.observe_install.png)
+
+  Installation failed, because MSYS2 needs administrative priveleges to
+  install OpenSceneGraph into `C:\Program Files (x86)`.
+
+<a name="step-install"/>
+
+1.3.26. Install OpenSceneGraph
+------------------------------
+
+  ![Screenshot](readme/1.3.26.install.png)
+
+  Restart MSYS2 with administrative privelegies and run the following commands:
+
+  `cd /path/to/build/dir`
+
+  `mingw32-make install`
+
+<a name="step-try-osgviewer"/>
+
+1.3.27. Try to run 'osgviewer'
+------------------------------
+
+  ![Screenshot](readme/1.3.27.try_osgviewer.png)
+
+  Go to `C:\Program Files (x86)\OpenSceneGraph`, which contains OpenSceneGraph
+  installation.
+
+  Try to run 'osgviewer' from `bin` subdirectory.
+
+<a name="step-missing-library"/>
+
+1.3.28. Observe missing library
+-------------------------------
+
+  ![Screenshot](readme/1.3.28.missing_library.png)
+
+  You cannot run 'osgviewer' at this time, because it misses several libraries.
+
+  Those libraries are part of MinGW installation. However, since they reside
+  in non-standard place, 'osgviewer' executable can't find them.
+
+<a name="step-find-libraries"/>
+
+1.3.29. Find MinGW libraries
+------------------------------------
+
+  ![Screenshot](readme/1.3.29.find_libraries.png)
+
+  The easiest way to locate MinGW installation directory, is to run the
+  following command from within MSYS2:
+
+  `explorer .`
+
+  This will open your current directory in Explorer.
+
+  From there, you can navigate to `mingw32/bin` directory.
+  This is the place where MinGW libraries reside.
+
+<a name="step-copy-libraries"/>
+
+1.3.30. Copy MinGW libraries
+----------------------------
+
+  ![Screenshot](readme/1.3.30.copy_libraries.png)
+
+  Copy all files with `dll` extension to the directory, where `osgviewer`
+  resides.
+
+  **Note**: you don't really need all MinGW libraries. We copy all libraries
+  just to keep this tutorial simpler.
+
+<a name="step-go-osgviewer"/>
+
+1.3.31. Go to the directory with 'osgviewer'
+-----------------------------------------
+
+  ![Screenshot](readme/1.3.31.go_osgviewer.png)
+
+  With MSYS2, go to `C:\Program Files (x86)\OpenSceneGraph\bin`, where
+  `osgviewer` resides.
+
+<a name="step-check"/>
+
+1.3.32. Check 'box.osgt' with 'osgviewer'
+-----------------------------------------
+
+  ![Screenshot](readme/1.3.32.osgviewer.png)
+
+  Finally, take a look at the cube with `osgviewer`:
+
+  `./osgviewer /path/to/box.osgt`
 
