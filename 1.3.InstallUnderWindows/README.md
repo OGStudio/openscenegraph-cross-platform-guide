@@ -377,7 +377,7 @@ Steps
 
   ![Screenshot](readme/f726.png)
 
-  Restart MSYS2 with administrative privelegies and run the following commands:
+  Restart MSYS2 with administrative privilegies and run the following commands:
 
   `cd /path/to/build/dir`
 
