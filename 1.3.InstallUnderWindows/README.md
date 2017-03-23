@@ -66,7 +66,7 @@ Steps
 1.3.1. Find MSYS2
 -------------------------------------
 
-  ![Screenshot](readme/1.3.1.find_msys2.png)
+  ![Screenshot](readme/f025.png)
 
   [MSYS2](http://msys2.org) is a software distro and building platform
   for Windows.
@@ -80,7 +80,7 @@ Steps
 1.3.2. Download MSYS2
 -------------------------------------
 
-  ![Screenshot](readme/1.3.2.download_msys2.png)
+  ![Screenshot](readme/f028.png)
 
   Choose package suitable for your version of Windows.
   In case of 64-bit Windows, it's MSYS2 **x86_64**.
@@ -90,7 +90,7 @@ Steps
 1.3.3. Install MSYS2
 -------------------------------------
 
-  ![Screenshot](readme/1.3.3.install_msys2.png)
+  ![Screenshot](readme/f048.png)
 
   Run the downloaded package.
 
@@ -99,7 +99,7 @@ Steps
 1.3.4. Update MSYS2 core packages
 ---------------------------------
 
-  ![Screenshot](readme/1.3.4.update_msys2_core.png)
+  ![Screenshot](readme/f093.png)
 
   Run the following command in MSYS2:
 
@@ -112,7 +112,7 @@ Steps
 1.3.5. Update MSYS2 system packages
 -----------------------------------
 
-  ![Screenshot](readme/1.3.5.update_msys2_system.png)
+  ![Screenshot](readme/f140.png)
 
   Reopen MSYS2 and run the following command:
 
@@ -125,7 +125,7 @@ Steps
 1.3.6. Find MinGW-w64 CMake
 -----------------------------------
 
-  ![Screenshot](readme/1.3.6.find_cmake.png)
+  ![Screenshot](readme/f188.png)
 
   In order to build Windows applications, we need to use MinGW-w64 tools.
   [MinGW-w64](http://mingw-w64.org) is an advancement of the original
@@ -141,7 +141,7 @@ Steps
 1.3.7. Install build tools
 --------------------------
 
-  ![Screenshot](readme/1.3.7.install_build_tools.png)
+  ![Screenshot](readme/f217.png)
 
   To install CMake, Make, and GCC, run the following command:
 
@@ -155,7 +155,7 @@ Steps
 1.3.8. Find OpenSceneGraph repository
 -------------------------------------
 
-  ![Screenshot](readme/1.3.8.find.png)
+  ![Screenshot](readme/f303.png)
 
   Find OpenSceneGraph repository at the website.
 
@@ -164,7 +164,7 @@ Steps
 1.3.9. Install git to get OpenSceneGraph
 ----------------------------------------
 
-  ![Screenshot](readme/1.3.9.install_git.png)
+  ![Screenshot](readme/f325.png)
 
   Since [OpenSceneGraph is hosted at GitHub](https://github.com/openscenegraph/OpenSceneGraph),
   we need to install git.
@@ -179,7 +179,7 @@ Steps
 1.3.10. Get latest OpenSceneGraph
 ---------------------------------
 
-  ![Screenshot](readme/1.3.10.get_osg.png)
+  ![Screenshot](readme/f352.png)
 
   Get the latest copy of OpenSceneGraph with the following command:
 
