@@ -190,7 +190,7 @@ Steps
 1.3.11. Create build directory
 ------------------------------
 
-  ![Screenshot](readme/1.3.11.build_dir.png)
+  ![Screenshot](readme/f400.png)
   
   OpenSceneGraph uses CMake build system, which supports out-of-source builds.
   We create a build directory to keep generated (built) content separate
@@ -201,7 +201,7 @@ Steps
 1.3.12. Try to configure OpenSceneGraph with CMake
 --------------------------------------------------
 
-  ![Screenshot](readme/1.3.12.try_cfg.png)
+  ![Screenshot](readme/f412.png)
 
   Before we can build OpenSceneGraph, we need to configure the build.
 
@@ -212,7 +212,7 @@ Steps
 1.3.13. Add MinGW-w64 bin directory to PATH
 -------------------------------------------
 
-  ![Screenshot](readme/1.3.13.path.png)
+  ![Screenshot](readme/f441.png)
 
   CMake is not yet reachable, because it's a MinGW package. MinGW
   packages reside in a non-standard path.
@@ -232,7 +232,7 @@ Steps
 1.3.14. Try to configure OpenSceneGraph once again
 --------------------------------------------------
 
-  ![Screenshot](readme/1.3.14.cfg-2.png)
+  ![Screenshot](readme/f487.png)
 
   Try to configure OpenSceneGraph build with the following commands:
  
@@ -247,7 +247,7 @@ Steps
 1.3.15. Observe configuration errors
 ------------------------------------
 
-  ![Screenshot](readme/1.3.15.cfg-2_observe.png)
+  ![Screenshot](readme/f506.png)
 
   As you see, configuration process could not find valid compiler for
   **NMake Makefiles**. That's because **NMake Makefiles** are for
@@ -258,7 +258,7 @@ Steps
 1.3.16. Try to configure OpenSceneGraph for MinGW
 -------------------------------------------------
 
-  ![Screenshot](readme/1.3.16.cfg-3.png)
+  ![Screenshot](readme/f518.png)
 
   Since we want to use MinGW's GCC, we need to tell CMake to generate
   **MinGW Makefiles**. We do it by adding `-G "MinGW Makefiles"` to the
@@ -271,7 +271,7 @@ Steps
 1.3.17. Observe generator error
 -------------------------------
 
-  ![Screenshot](readme/1.3.17.cfg-3_observe.png)
+  ![Screenshot](readme/f525.png)
 
   CMake complains about using a generator that is different from
   the one used before.
@@ -281,7 +281,7 @@ Steps
 1.3.18. Clean build directory
 -----------------------------
   
-  ![Screenshot](readme/1.3.18.cfg-3_clean.png)
+  ![Screenshot](readme/f534.png)
 
   To fix generator error, we need to clean build directory with the following commands:
 
@@ -297,7 +297,7 @@ Steps
 1.3.19. Try to configure OpenSceneGraph for MinGW once again
 ------------------------------------------------------------
 
-  ![Screenshot](readme/1.3.19.cfg-4.png)
+  ![Screenshot](readme/f543.png)
 
   Configure OpenSceneGraph for MinGW once again.
 
@@ -306,7 +306,7 @@ Steps
 1.3.20. Observe sh error
 ------------------------
 
-  ![Screenshot](readme/1.3.20.cfg-4-observe.png)
+  ![Screenshot](readme/f551.png)
 
   CMake complains about `sh.exe` presence in PATH. As we seen before, MinGW
   resides in a non-standard path to make sure MinGW executables do not
