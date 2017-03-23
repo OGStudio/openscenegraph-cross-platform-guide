@@ -367,7 +367,7 @@ Steps
 
   ![Screenshot](readme/1.3.25.observe_install.png)
 
-  Installation failed, because MSYS2 needs administrative priveleges to
+  Installation failed, because MSYS2 needs administrative privileges to
   install OpenSceneGraph into `C:\Program Files (x86)`.
 
 <a name="step-install"/>

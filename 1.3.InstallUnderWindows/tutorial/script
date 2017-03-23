@@ -1,83 +1,86 @@
 background bg.png
 text 5 1.3. Install OpenSceneGraph under Windows
-#video 4:9 install_under_windows-01.mp4
-#text 5 1.3.1. Find MSYS2
-#video 9:17 install_under_windows-01.mp4
-#text 5 1.3.2. Download MSYS2
-#video 17:25 install_under_windows-01.mp4
-#text 5 1.3.3. Install MSYS2
-#video 63:87 install_under_windows-01.mp4
-#video 132:142 install_under_windows-01.mp4
-#text 5 1.3.4. Update MSYS2 core packages
-#video 171:202 install_under_windows-01.mp4
-#video 207:215 install_under_windows-01.mp4
-#video 222:230 install_under_windows-01.mp4
+video 4:9 install_under_windows-01.mp4
+text 5 1.3.1. Find MSYS2
+video 9:17 install_under_windows-01.mp4
+text 5 1.3.2. Download MSYS2
+video 17:25 install_under_windows-01.mp4
+text 5 1.3.3. Install MSYS2
+video 63:87 install_under_windows-01.mp4
+video 132:142 install_under_windows-01.mp4
+text 5 1.3.4. Update MSYS2 core packages
+video 171:202 install_under_windows-01.mp4
+video 207:215 install_under_windows-01.mp4
+video 222:230 install_under_windows-01.mp4
 
-#text 5 1.3.5. Update MSYS2 system packages
-#video 6:33 install_under_windows-02.mp4
-#video 67:72 install_under_windows-02.mp4
-#video 92:100 install_under_windows-02.mp4
-#video 115:122 install_under_windows-02.mp4
-#text 5 1.3.6. Find MinGW-w64 CMake
-#video 153:177 install_under_windows-02.mp4
+text 5 1.3.5. Update MSYS2 system packages
+video 6:33 install_under_windows-02.mp4
+video 67:72 install_under_windows-02.mp4
+video 92:100 install_under_windows-02.mp4
+video 115:122 install_under_windows-02.mp4
+text 5 1.3.6. Find MinGW-w64 CMake
+video 153:177 install_under_windows-02.mp4
 text 5 1.3.7. Install build tools
 video 182:201 install_under_windows-02.mp4
 video 228:258 install_under_windows-02.mp4
 video 292:305 install_under_windows-02.mp4
 video 328:338 install_under_windows-02.mp4
 text 5 1.3.8. Find OpenSceneGraph repository
-#video 350:390 install_under_windows-02.mp4
-#text 5 1.3.9. Install git to get OpenSceneGraph
-#video 400:480 install_under_windows-02.mp4
-#text 5 1.3.10. Get latest OpenSceneGraph
-#video 481:496 install_under_windows-02.mp4
-#video 529:547 install_under_windows-02.mp4
-#text 5 1.3.11. Create build directory
-#video 558:577 install_under_windows-02.mp4
-#text 5 1.3.12. Try to configure OpenSceneGraph with CMake
-#video 578:588 install_under_windows-02.mp4
-#text 5 1.3.13. Add MinGW-w64 bin directory to PATH
-#video 600:628 install_under_windows-02.mp4
-#text 5 1.3.14. Try to configure OpenSceneGraph once again
-#video 640:681 install_under_windows-02.mp4
-#text 5 1.3.15. Observe configuration errors
-#video 681:697 install_under_windows-02.mp4
-#text 5 1.3.16. Try to configure OpenSceneGraph for MinGW
-#video 699:708 install_under_windows-02.mp4
-#text 5 1.3.17. Observe generator error
-#video 708:712 install_under_windows-02.mp4
-#text 5 1.3.18. Clean build directory
-#video 712:717 install_under_windows-02.mp4
-#text 5 1.3.19. Try to configure OpenSceneGraph for MinGW once again
-#video 717:724 install_under_windows-02.mp4
-#text 5 1.3.20. Observe sh error
-#video 724:729 install_under_windows-02.mp4
-#text 5 1.3.21. Update CMake MinGW script
-#video 733:766 install_under_windows-02.mp4
-#text 5 1.3.22. Configure OpenSceneGraph
-#video 767:791 install_under_windows-02.mp4
-#
-#text 5 1.3.23. Build OpenSceneGraph
-#video 5:25 install_under_windows-03-1.mp4
-#video 0:5 install_under_windows-03-2.mp4
-#text 5 1.3.24. Try to install OpenSceneGraph
-#video 9:36 install_under_windows-03-3.mp4
-#text 5 1.3.25. Observe installation error
-#video 36:49 install_under_windows-03-3.mp4
-#text 5 1.3.26. Install OpenSceneGraph
-#video 54:62 install_under_windows-03-3.mp4
-#video 64:93 install_under_windows-03-3.mp4
-#
-#text 5 1.3.27. Try to run 'osgviewer'
-#video 15:33 install_under_windows-04.mp4
-#text 5 1.3.28. Observe missing library
-#video 33:39 install_under_windows-04.mp4
-#text 5 1.3.29. Find MinGW libraries
-#video 68:89 install_under_windows-04.mp4
-#text 5 1.3.30. Copy MinGW libraries
-#video 89:125 install_under_windows-04.mp4
-#text 5 1.3.31. Go to the directory with 'osgviewer'
-#video 195:230 install_under_windows-04.mp4
-#text 5 1.3.32. Check 'box.osgt' with 'osgviewer'
-#video 3:38 install_under_windows-05.mp4
-#text 5 1.3. That's it for installing OpenSceneGraph under Windows
+video 350:390 install_under_windows-02.mp4
+text 5 1.3.9. Install git to get OpenSceneGraph
+video 400:419 install_under_windows-02.mp4
+video 424:429 install_under_windows-02.mp4
+video 454:463 install_under_windows-02.mp4
+video 475:480 install_under_windows-02.mp4
+text 5 1.3.10. Get latest OpenSceneGraph
+video 481:496 install_under_windows-02.mp4
+video 529:547 install_under_windows-02.mp4
+text 5 1.3.11. Create build directory
+video 558:577 install_under_windows-02.mp4
+text 5 1.3.12. Try to configure OpenSceneGraph with CMake
+video 578:588 install_under_windows-02.mp4
+text 5 1.3.13. Add MinGW-w64 bin directory to PATH
+video 600:628 install_under_windows-02.mp4
+text 5 1.3.14. Try to configure OpenSceneGraph once again
+video 640:681 install_under_windows-02.mp4
+text 5 1.3.15. Observe configuration errors
+video 681:697 install_under_windows-02.mp4
+text 5 1.3.16. Try to configure OpenSceneGraph for MinGW
+video 699:708 install_under_windows-02.mp4
+text 5 1.3.17. Observe generator error
+video 708:712 install_under_windows-02.mp4
+text 5 1.3.18. Clean build directory
+video 712:717 install_under_windows-02.mp4
+text 5 1.3.19. Try to configure OpenSceneGraph for MinGW once again
+video 717:724 install_under_windows-02.mp4
+text 5 1.3.20. Observe sh error
+video 724:729 install_under_windows-02.mp4
+text 5 1.3.21. Update CMake MinGW script
+video 733:766 install_under_windows-02.mp4
+text 5 1.3.22. Configure OpenSceneGraph
+video 767:791 install_under_windows-02.mp4
+
+text 5 1.3.23. Build OpenSceneGraph
+video 5:25 install_under_windows-03-1.mp4
+video 0:5 install_under_windows-03-2.mp4
+text 5 1.3.24. Try to install OpenSceneGraph
+video 9:36 install_under_windows-03-3.mp4
+text 5 1.3.25. Observe installation error
+video 36:49 install_under_windows-03-3.mp4
+text 5 1.3.26. Install OpenSceneGraph
+video 54:62 install_under_windows-03-3.mp4
+video 64:93 install_under_windows-03-3.mp4
+
+text 5 1.3.27. Try to run 'osgviewer'
+video 15:33 install_under_windows-04.mp4
+text 5 1.3.28. Observe missing library
+video 33:39 install_under_windows-04.mp4
+text 5 1.3.29. Find MinGW libraries
+video 68:89 install_under_windows-04.mp4
+text 5 1.3.30. Copy MinGW libraries
+video 89:125 install_under_windows-04.mp4
+text 5 1.3.31. Go to the directory with 'osgviewer'
+video 195:230 install_under_windows-04.mp4
+text 5 1.3.32. Check 'box.osgt' with 'osgviewer'
+video 3:38 install_under_windows-05.mp4
+text 5 1.3. That's it for installing OpenSceneGraph under Windows
