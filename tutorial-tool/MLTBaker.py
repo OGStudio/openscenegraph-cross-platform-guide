@@ -13,7 +13,6 @@ CMD = """
 CMD_IMG = "{img} out={len} -mix {mix_len} -mixer luma \\\n"
 CMD_VID = "{vid} in={start} out={end} -mix {mix_len} -mixer luma \\\n"
 EXT = "mp4"
-MIX_LEN = 1
 FILE_NAME = "video"
 FPS = 25
 VCODEC = "libx264"
@@ -22,9 +21,10 @@ def frameSec(sec):
     return FPS * sec
 
 class MLTBaker(object):
-    def __init__(self, dstDir):
+    def __init__(self, dstDir, mixLen):
         self.items = []
         self.dstDir = dstDir
+        self.mixLen = mixLen
     def bake(self, items, videoDir):
         self.items = []
         i = 0
@@ -36,7 +36,7 @@ class MLTBaker(object):
                     CMD_IMG.format(
                         img = filePath,
                         len = frameSec(int(item.duration)),
-                        mix_len = frameSec(MIX_LEN)
+                        mix_len = frameSec(self.mixLen)
                     )
                 )
             elif (item.type == ITEM_TYPE_VIDEO):
@@ -48,7 +48,7 @@ class MLTBaker(object):
                         vid = videoDir + item.content,
                         start = frameSec(start),
                         end = frameSec(end),
-                        mix_len = frameSec(MIX_LEN)
+                        mix_len = frameSec(self.mixLen)
                     )
                 )
             i = i + 1

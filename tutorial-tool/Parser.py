@@ -41,8 +41,5 @@ class Parser(object):
     def printTree(self):
         print("Background: '{0}'".format(self.background))
         for item in self.items:
-            print("Item. Type: '{0}' Duration: '{1}' Content: '{2}'".format(
-                item.type,
-                item.duration,
-                item.content))
+            print(item)
 

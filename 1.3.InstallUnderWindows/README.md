@@ -52,7 +52,7 @@ at the cube with **osgviewer** tool.
 Video
 =====
 
-[YouTube](https://todo) | [Download](readme/video.mp4)
+[YouTube](https://youtu.be/1A7YNek7A3Y) | [Download](readme/video.mp4)
 
 Video depicts OpenSceneGraph installation under 64-bit Windows 7.
 

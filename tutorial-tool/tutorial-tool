@@ -3,6 +3,7 @@
 import os
 import sys
 import tempfile
+from Common import *
 from ImgBaker import *
 from MLTBaker import *
 from Parser import *
@@ -31,7 +32,7 @@ with (open(fileIn, "r")) as f:
 imgBaker = ImgBaker()
 imgBaker.bake(parser.background, parser.items, dstDir, fileInDir)
 
-mltBaker = MLTBaker(dstDir)
+mltBaker = MLTBaker(dstDir, MIX_LEN)
 mltBaker.bake(parser.items, fileInDir)
 
 print("# BASH script begins")
