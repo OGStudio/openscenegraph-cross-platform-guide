@@ -75,3 +75,12 @@ Tutorials
   We install OpenSceneGraph under Windows and take a look at the cube
   with **osgviewer** tool.
 
+<a name="tutorials-install-macos"/>
+
+### [1.3. Install OpenSceneGraph under macOS](1.3.InstallUnderMacOS)
+
+  ![Screenshot](readme/1.3.install_under_macos.png)
+
+  We install OpenSceneGraph under macOS and take a look at the cube
+  with **osgviewer** tool.
+
