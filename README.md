@@ -7,6 +7,7 @@ Table of contents
   * [1.1. Create a cube](#tutorials-cube)
   * [1.2. Install OpenSceneGraph under Linux](#tutorials-install-linux)
   * [1.3. Install OpenSceneGraph under Windows](#tutorials-install-windows)
+  * [1.4. Install OpenSceneGraph under macOS](#tutorials-install-macos)
 
 <a name="overview"/>
 
@@ -77,9 +78,9 @@ Tutorials
 
 <a name="tutorials-install-macos"/>
 
-### [1.3. Install OpenSceneGraph under macOS](1.3.InstallUnderMacOS)
+### [1.4. Install OpenSceneGraph under macOS](1.3.InstallUnderMacOS)
 
-  ![Screenshot](readme/1.3.install_under_macos.png)
+  ![Screenshot](readme/1.4.install_under_macos.png)
 
   We install OpenSceneGraph under macOS and take a look at the cube
   with **osgviewer** tool.
