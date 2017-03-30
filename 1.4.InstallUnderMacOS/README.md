@@ -64,3 +64,14 @@ Steps
   Choose the latest Xcode version that suits your macOS version. In case
   of El Capitan, it's Xcode 8.2.
 
+<a name="step-move-xcode"/>
+
+1.4.4. Move Xcode to Applications
+----------------------------------
+
+  ![Screenshot](readme/f.png)
+
+  Move Xcode from Downloads directory into Applications directory. This
+  lets other build tools, which we install later, find Xcode development
+  tools without additional help.
+
