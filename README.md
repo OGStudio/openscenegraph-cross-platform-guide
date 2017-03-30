@@ -78,7 +78,7 @@ Tutorials
 
 <a name="tutorials-install-macos"/>
 
-### [1.4. Install OpenSceneGraph under macOS](1.3.InstallUnderMacOS)
+### [1.4. Install OpenSceneGraph under macOS](1.4.InstallUnderMacOS)
 
   ![Screenshot](readme/1.4.install_under_macos.png)
 
