@@ -4,9 +4,9 @@ Table of contents
 * [Overview](#overview)
 * [Video](#video)
 * [Steps](#steps)
-  * [1.4.1. Find Xcode distribution](#step-find-xcode)
+  * [1.4.1. Find Xcode](#step-find-xcode)
   * [1.4.2. Authorize at Apple Developer network site](#step-auth)
-  * [1.4.3. Download Xcode distribution](#step-download-xcode)
+  * [1.4.3. Download Xcode](#step-download-xcode)
 
 
 <a name="overview"/>
@@ -35,8 +35,8 @@ Steps
 
 <a name="step-find-xcode"/>
 
-1.4.1. Find Xcode distribution
-------------------------------
+1.4.1. Find Xcode
+-----------------
 
   ![Screenshot](readme/f.png)
 
@@ -56,8 +56,8 @@ Steps
 
 <a name="step-download-xcode"/>
 
-1.4.3. Download Xcode distribution
-----------------------------------
+1.4.3. Download Xcode
+---------------------
 
   ![Screenshot](readme/f.png)
 
@@ -74,4 +74,14 @@ Steps
   Move Xcode from Downloads directory into Applications directory. This
   lets other build tools, which we install later, find Xcode development
   tools without additional help.
+
+<a name="step-launch-xcode"/>
+
+1.4.5. Launch Xcode and wait for verification
+---------------------------------------------
+
+  ![Screenshot](readme/f.png)
+
+  Since Xcode has been downloaded from the Internet, macOS first **verifies** the file.
+  This may take up some time.
 

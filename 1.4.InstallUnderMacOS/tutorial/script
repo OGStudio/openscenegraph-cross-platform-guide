@@ -15,37 +15,49 @@ text 5 1.4. Install OpenSceneGraph under macOS
 #video 50:63 install_under_macos-04.mp4
 #text 5 1.4.5. Launch Xcode
 #video 63:90 install_under_macos-04.mp4
-#text 5 1.4.6. Wait for verification
 #video 0:5 install_under_macos-05.mp4
 #video 0:5 install_under_macos-06.mp4
 #video 120:127 install_under_macos-06.mp4
-#text 5 1.4.7. Agree to open Xcode
+#text 5 1.4.6. Agree to open Xcode
 #video 128:140 install_under_macos-06.mp4
 #video 310:315 install_under_macos-06.mp4
-#text 5 1.4.8. Accept Xcode and iOS SDK license agreement
+#text 5 1.4.7. Accept Xcode and iOS SDK license agreement
 #video 330:342 install_under_macos-06.mp4
-#text 5 1.4.9. Provide your password to install additional components
+#text 5 1.4.8. Provide your password to install additional components
 #video 343:355 install_under_macos-06.mp4
 #video 380:385 install_under_macos-06.mp4
 #video 460:464 install_under_macos-06.mp4
 #video 482:489 install_under_macos-06.mp4
-#text 5 1.4.10. Find OpenSceneGraph repository
+#text 5 1.4.9. Find OpenSceneGraph repository
 #video 3:56 install_under_macos-07.mp4
-#text 5 1.4.11. Get latest OpenSceneGraph
+#text 5 1.4.10. Get latest OpenSceneGraph
 #video 3:11 install_under_macos-08.mp4
 #video 19:32 install_under_macos-08.mp4
 #video 65:69 install_under_macos-08.mp4
 #video 76:79 install_under_macos-08.mp4
 #video 82:90 install_under_macos-08.mp4
 #video 121:135 install_under_macos-08.mp4
-text 5 1.4.12. Create build directory
-video 4:15 install_under_macos-09.mp4
-text 5 1.4.13. Find CMake
-video 3:30 install_under_macos-10.mp4
-text 5 1.4.14. Download CMake
-video 30:58 install_under_macos-10.mp4
-text 5 1.4.15. Install CMake
-video 62:97 install_under_macos-10.mp4
-text 5 1.4.16. Launch CMake
-video 114:118 install_under_macos-10.mp4
-video 131:152 install_under_macos-10.mp4
+#text 5 1.4.11. Create build directory
+#video 4:15 install_under_macos-09.mp4
+#text 5 1.4.12. Find CMake
+#video 3:30 install_under_macos-10.mp4
+#text 5 1.4.13. Download CMake
+#video 30:58 install_under_macos-10.mp4
+#text 5 1.4.14. Install CMake
+#video 62:97 install_under_macos-10.mp4
+#text 5 1.4.15. Launch CMake
+#video 114:118 install_under_macos-10.mp4
+#video 131:152 install_under_macos-10.mp4
+text 5 1.4.16. Specify build and source directories
+video 166:204 install_under_macos-10.mp4
+text 5 1.4.17. Configure OpenSceneGraph
+video 207:223 install_under_macos-10.mp4
+video 232:240 install_under_macos-10.mp4
+video 283:287 install_under_macos-10.mp4
+text 5 1.4.18. Observe configuration notice
+video 290:298 install_under_macos-10.mp4
+text 5 1.4.19. Generate Xcode project file
+video 300:309 install_under_macos-10.mp4
+text 5 1.4.20. Build OpenSceneGraph
+video 3:8 install_under_macos-11.mp4
+video 16:90 install_under_macos-11.mp4
