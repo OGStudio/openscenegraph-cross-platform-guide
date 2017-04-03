@@ -218,7 +218,7 @@ Steps
 
   ![Screenshot](readme/f561.png)
 
-  By default, OpenSceneGraph libraries will be installed into `/usr/local/lib`,
+  By default, OpenSceneGraph libraries are installed into `/usr/local/lib`,
   which is not where libraries usually reside.
 
   However, macOS El Capitan is aware of `/usr/local/lib` location, so we don't
@@ -244,11 +244,12 @@ Steps
 
   `xcodebuild -IDEBuildOperationMaxNumberOfConcurrentCompileTasks=6 -target install -configuration Release`
 
-  - `xcodebuild` is a command line utility to build Xcode projects. Of course,
+  `xcodebuild` is a command line utility to build Xcode projects. Of course,
   we could use Xcode itself, but then this tutorial would be a lot longer.
-  - We use `-IDEBuildOperationMaxNumberOfConcurrentCompileTasks=6` to run 6
-  parallel jobs. This makes building faster.
-  - `-target install` makes installation phase starts right after building one.
+
+  Here's a brief overview of the parameters we used:
+  - `-IDEBuildOperationMaxNumberOfConcurrentCompileTasks=6` requests 6 parallel jobs to speed up the build process;
+  - `-target install` makes installation phase start right after the building one;
   - `-configuration Release` strips binaries of debug information, which we don't need in this tutorial.
 
 
