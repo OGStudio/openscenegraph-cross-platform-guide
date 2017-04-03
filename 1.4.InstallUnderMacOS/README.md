@@ -18,6 +18,10 @@ Table of contents
   * [1.4.12. Find and download CMake](#step-get-cmake)
   * [1.4.13. Install CMake](#step-install-cmake)
   * [1.4.14. Launch CMake](#step-open-cmake)
+  * [1.4.15. Specify build and source directories](#step-specify-dirs)
+  * [1.4.16. Configure OpenSceneGraph](#step-cfg-osg)
+  * [1.4.17. Observe configuration notice](#step-observe-cfg)
+  * [1.4.18. Generate Xcode project file](#step-generate)
 
 
 <a name="overview"/>
@@ -122,7 +126,7 @@ Steps
   ![Screenshot](readme/f211.png)
 
   Provide your password to allow Xcode to install necessary
-  additional components like Git.
+  additional components like Git and xcodebuild.
  
   Close Xcode after it has been launched.
 
@@ -183,4 +187,68 @@ Steps
   ![Screenshot](readme/f468.png)
 
   Open CMake.
+
+<a name="step-specify-dirs"/>
+
+1.4.15. Specify build and source directories
+--------------------------------------------
+
+  ![Screenshot](readme/f520.png)
+
+  Build directory is the one we created to host binaries.
+
+  Source directory is the one where we cloned OpenSceneGraph using Git.
+
+<a name="step-cfg-osg"/>
+
+1.4.16. Configure OpenSceneGraph
+--------------------------------
+
+  ![Screenshot](readme/f540.png)
+
+  Before we can build OpenSceneGraph, we need to configure the build.
+  Do it by pressing `Generate` button.
+
+  Make sure to select `Xcode` generator when prompted.
+
+<a name="step-observe-cfg"/>
+
+1.4.17. Observe configuration notice
+------------------------------------
+
+  ![Screenshot](readme/f561.png)
+
+  By default, OpenSceneGraph libraries will be installed into `/usr/local/lib`,
+  which is not where libraries usually reside.
+
+  However, macOS El Capitan is aware of `/usr/local/lib` location, so we don't
+  need to do anything about it.
+
+<a name="step-generate"/>
+
+1.4.18. Generate Xcode project file
+-----------------------------------
+
+  ![Screenshot](readme/f572.png)
+
+  Press `Generate` to generate Xcode specific project file.
+
+<a name="step-build"/>
+
+1.4.19. Build OpenSceneGraph
+----------------------------
+
+  ![Screenshot](readme/f641.png)
+
+  We are finally ready to build OpenSceneGraph with the following command:
+
+  `xcodebuild -IDEBuildOperationMaxNumberOfConcurrentCompileTasks=6 -target install -configuration Release`
+
+  - `xcodebuild` is a command line utility to build Xcode projects. Of course,
+  we could use Xcode itself, but then this tutorial would be a lot longer.
+  - We use `-IDEBuildOperationMaxNumberOfConcurrentCompileTasks=6` to run 6
+  parallel jobs. This makes building faster.
+  - `-target install` makes installation phase starts right after building one.
+  - `-configuration Release` strips binaries of debug information, which we don't need in this tutorial.
+
 
