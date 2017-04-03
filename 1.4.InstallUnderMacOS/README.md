@@ -22,6 +22,10 @@ Table of contents
   * [1.4.16. Configure OpenSceneGraph](#step-cfg-osg)
   * [1.4.17. Observe configuration notice](#step-observe-cfg)
   * [1.4.18. Generate Xcode project file](#step-generate)
+  * [1.4.19. Build OpenSceneGraph](#step-build)
+  * [1.4.20. Observe installation error](#step-observe-install)
+  * [1.4.21. Install OpenSceneGraph](#step-install)
+  * [1.4.22. Check 'box.osgt' with 'osgviewer'](#step-check)
 
 
 <a name="overview"/>
@@ -252,4 +256,37 @@ Steps
   - `-target install` makes installation phase start right after the building one;
   - `-configuration Release` strips binaries of debug information, which we don't need in this tutorial.
 
+<a name="step-observe-install"/>
+
+1.4.20. Observe installation error
+----------------------------------
+
+  ![Screenshot](readme/f677.png)
+
+  Installation failed, because we `xcodebuild` needs administrative privileges to
+  install OpenSceneGraph into `/usr/local/lib`.
+
+<a name="step-install"/>
+
+1.4.21. Install OpenSceneGraph
+------------------------------
+
+  ![Screenshot](readme/f696.png)
+
+  Run `xcodebuild` with administrative privileges using the following command:
+
+  `sudo xcodebuild -IDEBuildOperationMaxNumberOfConcurrentCompileTasks=6 -target install -configuration Release`
+
+  Make sure to provide your password for `sudo` when prompted.
+
+<a name="step-check"/>
+
+1.4.22. Check 'box.osgt' with 'osgviewer'
+-----------------------------------------
+
+  ![Screenshot](readme/f758.png)
+
+  Finally, take a look at the cube with `osgviewer`:
+
+  `/usr/local/bin/osgviewer /path/to/box.osgt`
 
