@@ -211,7 +211,7 @@ Steps
   ![Screenshot](readme/f540.png)
 
   Before we can build OpenSceneGraph, we need to configure the build.
-  Do it by pressing `Generate` button.
+  Do it by pressing `Configure` button.
 
   Make sure to select `Xcode` generator when prompted.
 
