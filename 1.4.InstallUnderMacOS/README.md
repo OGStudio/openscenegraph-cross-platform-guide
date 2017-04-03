@@ -263,7 +263,7 @@ Steps
 
   ![Screenshot](readme/f677.png)
 
-  Installation failed, because we `xcodebuild` needs administrative privileges to
+  Installation failed, because `xcodebuild` needs administrative privileges to
   install OpenSceneGraph into `/usr/local/lib`.
 
 <a name="step-install"/>
