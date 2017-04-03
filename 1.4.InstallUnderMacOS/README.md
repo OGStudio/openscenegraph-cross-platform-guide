@@ -43,7 +43,7 @@ at the cube with **osgviewer** tool.
 Video
 =====
 
-[YouTube](https://todo) | [Download](readme/video.mp4)
+[YouTube](https://youtu.be/yT4WmaZAdiQ) | [Download](readme/video.mp4)
 
 Video depicts OpenSceneGraph installation under macOS El Capitan (10.11).
 
