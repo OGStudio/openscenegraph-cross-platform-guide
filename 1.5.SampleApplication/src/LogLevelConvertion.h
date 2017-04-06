@@ -22,29 +22,36 @@ freely, subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 
-#ifndef OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_LOGGER_H
-#define OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_LOGGER_H
+#ifndef OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_LOG_LEVEL_CONVERTION_H
+#define OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_LOG_LEVEL_CONVERTION_H
 
-#include "LogLevelConvertion.h"
-
-// Contains NotifyHandler, which we use to get OpenSceneGraph notifications.
+// Contains NotifySeverity enum.
 #include <osg/Notify>
-// Provides printf().
-#include <iostream>
 
-// This class prints OpenSceneGraph notifications to stdout.
-class Logger : public osg::NotifyHandler
+// Convert NotifySeverity enum value to string.
+std::string logLevelToString(osg::NotifySeverity severity)
 {
-    public:
-        Logger() { }
+    switch (severity)
+    {
+        case osg::DEBUG_FP:
+            // Verbose.
+            return "V";
+        case osg::DEBUG_INFO:
+            // Debug.
+            return "D";
+        case osg::NOTICE:
+        case osg::INFO:
+            // Info.
+            return "I";
+        case osg::WARN:
+            // Warning.
+            return "W";
+        case osg::FATAL:
+        case osg::ALWAYS:
+            // Error.
+            return "E";
+    }
+}
 
-        // Override NotifyHandler::notify() to receive OpenSceneGraph notifications.
-        void notify(osg::NotifySeverity severity, const char *message)
-        {
-            // Simply print each notification to stdout.
-            printf("OSG/%s %s", logLevelToString(severity).c_str(), message);
-        }
-};
-
-#endif // OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_LOGGER_H
+#endif // OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_LOG_LEVEL_CONVERTION_H
 
