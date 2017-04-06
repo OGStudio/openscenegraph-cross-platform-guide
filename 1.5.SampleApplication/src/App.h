@@ -26,6 +26,7 @@ freely, subject to the following restrictions:
 #define OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_APP_H
 
 #include "AppLogging.h"
+#include "AppRendering.h"
 
 // This class is the central point of the application.
 class App
@@ -33,22 +34,23 @@ class App
     public:
         App()
         {
-            // Setup logging.
             logging = new AppLogging;
+            rendering = new AppRendering;
         }
         ~App()
         {
-            // Tear down logging.
+            delete rendering;
             delete logging;
         }
 
         // Run the application.
         void run() {
-
+            rendering->run();
         }
 
     private:
         AppLogging *logging;
+        AppRendering *rendering;
 };
 
 #endif // OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_APP_H

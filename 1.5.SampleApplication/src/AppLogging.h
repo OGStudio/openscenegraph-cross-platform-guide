@@ -37,8 +37,9 @@ class AppLogging
             logger = new Logger;
             // Provide the logger to OpenSceneGraph.
             osg::setNotifyHandler(logger);
-            // Make sure all notifications are logged.
-            osg::setNotifyLevel(osg::DEBUG_FP);
+            // Only accept notifications of Info level or higher
+            // like warnings and errors.
+            osg::setNotifyLevel(osg::INFO);
         }
         ~AppLogging()
         {
