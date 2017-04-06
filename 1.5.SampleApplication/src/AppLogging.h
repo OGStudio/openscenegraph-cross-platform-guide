@@ -22,14 +22,34 @@ freely, subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 
+#ifndef OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_APP_LOGGING_H
+#define OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_APP_LOGGING_H
 
-#include "App.h"
+#include "Logger.h"
 
-int main() {
-    App *app = new App;
-    app->run();
-    delete app;
+// This class manages application logging.
+class AppLogging
+{
+    public:
+        AppLogging()
+        {
+            // Create custom logger.
+            logger = new Logger;
+            // Provide the logger to OpenSceneGraph.
+            osg::setNotifyHandler(logger);
+            // Make sure all notifications are logged.
+            osg::setNotifyLevel(osg::DEBUG_FP);
+        }
+        ~AppLogging()
+        {
+            // Remove the logger from OpenSceneGraph.
+            // This also destroys the logger.
+            osg::setNotifyHandler(0);
+        }
 
-    return 0;
-}
+    private:
+        Logger *logger;
+};
+
+#endif // OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_APP_LOGGING_H
 

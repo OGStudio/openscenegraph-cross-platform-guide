@@ -37,6 +37,7 @@ class Logger : public osg::NotifyHandler
 {
     public:
         Logger() { }
+        virtual ~Logger() { }
 
         // Override NotifyHandler::notify() to receive OpenSceneGraph notifications.
         void notify(osg::NotifySeverity severity, const char *message)

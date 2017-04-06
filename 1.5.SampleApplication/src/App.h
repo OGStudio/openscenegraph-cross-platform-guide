@@ -22,14 +22,34 @@ freely, subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 
+#ifndef OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_APP_H
+#define OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_APP_H
 
-#include "App.h"
+#include "AppLogging.h"
 
-int main() {
-    App *app = new App;
-    app->run();
-    delete app;
+// This class is the central point of the application.
+class App
+{
+    public:
+        App()
+        {
+            // Setup logging.
+            logging = new AppLogging;
+        }
+        ~App()
+        {
+            // Tear down logging.
+            delete logging;
+        }
 
-    return 0;
-}
+        // Run the application.
+        void run() {
+
+        }
+
+    private:
+        AppLogging *logging;
+};
+
+#endif // OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_APP_H
 
