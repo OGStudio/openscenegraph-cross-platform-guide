@@ -66,9 +66,6 @@ class Logger : public osg::NotifyHandler
                 case osg::ALWAYS:
                     // Error.
                     return "E";
-                default:
-                    // Default to Debug.
-                    return "D";
             }
         }
 };
