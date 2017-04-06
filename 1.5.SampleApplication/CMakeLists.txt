@@ -1,0 +1,7 @@
+PROJECT(SAMPLE_APPLICATION)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+
+# Use C++11.
+ADD_DEFINITIONS("-std=c++11")
+ADD_EXECUTABLE(sampleApplication src/main.cpp)
+TARGET_LINK_LIBRARIES(sampleApplication osg osgDB osgGA osgViewer)
