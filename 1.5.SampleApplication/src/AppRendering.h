@@ -25,6 +25,8 @@ freely, subject to the following restrictions:
 #ifndef OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_APP_RENDERING_H
 #define OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_APP_RENDERING_H
 
+#include "Rendering.h"
+
 #include <osgViewer/Viewer>
 
 // This class manages application rendering.
@@ -35,8 +37,10 @@ class AppRendering
         {
             // Create OpenSceneGraph viewer.
             mViewer = new osgViewer::Viewer;
+            // Use single thread: CRITICAL for web.
             mViewer->setThreadingModel(osgViewer::ViewerBase::SingleThreaded);
-            setupWindow(100, 100, 1024, 768);
+            // Setup window size.
+            setupWindow(1024, 768);
         }
         ~AppRendering()
         {
@@ -51,34 +55,13 @@ class AppRendering
         }
 
     private:
-        osg::GraphicsContext *createGraphicsContext(int x, int y, int width, int height)
+        void setupWindow(int width, int height)
         {
-            // TODO: describe.
-            osg::GraphicsContext::Traits *traits =
-                new osg::GraphicsContext::Traits;
-
-            traits->x                = x;
-            traits->y                = y;
-            traits->width            = width;
-            traits->height           = height;
-
-            traits->windowName       = "SampleApplication";
-            traits->windowDecoration = true;
-            traits->doubleBuffer     = true;
-
-            return osg::GraphicsContext::createGraphicsContext(traits);
-        }
-        void setupWindow(int x, int y, int width, int height)
-        {
-            // TODO: describe.
-            //
-            osg::GraphicsContext *gc = createGraphicsContext(x, y, width, height);
+            osg::GraphicsContext *gc =
+                createGraphicsContext("Sample", 100, 100, width, height);
+            // Configure viewer's camera with FOVY and window size.
             osg::Camera *cam = mViewer->getCamera();
-            cam->setGraphicsContext(gc);
-            cam->setViewport(new osg::Viewport(0, 0, width, height));
-            cam->setClearMask(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
-            float aspect = static_cast<float>(width) / static_cast<float>(height);
-            cam->setProjectionMatrixAsPerspective(30, aspect, 1, 1000);
+            setupCamera(cam, gc, 30, width, height);
         }
 
         osgViewer::Viewer *mViewer;

@@ -25,7 +25,7 @@ freely, subject to the following restrictions:
 #ifndef OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_LOGGER_H
 #define OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_LOGGER_H
 
-#include "LogLevelConvertion.h"
+#include "LogLevelConversion.h"
 
 // Contains NotifyHandler, which we use to get OpenSceneGraph notifications.
 #include <osg/Notify>

@@ -22,8 +22,8 @@ freely, subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 
-#ifndef OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_LOG_LEVEL_CONVERTION_H
-#define OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_LOG_LEVEL_CONVERTION_H
+#ifndef OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_LOG_LEVEL_CONVERSION_H
+#define OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_LOG_LEVEL_CONVERSION_H
 
 // Contains NotifySeverity enum.
 #include <osg/Notify>
@@ -53,5 +53,5 @@ std::string logLevelToString(osg::NotifySeverity severity)
     }
 }
 
-#endif // OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_LOG_LEVEL_CONVERTION_H
+#endif // OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_LOG_LEVEL_CONVERSION_H
 
