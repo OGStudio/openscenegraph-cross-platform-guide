@@ -34,9 +34,9 @@ class AppLogging
         AppLogging()
         {
             // Create custom logger.
-            logger = new Logger;
+            mLogger = new Logger;
             // Provide the logger to OpenSceneGraph.
-            osg::setNotifyHandler(logger);
+            osg::setNotifyHandler(mLogger);
             // Only accept notifications of Info level or higher
             // like warnings and errors.
             osg::setNotifyLevel(osg::INFO);
@@ -49,7 +49,7 @@ class AppLogging
         }
 
     private:
-        Logger *logger;
+        Logger *mLogger;
 };
 
 #endif // OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_APP_LOGGING_H

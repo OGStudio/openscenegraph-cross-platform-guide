@@ -37,13 +37,13 @@ class App
     public:
         App()
         {
-            logging = new AppLogging;
-            rendering = new AppRendering;
+            mLogging = new AppLogging;
+            mRendering = new AppRendering;
         }
         ~App()
         {
-            delete rendering;
-            delete logging;
+            delete mRendering;
+            delete mLogging;
         }
 
         void loadScene(const std::string &fileName)
@@ -60,16 +60,16 @@ class App
             // Apply shaders.
             scene->getOrCreateStateSet()->setAttribute(prog);
             // Set scene.
-            rendering->setScene(scene);
+            mRendering->setScene(scene);
         }
         // Run the application.
         void run() {
-            rendering->run();
+            mRendering->run();
         }
 
     private:
-        AppLogging *logging;
-        AppRendering *rendering;
+        AppLogging *mLogging;
+        AppRendering *mRendering;
 };
 
 #endif // OPENSCENEGRAPH_CROSS_PLATFORM_GUIDE_APP_H
