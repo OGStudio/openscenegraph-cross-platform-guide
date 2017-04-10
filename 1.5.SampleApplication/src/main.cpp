@@ -25,8 +25,18 @@ freely, subject to the following restrictions:
 
 #include "App.h"
 
-int main() {
+int main(int argc, char *argv[])
+{
+    // Make sure we have path to model on command line.
+    if (argc != 2)
+    {
+        printf("Usage: %s /path/to/box.osgt\n", argv[0]);
+        return 1;
+    }
+    std::string model = argv[1];
+
     App *app = new App;
+    app->loadScene(model);
     app->run();
     delete app;
 

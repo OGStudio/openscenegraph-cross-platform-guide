@@ -53,6 +53,10 @@ class AppRendering
             // Launch the viewer.
             mViewer->run();
         }
+        void setScene(osg::Node *scene)
+        {
+            mViewer->setSceneData(scene);
+        }
 
     private:
         void setupWindow(int width, int height)

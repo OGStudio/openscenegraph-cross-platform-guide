@@ -27,6 +27,9 @@ freely, subject to the following restrictions:
 
 #include "AppLogging.h"
 #include "AppRendering.h"
+#include "Shaders.h"
+
+#include <osgDB/ReadFile>
 
 // This class is the central point of the application.
 class App
@@ -43,6 +46,22 @@ class App
             delete logging;
         }
 
+        void loadScene(const std::string &fileName)
+        {
+            // Load scene.
+            osg::Node *scene = osgDB::readNodeFile(fileName);
+            if (!scene)
+            {
+                osg::notify(osg::FATAL) << "Could not load scene";
+                return;
+            }
+            // Load shaders.
+            osg::Program *prog = createShaderProgram(shaderVertex, shaderFragment);
+            // Apply shaders.
+            scene->getOrCreateStateSet()->setAttribute(prog);
+            // Set scene.
+            rendering->setScene(scene);
+        }
         // Run the application.
         void run() {
             rendering->run();
