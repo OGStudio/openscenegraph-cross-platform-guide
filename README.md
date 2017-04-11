@@ -88,7 +88,7 @@ Tutorials
 
 <a name="tutorials-sample-linux"/>
 
-### [1.5. Sample under Linux](1.5.SampleUnderLinux)
+### [1.5. Build and run sample OpenSceneGraph application under Linux](1.5.SampleUnderLinux)
 
   ![Screenshot](readme/1.5.sample_under_linux.png)
 
