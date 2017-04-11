@@ -8,6 +8,7 @@ Table of contents
   * [1.2. Install OpenSceneGraph under Linux](#tutorials-install-linux)
   * [1.3. Install OpenSceneGraph under Windows](#tutorials-install-windows)
   * [1.4. Install OpenSceneGraph under macOS](#tutorials-install-macos)
+  * [1.5. Sample under Linux](#tutorials-sample-linux)
 
 <a name="overview"/>
 
@@ -84,4 +85,12 @@ Tutorials
 
   We install OpenSceneGraph under macOS and take a look at the cube
   with **osgviewer** tool.
+
+<a name="tutorials-sample-linux"/>
+
+### [1.5. Sample under Linux](1.5.SampleUnderLinux)
+
+  ![Screenshot](readme/1.5.sample_under_linux.png)
+
+  We build and run sample OpenSceneGraph application under Linux.
 
