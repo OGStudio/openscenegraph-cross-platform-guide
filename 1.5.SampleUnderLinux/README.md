@@ -99,5 +99,5 @@ Steps
 
   `cd /path/to/build/dir`
 
-  `sampleApplication /path/to/box.osgt`
+  `./sampleApplication /path/to/box.osgt`
 
