@@ -22,6 +22,9 @@ In this tutorial we build
 [sample OpenSceneGraph application](http://github.com/OGStudio/openscenegraph-cross-platform-guide-application)
 under Linux. The application displays provided model with simple GLSL shaders.
 
+**Note**: this tutorial requires a valid OpenSceneGraph installation.
+See previous tutorials for more information.
+
 <a name="video"/>
 
 Video
