@@ -8,7 +8,7 @@ Table of contents
   * [1.2. Install OpenSceneGraph under Linux](#tutorials-install-linux)
   * [1.3. Install OpenSceneGraph under Windows](#tutorials-install-windows)
   * [1.4. Install OpenSceneGraph under macOS](#tutorials-install-macos)
-  * [1.5. Sample under Linux](#tutorials-sample-linux)
+  * [1.5. Build and run sample OpenSceneGraph application under Linux](#tutorials-sample-linux)
 
 <a name="overview"/>
 
