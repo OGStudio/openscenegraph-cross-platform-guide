@@ -30,7 +30,7 @@ See previous tutorials for more information.
 Video
 =====
 
-[YouTube](todo) | [Download](readme/video.mp4)
+[YouTube](https://youtu.be/5wL0H0W2oWQ) | [Download](readme/video.mp4)
 
 Video depicts running and building sample OpenSceneGraph application
 under Xubuntu 16.04.
