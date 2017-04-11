@@ -1,0 +1,19 @@
+background bg.png
+text 5 1.6. Run sample OSG application under Windows
+video 2:5 sample_under_windows-01.mp4
+text 5 1.6.1. Get sample application
+video 5:11 sample_under_windows-01.mp4
+video 57:73 sample_under_windows-01.mp4
+text 5 1.6.2. Create build directory
+video 84:98 sample_under_windows-01.mp4
+text 5 1.6.3. Configure the build
+video 111:141 sample_under_windows-01.mp4
+text 5 1.6.4. Try to build application
+video 146:155 sample_under_windows-01.mp4
+text 5 1.6.5. Observe build error
+video 158:165 sample_under_windows-01.mp4
+
+
+text 5 1... Run application
+text 5 1.6. That's it for running sample OSG application under Windows
+
