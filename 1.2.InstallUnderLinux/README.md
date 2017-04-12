@@ -33,7 +33,7 @@ In this tutorial we install OpenSceneGraph under Linux and take a look
 at the cube with **osgviewer** tool.
 
 **Note**: this tutorial requires OpenSceneGraph model
-created in [1.1.CreateCube](../1.1.CreateCube).
+created in [1.1. Create a cube](../1.1.CreateCube).
 
 <a name="video"/>
 

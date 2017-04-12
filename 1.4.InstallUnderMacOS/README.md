@@ -38,6 +38,9 @@ This tutorial is part of [OpenSceneGraph cross-platform guide](http://github.com
 In this tutorial we install OpenSceneGraph under macOS and take a look
 at the cube with **osgviewer** tool.
 
+**Note**: this tutorial requires OpenSceneGraph model
+created in [1.1. Create a cube](../1.1.CreateCube).
+
 <a name="video"/>
 
 Video
