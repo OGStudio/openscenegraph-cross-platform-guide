@@ -97,7 +97,7 @@ Tutorials
 
 <a name="tutorials-sample-windows"/>
 
-### [1.5. Build and run sample OpenSceneGraph application under Windows](1.5.SampleUnderWindows)
+### [1.6. Build and run sample OpenSceneGraph application under Windows](1.5.SampleUnderWindows)
 
   ![Screenshot](readme/1.6.sample_under_windows.png)
 
