@@ -49,6 +49,9 @@ Video depicts OpenSceneGraph installation under Xubuntu 16.04.
 Steps
 =====
 
+**Note**: steps below use frames from the video as screenshots.
+Watch the video to see all details.
+
 <a name="step-find"/>
 
 1.2.1. Find OpenSceneGraph repository

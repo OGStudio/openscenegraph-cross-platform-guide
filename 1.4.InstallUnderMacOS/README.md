@@ -55,6 +55,9 @@ Video depicts OpenSceneGraph installation under macOS El Capitan (10.11).
 Steps
 =====
 
+**Note**: steps below use frames from the video as screenshots.
+Watch the video to see all details.
+
 <a name="step-find-xcode"/>
 
 1.4.1. Find Xcode

@@ -50,6 +50,9 @@ under 64-bit Windows 7.
 Steps
 =====
 
+**Note**: steps below use frames from the video as screenshots.
+Watch the video to see all details.
+
 <a name="step-get"/>
 
 1.6.1. Get sample application

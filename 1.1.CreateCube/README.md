@@ -38,6 +38,9 @@ Video depicts Blender installation under Xubuntu 16.04.
 Steps
 =====
 
+**Note**: steps below use frames from the video as screenshots.
+Watch the video to see all details.
+
 <a name="step-install-blender"/>
 
 1.1.1. Install Blender

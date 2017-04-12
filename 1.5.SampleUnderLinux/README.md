@@ -41,6 +41,8 @@ under Xubuntu 16.04.
 Steps
 =====
 
+**Note**: steps below use frames from the video as screenshots.
+Watch the video to see all details.
 
 <a name="step-get"/>
 

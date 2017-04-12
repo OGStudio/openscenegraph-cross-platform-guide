@@ -64,6 +64,9 @@ Video depicts OpenSceneGraph installation under 64-bit Windows 7.
 Steps
 =====
 
+**Note**: steps below use frames from the video as screenshots.
+Watch the video to see all details.
+
 <a name="step-find-msys2"/>
 
 1.3.1. Find MSYS2
