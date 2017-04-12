@@ -4,7 +4,8 @@ Table of contents
 * [Overview](#overview)
 * [Video](#video)
 * [Steps](#steps)
-  * [1.5.1. Get sample application](#step-get)
+  * [1.6.1. Get sample application](#step-get)
+
   * [1.5.2. Create build directory](#step-build-dir)
   * [1.5.3. Configure the build](#step-cfg)
   * [1.5.4. Build application](#step-build)
@@ -20,7 +21,7 @@ This tutorial is part of [OpenSceneGraph cross-platform guide](http://github.com
 
 In this tutorial we build and run
 [sample OpenSceneGraph application](http://github.com/OGStudio/openscenegraph-cross-platform-guide-application)
-under Linux. The application displays provided model with simple GLSL shaders.
+under Windows. The application displays provided model with simple GLSL shaders.
 
 **Note**: this tutorial requires a valid OpenSceneGraph installation.
 See previous tutorials for more information.
