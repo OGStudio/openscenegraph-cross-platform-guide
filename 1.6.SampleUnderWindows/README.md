@@ -40,7 +40,7 @@ under Windows. The application displays provided model with simple GLSL shaders.
 Video
 =====
 
-[YouTube](todo) | [Download](readme/video.mp4)
+[YouTube](https://youtu.be/0EftrM1SznM) | [Download](readme/video.mp4)
 
 Video depicts running and building sample OpenSceneGraph application
 under 64-bit Windows 7.
