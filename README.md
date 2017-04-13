@@ -10,6 +10,7 @@ Table of contents
   * [1.4. Install OpenSceneGraph under macOS](#tutorials-install-macos)
   * [1.5. Build and run sample OpenSceneGraph application under Linux](#tutorials-sample-linux)
   * [1.6. Build and run sample OpenSceneGraph application under Windows](#tutorials-sample-windows)
+  * [1.7. Build and run sample OpenSceneGraph application under macOS](#tutorials-sample-macos)
 
 <a name="overview"/>
 
@@ -102,4 +103,12 @@ Tutorials
   ![Screenshot](readme/1.6.sample_under_windows.png)
 
   We build and run sample OpenSceneGraph application under Windows.
+
+<a name="tutorials-sample-macos"/>
+
+### [1.7. Build and run sample OpenSceneGraph application under macOS](1.7.SampleUnderMacOS)
+
+  ![Screenshot](readme/1.7.sample_under_macos.png)
+
+  We build and run sample OpenSceneGraph application under macOS.
 

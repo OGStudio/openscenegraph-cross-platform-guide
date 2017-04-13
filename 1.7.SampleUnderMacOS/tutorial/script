@@ -1,0 +1,25 @@
+background bg.png
+text 5 1.7. Run sample OSG application under macOS
+video 0:3 sample_under_macos-01.mp4
+text 5 1.7.1. Get sample application
+video 3:10 sample_under_macos-01.mp4
+video 7:25 sample_under_macos-02.mp4
+text 5 1.7.2. Create build directory
+video 1:13 sample_under_macos-03.mp4
+text 5 1.7.3. Configure the build
+video 1:67 sample_under_macos-04.mp4
+text 5 1.7.4. Generate Xcode project file
+video 76:80 sample_under_macos-04.mp4
+text 5 1.7.5. Try to build application
+video 1:16 sample_under_macos-05.mp4
+text 5 1.7.6. Observe build error
+video 19:24 sample_under_macos-05.mp4
+text 5 1.7.7. Reconfigure with OSG include and library directories
+video 1:35 sample_under_macos-06.mp4
+text 5 1.7.8. Regenerate Xcode project file
+video 35:41 sample_under_macos-06.mp4
+text 5 1.7.9. Build application
+video 1:16 sample_under_macos-07.mp4
+text 5 1.7.10. Run application
+video 1:25 sample_under_macos-08.mp4
+text 5 1.7. That's it for running sample OSG application under macOS
