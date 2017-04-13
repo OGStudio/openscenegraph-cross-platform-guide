@@ -35,7 +35,7 @@ under macOS. The application displays provided model with simple GLSL shaders.
 Video
 =====
 
-[YouTube](todo) | [Download](readme/video.mp4)
+[YouTube](https://youtu.be/i0kUMSP20VA) | [Download](readme/video.mp4)
 
 Video depicts running and building sample OpenSceneGraph application
 under macOS El Capitan (10.11).
