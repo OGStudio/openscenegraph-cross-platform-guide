@@ -10,17 +10,10 @@ Table of contents
   * [1.7.4. Generate Xcode project file](#step-generate)
   * [1.7.5. Try to build application](#step-try-build)
   * [1.7.6. Observe build error](#step-build-error)
-
-  * [1.6.6. Find OpenSceneGraph include directory](#step-find-osg-dir)
-  * [1.6.7. Reconfigure with OSG include directory](#step-cfg-inc)
-  * [1.6.8. Try to build application once again](#step-try-build-again)
-  * [1.6.9. Observe another build error](#step-link-error)
-  * [1.6.10. Reconfigure with OSG include and library directories](#step-cfg-all)
-  * [1.6.11. Build application](#step-build)
-  * [1.6.12. Try to run application](#step-try-run)
-  * [1.6.13. Observe missing library](#step-run-lib)
-  * [1.6.14. Copy OSG libraries](#step-copy-lib)
-  * [1.6.15. Run application](#step-run)
+  * [1.7.7. Reconfigure with OSG include and library directories](#step-cfg-all)
+  * [1.7.8. Regenerate Xcode project file](#step-regenerate)
+  * [1.7.9. Build application](#step-build)
+  * [1.7.10. Run application](#step-run)
 
 <a name="overview"/>
 
@@ -121,113 +114,53 @@ Watch the video to see all details.
   Building process could not find one of OpenSceneGraph headers, because
   OpenSceneGraph is installed in a non-standard directory.
   
-<a name="step-find-osg-dir"/>
-
-
-
-
-
-
-
-
-
-
-1.6.7. Reconfigure with OSG include directory
----------------------------------------------
-
-  ![Screenshot](readme/f151.png)
-
-  Reconfigure sample application build with the following command:
- 
-  `cmake -G "MinGW Makefiles" -DOSG_INC_DIR="C:\Program Files (x86)\OpenSceneGraph\include" /path/to/source/dir`
-
-  Application's CMake file uses `OSG_INC_DIR` to search for additional headers.
-
-<a name="step-try-build-again"/>
-
-1.6.8. Try to build application once again
-------------------------------------------
-
-  ![Screenshot](readme/f163.png)
-
-  Try to build application with the following command once again:
-
-  `mingw32-make`
-
-<a name="step-link-error"/>
-
-1.6.9. Observe another build error
-----------------------------------
-
-  ![Screenshot](readme/f172.png)
-
-  Building process could not find OpenSceneGraph libraries, because
-  OpenSceneGraph is installed in a non-standard directory.
-
 <a name="step-cfg-all"/>
 
-1.6.10. Reconfigure with OSG include and library directories
+1.7.7. Reconfigure with OSG include and library directories
 ------------------------------------------------------------
 
-  ![Screenshot](readme/f207.png)
+  ![Screenshot](readme/f186.png)
 
-  Reconfigure sample application build with the following command:
- 
-  `cmake -G "MinGW Makefiles" -DOSG_INC_DIR="C:\Program Files (x86)\OpenSceneGraph\include" -DOSG_LIB_DIR="C:\Program Files (x86)\OpenSceneGraph\lib" /path/to/source/dir`
+  Since OpenSceneGraph has been installed into `/usr/local` directory,
+  OpenSceneGraph header are located in `/usr/local/include` and libraries
+  in `/usr/local/lib`. Specify these paths into `OSG_INC_DIR` and
+  `OSG_LIB_DIR` variables correspondingly.
 
-  Application's CMake file uses `OSG_LIB_DIR` to search for additional libraries.
+  Application's CMake file uses `OSG_INC_DIR` to search for additional headers
+  and `OSG_LIB_DIR` to search for additional libraries.
+
+<a name="step-regenerate"/>
+
+1.7.8. Regenerate Xcode project file
+------------------------------------
+
+  ![Screenshot](readme/f196.png)
+
+  Press `Generate` to regenerate Xcode specific project file.
+
 
 <a name="step-build"/>
 
-1.6.11. Build application
+1.7.9. Build application
 ------------------------
 
-  ![Screenshot](readme/f216.png)
+  ![Screenshot](readme/f210.png)
 
   Build sample application with the following command:
 
-  `mingw32-make`
-
-<a name="step-try-run"/>
-
-1.6.12. Try to run application
-------------------------------
-
-  ![Screenshot](readme/f232.png)
-
-  Try to run sample application.
-
-<a name="step-run-lib"/>
-
-1.6.13. Observe missing library
--------------------------------
-
-  ![Screenshot](readme/f241.png)
-
-  Sample application cannot be run, because it cannot find
-  OpenSceneGraph libraries.
-
-<a name="step-copy-lib"/>
-
-1.6.14. Copy OSG libraries
---------------------------
-
-  ![Screenshot](readme/f269.png)
-
-  Copy osgPlugins directory and all files with `dll` extension to the directory,
-  where sample application resides. 
-
-  **Note**: you don't really need all OpenSceneGraph libraries. We copy all
-  libraries just to keep this tutorial simpler.
+  `xcodebuild -configuration Release`
 
 <a name="step-run"/>
 
-1.6.15. Run application
+1.7.10. Run application
 -----------------------
 
-  ![Screenshot](readme/f317.png)
+  ![Screenshot](readme/f238.png)
 
   Run sample application with the following command:
 
-  `./sampleApplication /path/to/box.osgt`
+  `./Release/sampleApplication /path/to/box.osgt`
+
+  **Note**: since we built `Release` configuration, binaries have been placed
+  inside `Release` directory.
 
