@@ -4,7 +4,7 @@ video 2:5 sample_under_android-01.mp4
 text 5 1.8.1. Download Android Studio
 video 27:80 sample_under_android-01.mp4
 video 213:223 sample_under_android-01.mp4
-text 5 1.8.2. Install Android Studio dependencies
+text 5 1.8.2. Install 32-bit libraries
 video 3:43 sample_under_android-02.mp4
 video 59:77 sample_under_android-02.mp4
 text 5 1.8.3. Unpack Android Studio
@@ -15,5 +15,18 @@ video 2:49 sample_under_android-04.mp4
 video 59:80 sample_under_android-04.mp4
 video 2:15 sample_under_android-05.mp4
 video 24:35 sample_under_android-06.mp4
+text 5 1.8.5. Install CMake, LLDB, and NDK
+video 3:39 sample_under_android-07.mp4
+video 2:5 sample_under_android-08.mp4
+video 33:38 sample_under_android-09.mp4
+video 98:104 sample_under_android-09.mp4
+video 120:136 sample_under_android-09.mp4
+text 5 1.8.6. Import 'Hello GL2' sample
+video 3:35 sample_under_android-10.mp4
+video 157:169 sample_under_android-10.mp4
+video 203:206 sample_under_android-10.mp4
+video 248:285 sample_under_android-10.mp4
+text 5 1.8.7. Run 'Hello GL2' sample
+
 
 text 5 1.8. That's it for running sample OSG application under Android
