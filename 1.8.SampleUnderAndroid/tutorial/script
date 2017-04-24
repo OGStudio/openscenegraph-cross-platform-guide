@@ -1,5 +1,19 @@
 background bg.png
 text 5 1.8. Run sample OSG application under Android
-#video 0:3 sample_under_android-01.mp4
+video 2:5 sample_under_android-01.mp4
+text 5 1.8.1. Download Android Studio
+video 27:80 sample_under_android-01.mp4
+video 213:223 sample_under_android-01.mp4
+text 5 1.8.2. Install Android Studio dependencies
+video 3:43 sample_under_android-02.mp4
+video 59:77 sample_under_android-02.mp4
+text 5 1.8.3. Unpack Android Studio
+video 3:37 sample_under_android-03.mp4
+video 44:50 sample_under_android-03.mp4
+text 5 1.8.4. Configure Android Studio
+video 2:49 sample_under_android-04.mp4
+video 59:80 sample_under_android-04.mp4
+video 2:15 sample_under_android-05.mp4
+video 24:35 sample_under_android-06.mp4
 
 text 5 1.8. That's it for running sample OSG application under Android
