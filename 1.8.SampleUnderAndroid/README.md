@@ -8,12 +8,12 @@ Table of contents
   * [1.8.2. Install 32-bit libraries](#step-32-libs)
   * [1.8.3. Unpack Android Studio](#step-unpack-as)
   * [1.8.4. Run Android Studio](#step-run-as)
-  * [1.8.5. Complete Android Studio installation](#step-install-as)
-  * [1.8.6. Wait for components to download](#step-wait-as)
+  * [1.8.5. Select standard installation options](#step-install-as)
+  * [1.8.6. Wait for components to install](#step-wait-as)
   * [1.8.7. Run SDK Manager](#step-run-sdk)
   * [1.8.8. Select CMake, LLDB, NDK components](#step-select-ndk)
   * [1.8.9. Accept license](#step-license)
-  * [1.8.10. Wait for CMake, LLDB, NDK to download](#step-wait-ndk)
+  * [1.8.10. Wait for CMake, LLDB, NDK to install](#step-wait-ndk)
 
 <a name="overview"/>
 
@@ -87,7 +87,7 @@ Watch the video to see all details.
 
   ![Screenshot](readme/f191.png)
 
-  Run Android Studio with the following command:
+  Run Android Studio with the following commands:
 
   `cd ~`
 
@@ -95,7 +95,7 @@ Watch the video to see all details.
 
 <a name="step-install-as"/>
 
-1.8.5. Complete Android Studio installation
+1.8.5. Select standard installation options
 -------------------------------------------
 
   ![Screenshot](readme/f216.png)
@@ -104,12 +104,12 @@ Watch the video to see all details.
 
 <a name="step-wait-as"/>
 
-1.8.6. Wait for components to download
---------------------------------------
+1.8.6. Wait for components to install
+-------------------------------------
 
   ![Screenshot](readme/f244.png)
 
-  Wait for standard components to download.
+  Wait for standard components to install.
 
 <a name="step-run-sdk"/>
 
@@ -118,7 +118,7 @@ Watch the video to see all details.
 
   ![Screenshot](readme/f274.png)
 
-  Run SDK manager to install components that are required to build C++.
+  We will use SDK manager to install additional components.
 
 <a name="step-install-ndk"/>
 
@@ -142,10 +142,10 @@ Watch the video to see all details.
 
 <a name="step-wait-ndk"/>
 
-1.8.10. Wait for CMake, LLDB, NDK to download
----------------------------------------------
+1.8.10. Wait for CMake, LLDB, NDK to install
+--------------------------------------------
 
   ![Screenshot](readme/f325.png)
 
-  Wait for additional components to download.
+  Wait for additional components to install.
 
