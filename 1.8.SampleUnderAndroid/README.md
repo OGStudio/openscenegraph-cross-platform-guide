@@ -7,6 +7,13 @@ Table of contents
   * [1.8.1. Download Android Studio](#step-dl-as)
   * [1.8.2. Install 32-bit libraries](#step-32-libs)
   * [1.8.3. Unpack Android Studio](#step-unpack-as)
+  * [1.8.4. Run Android Studio](#step-run-as)
+  * [1.8.5. Complete Android Studio installation](#step-install-as)
+  * [1.8.6. Wait for components to download](#step-wait-as)
+  * [1.8.7. Run SDK Manager](#step-run-sdk)
+  * [1.8.8. Select CMake, LLDB, NDK components](#step-select-ndk)
+  * [1.8.9. Accept license](#step-license)
+  * [1.8.10. Wait for CMake, LLDB, NDK to download](#step-wait-ndk)
 
 <a name="overview"/>
 
@@ -43,7 +50,7 @@ Watch the video to see all details.
 <a name="step-dl-as"/>
 
 1.8.1. Download Android Studio
------------------------------
+------------------------------
 
   ![Screenshot](readme/f041.png)
 
@@ -53,7 +60,7 @@ Watch the video to see all details.
 <a name="step-32-libs"/>
 
 1.8.2. Install 32-bit libraries
------------------------------
+-------------------------------
 
   ![Screenshot](readme/f101.png)
 
@@ -67,93 +74,78 @@ Watch the video to see all details.
 <a name="step-unpack-as"/>
 
 1.8.3. Unpack Android Studio
---------------------------
+----------------------------
 
   ![Screenshot](readme/f165.png)
 
   Extract Android Studio archive into your home directory.
 
-<a name="step-generate"/>
+<a name="step-cfg-as"/>
 
-1.7.4. Generate Xcode project file
------------------------------------
-
-  ![Screenshot](readme/f125.png)
-
-  Press `Generate` to generate Xcode specific project file.
-
-<a name="step-try-build"/>
-
-1.7.5. Try to build application
+1.8.4. Run Android Studio
 -------------------------------
 
-  ![Screenshot](readme/f141.png)
+  ![Screenshot](readme/f191.png)
 
-  Try to build application with the following command:
+  Run Android Studio with the following command:
 
-  `xcodebuild -configuration Release`
+  `cd ~`
 
-  You may remember that we specified `-target install` during OpenSceneGraph
-  building. Since sample application has no `install` target, we don't need
-  to specify any `target`.
+  `./android-studio/bin/studio.sh`
 
-<a name="step-build-error"/>
+<a name="step-install-as"/>
 
-1.7.6. Observe build error
---------------------------
+1.8.5. Complete Android Studio installation
+-------------------------------------------
 
-  ![Screenshot](readme/f150.png)
+  ![Screenshot](readme/f216.png)
 
-  Building process could not find one of OpenSceneGraph headers, because
-  OpenSceneGraph is installed in a non-standard directory.
-  
-<a name="step-cfg-all"/>
+  Select standard installation options.
 
-1.7.7. Reconfigure with OSG include and library directories
-------------------------------------------------------------
+<a name="step-wait-as"/>
 
-  ![Screenshot](readme/f186.png)
+1.8.6. Wait for components to download
+--------------------------------------
 
-  Since OpenSceneGraph has been installed into `/usr/local` directory,
-  OpenSceneGraph header are located in `/usr/local/include` and libraries
-  in `/usr/local/lib`. Specify these paths into `OSG_INC_DIR` and
-  `OSG_LIB_DIR` variables correspondingly.
+  ![Screenshot](readme/f244.png)
 
-  Application's CMake file uses `OSG_INC_DIR` to search for additional headers
-  and `OSG_LIB_DIR` to search for additional libraries.
+  Wait for standard components to download.
 
-<a name="step-regenerate"/>
+<a name="step-run-sdk"/>
 
-1.7.8. Regenerate Xcode project file
-------------------------------------
+1.8.7. Run SDK Manager
+----------------------
 
-  ![Screenshot](readme/f196.png)
+  ![Screenshot](readme/f274.png)
 
-  Press `Generate` to regenerate Xcode specific project file.
+  Run SDK manager to install components that are required to build C++.
 
+<a name="step-install-ndk"/>
 
-<a name="step-build"/>
+1.8.8. Select CMake, LLDB, NDK components
+-----------------------------------------
 
-1.7.9. Build application
-------------------------
+  ![Screenshot](readme/f292.png)
 
-  ![Screenshot](readme/f210.png)
+  We need CMake, LLDB, and NDK components to build C++ for Android.
 
-  Build sample application with the following command:
+  Select them in *SDK Tools* tab of *SDK Manager*.
 
-  `xcodebuild -configuration Release`
+<a name="step-license"/>
 
-<a name="step-run"/>
+1.8.9. Accept license
+---------------------
 
-1.7.10. Run application
------------------------
+  ![Screenshot](readme/f302.png)
 
-  ![Screenshot](readme/f238.png)
+  To install CMake, LLDB, and NDK, we need to accept the license.
 
-  Run sample application with the following command:
+<a name="step-wait-ndk"/>
 
-  `./Release/sampleApplication /path/to/box.osgt`
+1.8.10. Wait for CMake, LLDB, NDK to download
+---------------------------------------------
 
-  **Note**: since we built `Release` configuration, binaries have been placed
-  inside `Release` directory.
+  ![Screenshot](readme/f325.png)
+
+  Wait for additional components to download.
 
