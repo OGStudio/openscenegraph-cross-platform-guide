@@ -14,6 +14,16 @@ Table of contents
   * [1.8.8. Select CMake, LLDB, NDK components](#step-select-ndk)
   * [1.8.9. Accept license](#step-license)
   * [1.8.10. Wait for CMake, LLDB, NDK to install](#step-wait-ndk)
+  * [1.8.11. Start Android code sample import](#step-import)
+  * [1.8.12. Import 'Hello GL2' sample](#step-import-gl2)
+  * [1.8.13. Try to run 'Hello GL2' sample](#step-try-run-gl2)
+  * [1.8.14. Start AVD creation](#step-start-avd)
+  * [1.8.15. Select device definition](#step-definition)
+  * [1.8.16. Download system image](#step-dl-img)
+  * [1.8.17. Select system image](#step-select-img)
+  * [1.8.18. Select software graphics renderer](#step-software-gfx)
+  * [1.8.19. Run 'Hello GL2' sample](#step-run-gl2)
+  * [1.8.20. Observe 'Hello GL2' sample](#step-observe-gl2)
 
 <a name="overview"/>
 
@@ -148,4 +158,102 @@ Watch the video to see all details.
   ![Screenshot](readme/f325.png)
 
   Wait for additional components to install.
+
+<a name="step-import"/>
+
+1.8.11. Start Android code sample import
+----------------------------------------
+
+  ![Screenshot](readme/f353.png)
+
+  Select *Import an Android code sample*.
+
+<a name="step-import-gl2"/>
+
+1.8.12. Import 'Hello GL2' sample
+---------------------------------
+
+  ![Screenshot](readme/f371.png)
+
+  Locate 'Hello GL2' sample and import it.
+
+<a name="step-try-run-gl2"/>
+
+1.8.13. Try to run 'Hello GL2' sample
+-------------------------------------
+
+  ![Screenshot](readme/f444.png)
+
+  When we try to run 'Hello GL2' sample, an empty list
+  of devices is presented.
+
+<a name="step-start-avd"/>
+
+1.8.14. Start AVD creation
+--------------------------
+
+  ![Screenshot](readme/f453.png)
+
+  We need to create Android Virtual Device to run 'Hello GL2' sample.
+
+<a name="step-definition"/>
+
+1.8.15. Select device definition
+--------------------------------
+
+  ![Screenshot](readme/f462.png)
+
+  Select device definition. This is effectively the size of AVD.
+
+  This tutorial uses *Nexus One 3.7"* with 480x800 resolution.
+
+<a name="step-dl-img"/>
+
+1.8.16. Download system image
+-----------------------------
+
+  ![Screenshot](readme/f490.png)
+
+  Download *armeabi-v7a* system image. It emulates *ARMv7*, which is
+  the most widespread architecture for Android.
+
+  You may install other system images to test your application
+  on other architectures.
+  
+<a name="step-select-img"/>
+
+1.8.17. Select system image
+---------------------------
+
+  ![Screenshot](readme/f520.png)
+
+  Select downloaded system image.
+
+<a name="step-software-gfx"/>
+
+1.8.18. Select software graphics renderer
+-----------------------------------------
+
+  ![Screenshot](readme/f530.png)
+
+  This step is optional. You only need to select software graphics renderer
+  if you run Android Studio in an environment that lacks 3D acceleration.
+
+<a name="step-run-gl2"/>
+
+1.8.19. Run 'Hello GL2' sample
+------------------------------
+
+  ![Screenshot](readme/f564.png)
+
+  Select created AVD to run the sample.
+
+<a name="step-observe-gl2"/>
+
+1.8.20. Observe 'Hello GL2' sample
+----------------------------------
+
+  ![Screenshot](readme/f591.png)
+
+  You should see green triangle. This means AVD can display GLES2 graphics.
 
