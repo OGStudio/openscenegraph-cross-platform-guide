@@ -24,6 +24,21 @@ Table of contents
   * [1.8.18. Select software graphics renderer](#step-software-gfx)
   * [1.8.19. Run 'Hello GL2' sample](#step-run-gl2)
   * [1.8.20. Observe 'Hello GL2' sample](#step-observe-gl2)
+  * [1.8.21. Start a new Android Studio project](#step-start-project)
+  * [1.8.22. Include C++ support](#step-cpp-support)
+  * [1.8.23. Select empty activity](#step-empty-activity)
+  * [1.8.24. Turn on C++11, exceptions, and RTTI](#step-cpp11)
+  * [1.8.25. Run the project](#step-run-stub)
+  * [1.8.26. Clone OSG alongside the project](#step-osg)
+  * [1.8.27. Clone sample OSG application alongside the project](#step-osg-app)
+  * [1.8.28. Copy Android part into the project](#step-copy)
+  * [1.8.29. Update RenderActivity](#step-render-activity)
+  * [1.8.30. Update AndroidManifest](#step-manifest)
+  * [1.8.31. Update CMakeLists](#step-cmake)
+  * [1.8.32. Specify target ABIs](#step-abi)
+  * [1.8.33. Build the project](#step-build)
+  * [1.8.34. Try to run the project](#step-run)
+  * [1.8.35. Observe error](#step-error)
 
 <a name="overview"/>
 
@@ -258,3 +273,173 @@ Watch the video to see all details.
 
   You should see green triangle. This means AVD can display GLES2 graphics.
 
+<a name="step-start-project"/>
+
+1.8.21. Start a new Android Studio project
+------------------------------------------
+
+  ![Screenshot](readme/f615.png)
+
+  Start a new Android Studio project.
+
+<a name="step-cpp-support"/>
+
+1.8.22. Include C++ support
+---------------------------
+
+  ![Screenshot](readme/f662.png)
+
+  This options adds sample C++ native library to the project.
+
+  We will use its CMakeLists.txt file later.
+
+<a name="step-empty-activity"/>
+
+1.8.23. Select empty activity
+-----------------------------
+
+  ![Screenshot](readme/f685.png)
+
+  Since we only need one screen, select empty activity.
+
+<a name="step-cpp11"/>
+
+1.8.24. Turn on C++11, exceptions, and RTTI
+-------------------------------------------
+
+  ![Screenshot](readme/f710.png)
+
+  Turn on C++11, exceptions, and RTTI, because they are necessary
+  to build OpenSceneGraph.
+
+<a name="step-run-stub"/>
+
+1.8.25. Run the project
+-----------------------
+
+  ![Screenshot](readme/f765.png)
+
+  Run the project. It should display a screen with *Hello from C++* text.
+
+<a name="step-osg"/>
+
+1.8.26. Clone OSG alongside the project
+---------------------------------------
+
+  ![Screenshot](readme/f788.png)
+
+  Clone OpenSceneGraph alongside the project with the following commands:
+
+  `cd ~`
+
+  `cd AndroidStudioProjects`
+
+  `git clone https://github.com/openscenegraph/OpenSceneGraph`
+
+  **Note**: you must place OpenSceneGraph alongside the project, because
+  sample OpenSceneGraph application's Android part requires it.
+
+<a name="step-osg-app"/>
+
+1.8.27. Clone sample OSG application alongside the project
+----------------------------------------------------------
+
+  ![Screenshot](readme/f825.png)
+
+  Clone sample OpenSceneGraph application alongside the project
+  with the following commands:
+
+  `cd ~`
+
+  `cd AndroidStudioProjects`
+
+  `git clone https://github.com/ogstudio/openscenegraph-cross-platform-guide-application`
+
+  **Note**: you must place sample OpenSceneGraph application alongside
+  the project, because sample OpenSceneGraph application's Android part
+  requires it.
+
+<a name="step-copy"/>
+
+1.8.28. Copy Android part into the project
+------------------------------------------
+
+  ![Screenshot](readme/f864.png)
+
+  Copy Android part into the project with the following commands:
+
+  `cd ~`
+
+  `cd AndroidStudioProjects`
+ 
+  `cp -R openscenegraph-cross-platform-guide-application/android/app /path/to/the/project`
+
+  Sample OpenSceneGraph application's *android/app* directory contains
+  RenderActivity with backing native library, box model, and a few supporting files.
+
+  *android/app* is almost all you need to run OpenSceneGraph
+  application under Android.
+
+<a name="step-manifest"/>
+
+1.8.30. Update AndroidManifest
+------------------------------
+
+  ![Screenshot](readme/f952.png)
+
+  * Request GLES2 support by adding `<uses-feature android:glEsVersion="0x00020000"/>`
+  * Make RnederActivity the main activity by referencing it with `<activity android:name="org.opengamestudio.osgapp.RenderActivity">`
+
+<a name="step-cmake"/>
+
+1.8.31. Update CMakeLists
+-------------------------
+
+  ![Screenshot](readme/f995.png)
+
+  Reference RenderActivity's backing native library's CMakeLists file
+  by adding `include(CMakeLists-osgNativeLib.txt)` to the project's
+  CMakeLists file.
+
+<a name="step-abi"/>
+
+1.8.32. Specify target ABIs
+---------------------------
+
+  ![Screenshot](readme/f1032.png)
+
+  This step is optional.
+
+  By default, Android Studio builds the project for all supported architectures.
+  Each architecture requires its own build of OpenSceneGraph, which is about 1.5G
+  in size.
+
+  We restrict the project to ARMv7 ABI to save disk space.
+
+<a name="step-build"/>
+
+1.8.33. Build the project
+-------------------------
+
+  ![Screenshot](readme/f1127.png)
+
+  This builds OpenSceneGraph as static libraries and links them
+  to RenderActivity's backing native library called `osgNativeLib`.
+
+  **Note**: make note of the native library's full name.
+
+<a name="step-run"/>
+
+1.8.34. Try to run the project
+------------------------------
+
+  ![Screenshot](readme/f1196.png)
+
+  Try to run the project.
+
+<a name="step-error"/>
+
+1.8.35. Observe error
+---------------------
+
+  ![Screenshot](readme/f???.png)

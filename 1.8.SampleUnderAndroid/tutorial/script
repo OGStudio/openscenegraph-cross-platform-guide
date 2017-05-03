@@ -1,35 +1,34 @@
 background bg.png
-#text 5 1.8. Run sample OSG application under Android
-#video 2:5 sample_under_android-01.mp4
-#text 5 1.8.1. Download Android Studio
-#video 27:80 sample_under_android-01.mp4
-#video 213:223 sample_under_android-01.mp4
-#text 5 1.8.2. Install 32-bit libraries
-#video 3:43 sample_under_android-02.mp4
-#video 59:77 sample_under_android-02.mp4
-#text 5 1.8.3. Unpack Android Studio
-#video 3:37 sample_under_android-03.mp4
-#video 44:50 sample_under_android-03.mp4
-#text 5 1.8.4. Run Android Studio
-#video 2:38 sample_under_android-04.mp4
-#text 5 1.8.5. Select standard installation options
-#video 38:49 sample_under_android-04.mp4
-#video 59:80 sample_under_android-04.mp4
-#text 5 1.8.6. Wait for components to install
-#video 2:15 sample_under_android-05.mp4
-#video 24:35 sample_under_android-06.mp4
-#text 5 1.8.7. Run SDK Manager
-#video 3:13 sample_under_android-07.mp4
-#text 5 1.8.8. Select CMake, LLDB, NDK components
-#video 13:32 sample_under_android-07.mp4
-#text 5 1.8.9. Accept license
-#video 32:38 sample_under_android-07.mp4
-#text 5 1.8.10. Wait for CMake, LLDB, NDK to install
-#video 2:5 sample_under_android-08.mp4
-#video 33:38 sample_under_android-09.mp4
-#video 98:104 sample_under_android-09.mp4
-#video 120:136 sample_under_android-09.mp4
-
+text 5 1.8. Run sample OSG application under Android
+video 2:5 sample_under_android-01.mp4
+text 5 1.8.1. Download Android Studio
+video 27:80 sample_under_android-01.mp4
+video 213:223 sample_under_android-01.mp4
+text 5 1.8.2. Install 32-bit libraries
+video 3:43 sample_under_android-02.mp4
+video 59:77 sample_under_android-02.mp4
+text 5 1.8.3. Unpack Android Studio
+video 3:37 sample_under_android-03.mp4
+video 44:50 sample_under_android-03.mp4
+text 5 1.8.4. Run Android Studio
+video 2:38 sample_under_android-04.mp4
+text 5 1.8.5. Select standard installation options
+video 38:49 sample_under_android-04.mp4
+video 59:80 sample_under_android-04.mp4
+text 5 1.8.6. Wait for components to install
+video 2:15 sample_under_android-05.mp4
+video 24:35 sample_under_android-06.mp4
+text 5 1.8.7. Run SDK Manager
+video 3:13 sample_under_android-07.mp4
+text 5 1.8.8. Select CMake, LLDB, NDK components
+video 13:32 sample_under_android-07.mp4
+text 5 1.8.9. Accept license
+video 32:38 sample_under_android-07.mp4
+text 5 1.8.10. Wait for CMake, LLDB, NDK to install
+video 2:5 sample_under_android-08.mp4
+video 33:38 sample_under_android-09.mp4
+video 98:104 sample_under_android-09.mp4
+video 120:136 sample_under_android-09.mp4
 text 5 1.8.11. Start Android code sample import
 video 3:13 sample_under_android-10.mp4
 text 5 1.8.12. Import 'Hello GL2' sample
@@ -58,51 +57,52 @@ video 36:42 sample_under_android-13.mp4
 video 95:98 sample_under_android-13.mp4
 text 5 1.8.20. Observe 'Hello GL2' sample
 video 108:125 sample_under_android-13.mp4
+text 5 1.8.21. Start a new Android Studio project
+video 3:22 sample_under_android-14.mp4
+text 5 1.8.22. Include C++ support
+video 22:63 sample_under_android-14.mp4
+video 70:87 sample_under_android-14.mp4
+text 5 1.8.23. Select empty activity
+video 87:105 sample_under_android-14.mp4
+text 5 1.8.24. Turn on C++11, exceptions, and RTTI
+video 105:120 sample_under_android-14.mp4
+video 193:203 sample_under_android-14.mp4
+video 250:265 sample_under_android-14.mp4
+text 5 1.8.25. Run the project
+video 4:14 sample_under_android-15.mp4
+video 51:54 sample_under_android-15.mp4
+video 127:138 sample_under_android-15.mp4
+text 5 1.8.26. Clone OSG alongside the project
+video 16:42 sample_under_android-16.mp4
+video 163:172 sample_under_android-16.mp4
+text 5 1.8.27. Clone sample OSG application alongside the project
+video 2:25 sample_under_android-17.mp4
+text 5 1.8.28. Copy Android part into the project
+video 4:37 sample_under_android-18.mp4
+text 5 1.8.29. Update RenderActivity
+video 3:40 sample_under_android-19.mp4
+text 5 1.8.30. Update AndroidManifest
+video 2:50 sample_under_android-20.mp4
+text 5 1.8.31. Update CMakeLists
+video 4:8 sample_under_android-21.mp4
+video 13:52 sample_under_android-21.mp4
+text 5 1.8.32. Specify target ABIs
+video 2:37 sample_under_android-22.mp4
+text 5 1.8.33. Build the project
+video 3:62 sample_under_android-23.mp4
+video 21:81 sample_under_android-24.mp4
+video 223:229 sample_under_android-24.mp4
+text 5 1.8.34. Try to run the project
+video 12:21 sample_under_android-25.mp4
+video 86:100 sample_under_android-25.mp4
 
-#text 5 1.8.10. Start a new Android Studio project
-#video 3:22 sample_under_android-14.mp4
-#text 5 1.8.11. Include C++ support
-#video 22:63 sample_under_android-14.mp4
-#video 70:87 sample_under_android-14.mp4
-#text 5 1.8.12. Select empty activity
-#video 87:105 sample_under_android-14.mp4
-#text 5 1.8.13. Turn on C++11, exceptions, and RTTI
-#video 105:120 sample_under_android-14.mp4
-#video 193:203 sample_under_android-14.mp4
-#video 250:265 sample_under_android-14.mp4
-#text 5 1.8.14. Run sample project
-#video 4:14 sample_under_android-15.mp4
-#video 51:54 sample_under_android-15.mp4
-#video 127:138 sample_under_android-15.mp4
-#text 5 1.8.15. Clone OSG alongside sample project
-#video 16:42 sample_under_android-16.mp4
-#video 163:172 sample_under_android-16.mp4
-#text 5 1.8.16. Clone sample OSG application
-#video 2:25 sample_under_android-17.mp4
-#text 5 1.8.17. Copy Android specific files to sample project
-#video 4:37 sample_under_android-18.mp4
-#text 5 1.8.18. Update RenderActivity
-#video 3:40 sample_under_android-19.mp4
-#text 5 1.8.19. Update AndroidManifest
-#video 2:50 sample_under_android-20.mp4
-#text 5 1.8.20. Update CMakeLists
-#video 4:8 sample_under_android-21.mp4
-#video 13:52 sample_under_android-21.mp4
-#text 5 1.8.21. Provide target ABIs
-#video 2:37 sample_under_android-22.mp4
-#text 5 1.8.22. Build sample project
-#video 3:62 sample_under_android-23.mp4
-#video 21:81 sample_under_android-24.mp4
-#video 223:229 sample_under_android-24.mp4
-#text 5 1.8.23. Try to run sample project
-#video 12:21 sample_under_android-25.mp4
-#video 86:100 sample_under_android-25.mp4
-#text 5 1.8.24. Observe error
-#video 104:151 sample_under_android-25.mp4
-#text 5 1.8.25. Fix referenced library name
-#video 4:39 sample_under_android-26.mp4
-#text 5 1.8.26. Run sample project
-#video 43:52 sample_under_android-26.mp4
-#video 266:270 sample_under_android-26.mp4
-#video 277:299 sample_under_android-26.mp4
+text 5 1.8.35. Observe error
+video 104:151 sample_under_android-25.mp4
+
+text 5 1.8.25. Fix referenced library name
+video 4:39 sample_under_android-26.mp4
+text 5 1.8.26. Run sample project
+video 43:52 sample_under_android-26.mp4
+video 266:270 sample_under_android-26.mp4
+video 277:299 sample_under_android-26.mp4
 text 5 1.8. That's it for running sample OSG application under Android
