@@ -39,6 +39,8 @@ Table of contents
   * [1.8.33. Build the project](#step-build)
   * [1.8.34. Try to run the project](#step-run)
   * [1.8.35. Observe error](#step-error)
+  * [1.8.36. Fix osgNativeLib reference](#step-fix)
+  * [1.8.37. Run the project](#step-result)
 
 <a name="overview"/>
 
@@ -450,4 +452,29 @@ Watch the video to see all details.
 1.8.35. Observe error
 ---------------------
 
-  ![Screenshot](readme/f???.png)
+  ![Screenshot](readme/f1239.png)
+
+  The logs say that `osgNativeLib` is missing.
+
+  As you noted above, the name should read like `osgNativeLibd`.
+  `d` postfix is a side effect of building OpenSceneGraph in Debug mode.
+
+<a name="step-fix"/>
+
+1.8.36. Fix osgNativeLib reference
+----------------------------------
+
+  ![Screenshot](readme/f1270.png)
+
+  Open `osgNativeLib.java` and reference `osgNativeLibd`
+  instead of `osgNativeLib`.
+
+<a name="step-result"/>
+
+1.8.37. Run the project
+-----------------------
+
+  ![Screenshot](readme/f1300.png)
+
+  You should now see red cube displayed.
+

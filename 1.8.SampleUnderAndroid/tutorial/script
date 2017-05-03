@@ -95,13 +95,11 @@ video 223:229 sample_under_android-24.mp4
 text 5 1.8.34. Try to run the project
 video 12:21 sample_under_android-25.mp4
 video 86:100 sample_under_android-25.mp4
-
 text 5 1.8.35. Observe error
 video 104:151 sample_under_android-25.mp4
-
-text 5 1.8.25. Fix referenced library name
+text 5 1.8.36. Fix osgNativeLib reference
 video 4:39 sample_under_android-26.mp4
-text 5 1.8.26. Run sample project
+text 5 1.8.37. Run the project
 video 43:52 sample_under_android-26.mp4
 video 266:270 sample_under_android-26.mp4
 video 277:299 sample_under_android-26.mp4
