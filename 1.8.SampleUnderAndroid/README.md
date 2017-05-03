@@ -289,7 +289,7 @@ Watch the video to see all details.
 
   ![Screenshot](readme/f662.png)
 
-  This options adds sample C++ native library to the project.
+  This option adds sample C++ native library to the project.
 
   We will use its CMakeLists.txt file later.
 
@@ -387,8 +387,13 @@ Watch the video to see all details.
 
   ![Screenshot](readme/f952.png)
 
-  * Request GLES2 support by adding `<uses-feature android:glEsVersion="0x00020000"/>`
-  * Make RnederActivity the main activity by referencing it with `<activity android:name="org.opengamestudio.osgapp.RenderActivity">`
+  * Request GLES2 support by adding
+
+  `<uses-feature android:glEsVersion="0x00020000"/>`
+
+  * Make RenderActivity the main activity by referencing it with
+
+  `<activity android:name="org.opengamestudio.osgapp.RenderActivity">`
 
 <a name="step-cmake"/>
 
@@ -398,8 +403,11 @@ Watch the video to see all details.
   ![Screenshot](readme/f995.png)
 
   Reference RenderActivity's backing native library's CMakeLists file
-  by adding `include(CMakeLists-osgNativeLib.txt)` to the project's
-  CMakeLists file.
+  by adding
+
+  `include(CMakeLists-osgNativeLib.txt)`
+
+  to the project's CMakeLists file.
 
 <a name="step-abi"/>
 
@@ -411,8 +419,8 @@ Watch the video to see all details.
   This step is optional.
 
   By default, Android Studio builds the project for all supported architectures.
-  Each architecture requires its own build of OpenSceneGraph, which is about 1.5G
-  in size.
+  Each architecture requires its own build of OpenSceneGraph. OpenSceneGraph build
+  for single architecture takes about 1.5G.
 
   We restrict the project to ARMv7 ABI to save disk space.
 
