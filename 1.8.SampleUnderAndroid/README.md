@@ -128,7 +128,8 @@ Watch the video to see all details.
 
   ![Screenshot](readme/f274.png)
 
-  We will use SDK manager to install additional components.
+  Select *Configure* -> *SDK Manager* to run *SDK Manager*, which 
+  we will use to install additional components.
 
 <a name="step-install-ndk"/>
 
