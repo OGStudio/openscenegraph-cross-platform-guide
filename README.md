@@ -11,6 +11,7 @@ Table of contents
   * [1.5. Build and run sample OpenSceneGraph application under Linux](#tutorials-sample-linux)
   * [1.6. Build and run sample OpenSceneGraph application under Windows](#tutorials-sample-windows)
   * [1.7. Build and run sample OpenSceneGraph application under macOS](#tutorials-sample-macos)
+  * [1.8. Build and run sample OpenSceneGraph application under Android](#tutorials-sample-android)
 
 <a name="overview"/>
 
@@ -59,7 +60,7 @@ Tutorials
 
   ![Screenshot](readme/1.1.cube.png)
 
-  We create a simple cube that OpenSceneGraph will render later.
+  Create a simple cube that OpenSceneGraph will render later.
 
 <a name="tutorials-install-linux"/>
 
@@ -67,7 +68,7 @@ Tutorials
 
   ![Screenshot](readme/1.2.install_under_linux.png)
 
-  We install OpenSceneGraph under Linux and take a look at the cube
+  Install OpenSceneGraph under Linux and take a look at the cube
   with **osgviewer** tool.
 
 <a name="tutorials-install-windows"/>
@@ -76,7 +77,7 @@ Tutorials
 
   ![Screenshot](readme/1.3.install_under_windows.png)
 
-  We install OpenSceneGraph under Windows and take a look at the cube
+  Install OpenSceneGraph under Windows and take a look at the cube
   with **osgviewer** tool.
 
 <a name="tutorials-install-macos"/>
@@ -85,7 +86,7 @@ Tutorials
 
   ![Screenshot](readme/1.4.install_under_macos.png)
 
-  We install OpenSceneGraph under macOS and take a look at the cube
+  Install OpenSceneGraph under macOS and take a look at the cube
   with **osgviewer** tool.
 
 <a name="tutorials-sample-linux"/>
@@ -94,7 +95,7 @@ Tutorials
 
   ![Screenshot](readme/1.5.sample_under_linux.png)
 
-  We build and run sample OpenSceneGraph application under Linux.
+  Build and run sample OpenSceneGraph application under Linux.
 
 <a name="tutorials-sample-windows"/>
 
@@ -102,7 +103,7 @@ Tutorials
 
   ![Screenshot](readme/1.6.sample_under_windows.png)
 
-  We build and run sample OpenSceneGraph application under Windows.
+  Build and run sample OpenSceneGraph application under Windows.
 
 <a name="tutorials-sample-macos"/>
 
@@ -110,5 +111,12 @@ Tutorials
 
   ![Screenshot](readme/1.7.sample_under_macos.png)
 
-  We build and run sample OpenSceneGraph application under macOS.
+  Build and run sample OpenSceneGraph application under macOS.
 
+<a name="tutorials-sample-android"/>
+
+### [1.8. Build and run sample OpenSceneGraph application under Android](1.8.SampleUnderAndroid)
+
+  ![Screenshot](readme/1.8.sample_under_android.png)
+
+  Build and run sample OpenSceneGraph application under Android.
