@@ -148,7 +148,7 @@ Watch the video to see all details.
   Select *Configure* -> *SDK Manager* to run *SDK Manager*, which 
   we will use to install additional components.
 
-<a name="step-install-ndk"/>
+<a name="step-select-ndk"/>
 
 1.8.8. Select CMake, LLDB, NDK components
 -----------------------------------------
