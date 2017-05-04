@@ -61,7 +61,7 @@ under Android. The application displays provided model with simple GLSL shaders.
 Video
 =====
 
-[YouTube](todo) | [Download](readme/video.mp4)
+[YouTube](https://youtu.be/Za5oguyiwE4) | [Download](readme/video.mp4)
 
 Video depicts running and building sample OpenSceneGraph application
 with Android Studio 2.3.1 under Xubuntu 16.04.
