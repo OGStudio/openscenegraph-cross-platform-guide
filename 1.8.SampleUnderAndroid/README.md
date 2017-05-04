@@ -53,8 +53,8 @@ In this tutorial we build and run
 [sample OpenSceneGraph application](http://github.com/OGStudio/openscenegraph-cross-platform-guide-application)
 under Android. The application displays provided model with simple GLSL shaders.
 
-**Note**: this tutorial requires
-* OpenSceneGraph model (see [1.1. Create a cube](../1.1.CreateCube))
+**Note**: this tutorial requires OpenSceneGraph model
+(see [1.1. Create a cube](../1.1.CreateCube))
 
 <a name="video"/>
 
