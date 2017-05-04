@@ -42,7 +42,6 @@ background bg.png
 #video 240:244 sample_under_android-10.mp4
 #video 250:255 sample_under_android-10.mp4
 #video 284:288 sample_under_android-10.mp4
-
 #text 5 1.8.13. Try to run 'Hello GL2' sample
 #video 1:10 sample_under_android-11.mp4
 #text 5 1.8.14. Start AVD creation
@@ -50,14 +49,17 @@ background bg.png
 #text 5 1.8.15. Select device definition
 #video 20:29 sample_under_android-11.mp4
 #text 5 1.8.16. Download system image
-#video 35:41 sample_under_android-11.mp4
-#video 47:62 sample_under_android-11.mp4
-#video 9:14 sample_under_android-12.mp4
-#video 49:64 sample_under_android-12.mp4
+#video 36:40 sample_under_android-11.mp4
+#video 48:52 sample_under_android-11.mp4
+#video 55:60 sample_under_android-11.mp4
+#video 9:13 sample_under_android-12.mp4
+#video 49:53 sample_under_android-12.mp4
+#video 56:64 sample_under_android-12.mp4
 #text 5 1.8.17. Select system image
 #video 64:71 sample_under_android-12.mp4
 #text 5 1.8.18. Select software graphics renderer
-#video 73:106 sample_under_android-12.mp4
+#video 73:80 sample_under_android-12.mp4
+#video 104:106 sample_under_android-12.mp4
 #text 5 1.8.19. Run 'Hello GL2' sample
 #video 110:115 sample_under_android-12.mp4
 #video 127:133 sample_under_android-12.mp4
@@ -68,10 +70,13 @@ background bg.png
 #text 5 1.8.21. Start a new Android Studio project
 #video 3:22 sample_under_android-14.mp4
 #text 5 1.8.22. Include C++ support
-#video 22:63 sample_under_android-14.mp4
+#video 23:29 sample_under_android-14.mp4
+#video 33:36 sample_under_android-14.mp4
+#video 45:63 sample_under_android-14.mp4
 #video 70:87 sample_under_android-14.mp4
 #text 5 1.8.23. Select empty activity
-#video 87:105 sample_under_android-14.mp4
+#video 87:97 sample_under_android-14.mp4
+#video 102:106 sample_under_android-14.mp4
 #text 5 1.8.24. Turn on C++11, exceptions, and RTTI
 #video 105:120 sample_under_android-14.mp4
 #video 193:203 sample_under_android-14.mp4
@@ -86,9 +91,11 @@ background bg.png
 #text 5 1.8.27. Clone sample OSG application alongside the project
 #video 2:25 sample_under_android-17.mp4
 #text 5 1.8.28. Copy Android part into the project
-#video 4:37 sample_under_android-18.mp4
+#video 4:28 sample_under_android-18.mp4
+#video 33:37 sample_under_android-18.mp4
 #text 5 1.8.29. Update RenderActivity
 #video 3:40 sample_under_android-19.mp4
+
 #text 5 1.8.30. Update AndroidManifest
 #video 2:50 sample_under_android-20.mp4
 #text 5 1.8.31. Update CMakeLists

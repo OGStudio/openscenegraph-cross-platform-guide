@@ -374,13 +374,23 @@ Watch the video to see all details.
 
   `cd AndroidStudioProjects`
  
-  `cp -R openscenegraph-cross-platform-guide-application/android/app /path/to/the/project`
+  `cp -R openscenegraph-cross-platform-guide-application/android/app your_project`
 
   Sample OpenSceneGraph application's *android/app* directory contains
   RenderActivity with backing native library, box model, and a few supporting files.
 
   *android/app* is almost all you need to run OpenSceneGraph
   application under Android.
+
+<a name="step-render-activity"/>
+
+1.8.29. Update RenderActivity
+-----------------------------
+
+  ![Screenshot](readme/f886.png)
+
+  Import your package's `R` class inside RenderActivity, so that it can
+  reference box model from you project's resources.
 
 <a name="step-manifest"/>
 
