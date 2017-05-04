@@ -107,7 +107,7 @@ Watch the video to see all details.
 
   Extract Android Studio archive into your home directory.
 
-<a name="step-cfg-as"/>
+<a name="step-run-as"/>
 
 1.8.4. Run Android Studio
 -------------------------------
