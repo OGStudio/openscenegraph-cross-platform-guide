@@ -23,8 +23,8 @@ In this tutorial we build and run
 under Linux. The application displays provided model with simple GLSL shaders.
 
 **Note**: this tutorial requires
-* OpenSceneGraph installation (see [1.2. Install OpenSceneGraph under Linux](../1.2.InstallUnderLinux))
 * OpenSceneGraph model (see [1.1. Create a cube](../1.1.CreateCube))
+* OpenSceneGraph installation (see [1.2. Install OpenSceneGraph under Linux](../1.2.InstallUnderLinux))
 
 <a name="video"/>
 

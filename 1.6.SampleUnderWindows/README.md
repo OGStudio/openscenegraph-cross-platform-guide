@@ -32,8 +32,8 @@ In this tutorial we build and run
 under Windows. The application displays provided model with simple GLSL shaders.
 
 **Note**: this tutorial requires
-* OpenSceneGraph installation (see [1.3. Install OpenSceneGraph under Windows](../1.3.InstallUnderWindows))
 * OpenSceneGraph model (see [1.1. Create a cube](../1.1.CreateCube))
+* OpenSceneGraph installation (see [1.3. Install OpenSceneGraph under Windows](../1.3.InstallUnderWindows))
 
 <a name="video"/>
 

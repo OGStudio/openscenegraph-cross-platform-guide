@@ -27,8 +27,8 @@ In this tutorial we build and run
 under macOS. The application displays provided model with simple GLSL shaders.
 
 **Note**: this tutorial requires
-* OpenSceneGraph installation (see [1.4. Install OpenSceneGraph under macOS](../1.4.InstallUnderMacOS))
 * OpenSceneGraph model (see [1.1. Create a cube](../1.1.CreateCube))
+* OpenSceneGraph installation (see [1.4. Install OpenSceneGraph under macOS](../1.4.InstallUnderMacOS))
 
 <a name="video"/>
 
