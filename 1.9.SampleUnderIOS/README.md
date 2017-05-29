@@ -12,6 +12,19 @@ Table of contents
   * [1.9.6. Generate Xcode project file](#step-generate)
   * [1.9.7. Build OpenSceneGraph](#step-build-osg)
 
+
+* Create build directory
+  for osgNativeLib
+* Launch CMake
+* Specify build and source directories
+  by default it configures for iOS simulator
+* Configure osgNativeLib
+* Generate Xcode project file
+* Build osgNativeLib
+  it also builds OpenSceneGraph, actual osgNativeLib
+  packages static libs into single osglib
+
+
 <a name="overview"/>
 
 Overview
@@ -25,7 +38,9 @@ under iOS. The application displays provided model with simple GLSL shaders.
 
 **Note**: this tutorial requires
 * OpenSceneGraph model (see [1.1. Create a cube](../1.1.CreateCube))
-* OpenSceneGraph installation (see [1.4. Install OpenSceneGraph under macOS](../1.4.InstallUnderMacOS))
+* Xcode and CMake installations (see [1.4. Install OpenSceneGraph under macOS](../1.4.InstallUnderMacOS))
+* OpenSceneGraph sources (see [1.4. Install OpenSceneGraph under macOS](../1.4.InstallUnderMacOS))
+* sample OpenSceneGraph application sources (see [1.7. Build and run sample OpenSceneGraph application under macOS](../1.7.SampleUnderMacOS))
 
 <a name="video"/>
 
@@ -35,7 +50,7 @@ Video
 [YouTube](todo) | [Download](readme/video.mp4)
 
 Video depicts running and building sample OpenSceneGraph application
-for iOS 10 under iOS simulator.
+for iOS simulator with iOS 10.
 
 <a name="steps"/>
 
