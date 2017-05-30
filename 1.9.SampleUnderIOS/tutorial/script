@@ -1,6 +1,6 @@
 background bg.png
 text 5 1.9. Run sample OSG application under iOS
-video 1:3 sample_under_ios-01.mp4
+video 1:4 sample_under_ios-08.mp4
 text 5 1.9.1. Create build directory
 video 3:15 sample_under_ios-01.mp4
 text 5 1.9.2. Launch CMake
@@ -14,4 +14,32 @@ text 5 1.9.5. Generate Xcode project file
 video 2:13 sample_under_ios-05.mp4
 text 5 1.9.6. Build osgNativeLib
 video 1:44 sample_under_ios-06.mp4
+video 8:18 sample_under_ios-07.mp4
+text 5 1.9.7. Launch Xcode
+video 4:21 sample_under_ios-08.mp4
+text 5 1.9.8. Start a new Xcode project
+video 3:14 sample_under_ios-09.mp4
+text 5 1.9.9. Select Single view application
+video 3:12 sample_under_ios-10.mp4
+text 5 1.9.10. Select Objective-C language
+video 2:31 sample_under_ios-11.mp4
+text 5 1.9.11. Finish project creation
+video 2:26 sample_under_ios-12.mp4
+text 5 1.9.12. Copy osgNativeLib
+video 2:19 sample_under_ios-13.mp4
+text 5 1.9.12. Copy view controller and model
+video 2:34 sample_under_ios-14.mp4
+text 5 1.9.13. Add copied files to the project
+video 1:19 sample_under_ios-15.mp4
+text 5 1.9.14. Select RenderVC as the main interface
+video 1:8 sample_under_ios-16.mp4
+text 5 1.9.15. Reference osgNativeLib headers
+video 2:63 sample_under_ios-17.mp4
+text 5 1.9.16. Run the project
+video 1:19 sample_under_ios-18.mp4
+video 31:46 sample_under_ios-18.mp4
+video 55:59 sample_under_ios-18.mp4
+video 132:137 sample_under_ios-18.mp4
+video 142:149 sample_under_ios-18.mp4
+video 154:174 sample_under_ios-18.mp4
 text 5 1.9. That's it for running sample OSG application under iOS

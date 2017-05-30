@@ -23,6 +23,17 @@ Table of contents
 * Build osgNativeLib
   it also builds OpenSceneGraph, actual osgNativeLib
   packages static libs into single osglib
+* Launch Xcode
+* Start a new Xcode project
+* Select single view application
+* Select Objective-C language
+* Finish project creation
+* Copy osgNativeLib
+* Copy view controller and model
+* Add copied files to the project
+* Select render view controller as the main interface
+* Reference osgNativeLib headers
+* Launch application
 
 
 <a name="overview"/>
