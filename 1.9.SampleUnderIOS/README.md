@@ -175,7 +175,7 @@ Watch the video to see all details.
 
   Copy combined library into project directory with the following command:
 
-  `cp /path/to/libosglib.a /path/to/xcode/project/subdir/`
+  `cp /path/to/build/dir/libosglib.a /path/to/xcode/project/subdir/`
 
 <a name="step-copy"/>
 
@@ -199,7 +199,7 @@ Watch the video to see all details.
 
   ![Screenshot](readme/f382.png)
 
-  To be part of the project, copied files should be added to the project.
+  For Xcode to see the files, they should be added to the project.
 
 <a name="step-main"/>
 
@@ -208,8 +208,8 @@ Watch the video to see all details.
 
   ![Screenshot](readme/f396.png)
 
-  Go to `General` project page and select `RenderVC` as
-  the starting view controller.
+  Go to `General` project page and select `RenderVC.storyboard` as
+  the main interface.
 
 <a name="step-headers"/>
 
@@ -218,8 +218,11 @@ Watch the video to see all details.
 
   ![Screenshot](readme/f456.png)
 
-  Go to project's `Build Settings`, find `Header Search Paths`, and
-  add the following search paths:
+  Since we have not added osgNativeLib headers to the project, we should
+  reference them to be able to call osgNativeLib functions.
+
+  Go to project's `Build Settings`, find `Header Search Paths` section,
+  then add the following search paths:
 
   `/path/to/openscenegraph-cross-platform-guide-application/ios/src`
 
