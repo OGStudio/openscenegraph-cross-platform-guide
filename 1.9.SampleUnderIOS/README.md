@@ -70,12 +70,13 @@ Watch the video to see all details.
   a native C++ library to be used in Objective-C.
 
   osgNativeLib also builds OpenSceneGraph inside
-  `/path/to/OpenSceneGraph/build/Simulator`.
+  `/path/to/openscenegraph-cross-platform-guide-application/../OpenSceneGraph/build/Simulator`.
 
   **Note**: iOS simulator build only works under iOS simulator. If you need
   to build for a real device, you need to build osgNativeLib
   with `BUILD_SIMULATOR=NO` in a separate directory. In such a case
-  OpenSceneGraph is built inside `/path/to/OpenSceneGraph/build/Device`.
+  OpenSceneGraph is built inside
+  `/path/to/openscenegraph-cross-platform-guide-application/../OpenSceneGraph/build/Device`.
 
 <a name="step-open-cmake"/>
 
