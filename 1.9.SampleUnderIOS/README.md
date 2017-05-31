@@ -7,22 +7,11 @@ Table of contents
   * [1.9.1. Create build directory](#step-build-dir)
   * [1.9.2. Launch CMake](#step-open-cmake)
   * [1.9.3. Specify build and source directories](#step-dirs)
-  * [1.9.4. Add iOS specific variables](#step-vars)
-  * [1.9.5. Configure OpenSceneGraph](#step-cfg)
-  * [1.9.6. Generate Xcode project file](#step-generate)
-  * [1.9.7. Build OpenSceneGraph](#step-build-osg)
+  * [1.9.4. Configure osgNativeLib and OSG](#step-cfg)
+  * [1.9.5. Generate Xcode project file](#step-generate)
+  * [1.9.6. Build osgNativeLib and OSG](#step-build)
 
 
-* Create build directory
-  for osgNativeLib
-* Launch CMake
-* Specify build and source directories
-  by default it configures for iOS simulator
-* Configure osgNativeLib
-* Generate Xcode project file
-* Build osgNativeLib
-  it also builds OpenSceneGraph, actual osgNativeLib
-  packages static libs into single osglib
 * Launch Xcode
 * Start a new Xcode project
 * Select single view application
@@ -76,20 +65,25 @@ Watch the video to see all details.
 1.9.1. Create build directory
 -----------------------------
 
-  ![Screenshot](readme/f???.png)
+  ![Screenshot](readme/f021.png)
 
-  Create build directory for iOS simulator build of OpenSceneGraph.  
+  Create build directory for iOS simulator build of osgNativeLib,
+  a native C++ library to be used in Objective-C.
 
-  iOS simulator build only works under iOS simulator. If you need
-  to build for a real device, you need an additional build of
-  OpenSceneGraph in a separate directory.
+  osgNativeLib also builds OpenSceneGraph inside
+  `/path/to/OpenSceneGraph/build/Simulator`.
+
+  *Note*: iOS simulator build only works under iOS simulator. If you need
+  to build for a real device, you need to build osgNativeLib
+  with `BUILD_SIMULATOR=NO` in a separate directory. In such a case
+  OpenSceneGraph is built inside `/path/to/OpenSceneGraph/build/Device`.
 
 <a name="step-open-cmake"/>
 
 1.9.2. Launch CMake
 -------------------
 
-  ![Screenshot](readme/f???.png)
+  ![Screenshot](readme/f033.png)
 
   Open CMake
 
@@ -98,55 +92,40 @@ Watch the video to see all details.
 1.9.3. Specify build and source directories
 -------------------------------------------
 
-  ![Screenshot](readme/f???.png)
+  ![Screenshot](readme/f068.png)
 
   Specify build and source directories.
 
-<a name="step-vars"/>
-
-1.9.4. Add iOS specific variables
----------------------------------
-
-  ![Screenshot](readme/f???.png)
-
-  Add the following variables **before** pressing `Configure`:
-  - `BUILD_OSG_APPLICATIONS=OFF` makes sure we don't build applications
-  - `CMAKE_OSX_SYSROOT=/path/to/iOS/SDK` specifies path to SDK (simulator or real device)
-  - `DYNAMIC_OPENSCENEGRAPH=OFF` makes sure we build OpenSceneGraph statically
-  - `DYNAMIC_OPENTHREADS=OFF` makes sure we build OpenThreads statically
-  - `OPENGL_PROFILE=GLES2` specifies GLES2 OpenGL profile
-  - `OSG_WINDOWING_SYSTEM=IOS` specifies iOS windowing system
-  - `OSG_BUILD_PLATFORM_IPHONE_SIMULATOR=ON` is only necessary if you build for simulator
-
-  **Note**: you **must** specify these variables **before** pressing `Configure`,
-  otherwise you won't be able to build OpenSceneGraph.
-
 <a name="step-cfg"/>
 
-1.9.5. Configure OpenSceneGraph
--------------------------------
+1.9.4. Configure osgNativeLib and OSG
+-------------------------------------
 
-  ![Screenshot](readme/f???.png)
+  ![Screenshot](readme/f083.png)
 
   Press `Configure`. Select `Xcode` generator when prompted.
 
 <a name="step-generate"/>
 
-1.9.6. Generate Xcode project file
+1.9.5. Generate Xcode project file
 -----------------------------------
 
-  ![Screenshot](readme/???.png)
+  ![Screenshot](readme/f145.png)
 
   Press `Generate` to generate Xcode specific project file.
 
-<a name="step-build-osg"/>
+<a name="step-build"/>
 
-1.9.7. Build OpenSceneGraph
----------------------------
+1.9.6. Build osgNativeLib and OSG
+---------------------------------
 
-  ![Screenshot](readme/???.png)
+  ![Screenshot](readme/180.png)
 
-  Build OpenSceneGraph with the following command:
+  Build osgNativeLib and OpenSceneGraph with the following command:
 
-  `xcodebuild -IDEBuildOperationMaxNumberOfConcurrentCompileTasks=6 -configuration Release`
+  `xcodebuild -IDEBuildOperationMaxNumberOfConcurrentCompileTasks=8 -configuration Release`
+
+  At the end this also combines osgNativeLib and several OpenSceneGraph
+  libraries into single library called `libosglib.a`. This is done by
+  osgNativeLib build process for convenience.
 
