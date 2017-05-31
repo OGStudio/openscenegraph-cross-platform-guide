@@ -73,7 +73,7 @@ Watch the video to see all details.
   osgNativeLib also builds OpenSceneGraph inside
   `/path/to/OpenSceneGraph/build/Simulator`.
 
-  *Note*: iOS simulator build only works under iOS simulator. If you need
+  **Note**: iOS simulator build only works under iOS simulator. If you need
   to build for a real device, you need to build osgNativeLib
   with `BUILD_SIMULATOR=NO` in a separate directory. In such a case
   OpenSceneGraph is built inside `/path/to/OpenSceneGraph/build/Device`.
@@ -119,7 +119,7 @@ Watch the video to see all details.
 1.9.6. Build osgNativeLib and OSG
 ---------------------------------
 
-  ![Screenshot](readme/180.png)
+  ![Screenshot](readme/f180.png)
 
   Build osgNativeLib and OpenSceneGraph with the following command:
 
