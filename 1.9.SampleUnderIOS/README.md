@@ -10,18 +10,17 @@ Table of contents
   * [1.9.4. Configure osgNativeLib and OSG](#step-cfg)
   * [1.9.5. Generate Xcode project file](#step-generate)
   * [1.9.6. Build osgNativeLib and OSG](#step-build)
+  * [1.9.7. Start a new Xcode project](#step-xcode)
+  * [1.9.8. Select Single View Application](#step-single-view)
+  * [1.9.9. Select Objective-C language](#step-objc)
+  * [1.9.10. Finish project creation](#step-proj)
+  * [1.9.11. Copy combined library](#step-copy-lib)
+  * [1.9.12. Copy view controller and model](#step-copy)
+  * [1.9.13. Add copied files to the project](#step-add)
+  * [1.9.14. Select RenderVC as the main interface](#step-main)
+  * [1.9.15. Reference osgNativeLib headers](#step-headers)
+  * [1.9.16. Run the project](#step-run)
 
-
-* Launch Xcode
-* Start a new Xcode project
-* Select single view application
-* Select Objective-C language
-* Finish project creation
-* Copy osgNativeLib
-* Copy view controller and model
-* Add copied files to the project
-* Select render view controller as the main interface
-* Reference osgNativeLib headers
 * Launch application
 
 
@@ -121,11 +120,118 @@ Watch the video to see all details.
 
   ![Screenshot](readme/f180.png)
 
-  Build osgNativeLib and OpenSceneGraph with the following command:
+  Build osgNativeLib and OpenSceneGraph with the following commands:
+
+  `cd /path/to/build/dir`
 
   `xcodebuild -IDEBuildOperationMaxNumberOfConcurrentCompileTasks=8 -configuration Release`
 
-  At the end this also combines osgNativeLib and several OpenSceneGraph
-  libraries into single library called `libosglib.a`. This is done by
-  osgNativeLib build process for convenience.
+  At the end the build process combines osgNativeLib and several OpenSceneGraph
+  libraries into single `libosglib.a` library. This is done for convenience.
+
+<a name="step-xcode"/>
+
+1.9.7. Start a new Xcode project
+--------------------------------
+
+  ![Screenshot](readme/f233.png)
+
+  Start a new Xcode project.
+
+<a name="step-single-view"/>
+
+1.9.8. Select Single View Application
+--------------------------------
+
+  ![Screenshot](readme/f250.png)
+
+  Select Single View Application.
+
+<a name="step-objc"/>
+
+1.9.9. Select Objective-C language
+----------------------------------
+
+  ![Screenshot](readme/f280.png)
+
+  Select Objective-C language and provide application specific
+  information like title, organization, etc.
+
+<a name="step-proj"/>
+
+1.9.10. Finish project creation
+-------------------------------
+
+  ![Screenshot](readme/f299.png)
+
+  Select project directory and finish project creation.
+
+<a name="step-copy-lib"/>
+
+1.9.11. Copy combined library
+-----------------------------
+
+  ![Screenshot](readme/f330.png)
+
+  Copy combined library into project directory with the following command:
+
+  `cp /path/to/libosglib.a /path/to/xcode/project/subdir/`
+
+<a name="step-copy"/>
+
+1.9.12. Copy view controller and model
+--------------------------------------
+
+  ![Screenshot](readme/f365.png)
+
+  Copy view controller and model with the following command:
+
+  `cp -R /path/to/openscenegraph-cross-platform-guide-application/ios/project/* /path/to/xcode/project/subdir`
+  
+  Sample OpenSceneGraph application's *ios/project* directory contains
+  a box model and `RenderVC`. `RenderVC` is a view controller that renders
+  the model with osgNativeLib.
+
+<a name="step-add"/>
+
+1.9.13. Add copied files to the project
+---------------------------------------
+
+  ![Screenshot](readme/f382.png)
+
+  To be part of the project, copied files should be added to the project.
+
+<a name="step-main"/>
+
+1.9.14. Select RenderVC as the main interface
+---------------------------------------------
+
+  ![Screenshot](readme/f396.png)
+
+  Go to `General` project page and select `RenderVC` as
+  the starting view controller.
+
+<a name="step-headers"/>
+
+1.9.15. Reference osgNativeLib headers
+--------------------------------------
+
+  ![Screenshot](readme/f456.png)
+
+  Go to project's `Build Settings`, find `Header Search Paths`, and
+  add the following search paths:
+
+  `/path/to/openscenegraph-cross-platform-guide-application/ios/src`
+
+  `/path/to/openscenegraph-cross-platform-guide-application/ios/src-gen`
+
+<a name="step-run"/>
+
+1.9.16. Run the project
+-----------------------
+
+  ![Screenshot](readme/f527.png)
+
+  Select iPhone simulator and run the project.
+  You should see red cube displayed.
 

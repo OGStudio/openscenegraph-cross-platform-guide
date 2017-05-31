@@ -7,25 +7,24 @@ text 5 1.9.2. Launch CMake
 video 7:19 sample_under_ios-02.mp4
 text 5 1.9.3. Specify build and source directories
 video 2:31 sample_under_ios-03.mp4
-text 5 1.9.4. Configure osgNativeLib
+text 5 1.9.4. Configure osgNativeLib and OSG
 video 3:16 sample_under_ios-04.mp4
 video 27:80 sample_under_ios-04.mp4
 text 5 1.9.5. Generate Xcode project file
 video 2:13 sample_under_ios-05.mp4
-text 5 1.9.6. Build osgNativeLib
+text 5 1.9.6. Build osgNativeLib and OSG
 video 1:44 sample_under_ios-06.mp4
 video 8:18 sample_under_ios-07.mp4
-text 5 1.9.7. Launch Xcode
+text 5 1.9.7. Start a new Xcode project
 video 4:21 sample_under_ios-08.mp4
-text 5 1.9.8. Start a new Xcode project
 video 3:14 sample_under_ios-09.mp4
-text 5 1.9.9. Select Single view application
+text 5 1.9.8. Select Single View Application
 video 3:12 sample_under_ios-10.mp4
-text 5 1.9.10. Select Objective-C language
+text 5 1.9.9. Select Objective-C language
 video 2:31 sample_under_ios-11.mp4
-text 5 1.9.11. Finish project creation
+text 5 1.9.10. Finish project creation
 video 2:26 sample_under_ios-12.mp4
-text 5 1.9.12. Copy osgNativeLib
+text 5 1.9.11. Copy combined library
 video 2:19 sample_under_ios-13.mp4
 text 5 1.9.12. Copy view controller and model
 video 2:34 sample_under_ios-14.mp4
