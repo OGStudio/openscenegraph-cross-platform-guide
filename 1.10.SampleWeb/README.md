@@ -4,6 +4,7 @@ Table of contents
 * [Overview](#overview)
 * [Video](#video)
 * [Steps](#steps)
+
   * [1.9.1. Create build directory](#step-build-dir)
   * [1.9.2. Launch CMake](#step-open-cmake)
   * [1.9.3. Specify build and source directories](#step-dirs)
@@ -30,23 +31,22 @@ This tutorial is part of [OpenSceneGraph cross-platform guide](http://github.com
 
 In this tutorial we build and run
 [sample OpenSceneGraph application](http://github.com/OGStudio/openscenegraph-cross-platform-guide-application)
-under iOS. The application displays provided model with simple GLSL shaders.
+under Linux for Web. The application displays provided model with simple GLSL shaders.
 
 **Note**: this tutorial requires
 * OpenSceneGraph model (see [1.1. Create a cube](../1.1.CreateCube))
-* Xcode and CMake installations (see [1.4. Install OpenSceneGraph under macOS](../1.4.InstallUnderMacOS))
-* OpenSceneGraph sources (see [1.4. Install OpenSceneGraph under macOS](../1.4.InstallUnderMacOS))
-* sample OpenSceneGraph application sources (see [1.7. Build and run sample OpenSceneGraph application under macOS](../1.7.SampleUnderMacOS))
+* OpenSceneGraph sources (see [1.2. Install OpenSceneGraph under Linux](../1.2.InstallUnderLinux))
+* sample OpenSceneGraph application sources (see [1.5. Build and run sample OpenSceneGraph application under Linux](../1.5.SampleUnderLinux))
 
 <a name="video"/>
 
 Video
 =====
 
-[YouTube](https://youtu.be/VJw7_L4FJGo) | [Download](readme/video.mp4)
+[YouTube](todo) | [Download](readme/video.mp4)
 
 Video depicts running and building sample OpenSceneGraph application
-for iOS simulator with iOS 10.
+for Web under Xubuntu 16.04.
 
 <a name="steps"/>
 
