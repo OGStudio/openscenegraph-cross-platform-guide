@@ -131,6 +131,8 @@ Tutorials
 
   Build and run sample OpenSceneGraph application under iOS.
 
+<a name="tutorials-sample-web"/>
+
 ### [1.10. Build and run sample OpenSceneGraph application in Web](1.10.SampleWeb)
 
   ![Screenshot](readme/1.10.sample_web.png)

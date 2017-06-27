@@ -4,8 +4,21 @@ Table of contents
 * [Overview](#overview)
 * [Video](#video)
 * [Steps](#steps)
+  * [1.10.1. Find Emscripten site](#step-find-emscripten)
+  * [1.10.2. Download Emscripten portable SDK archive](#step-dl-emscripten)
+  * [1.10.3. Extract Emscripten portable SDK](#step-extract-emscripten)
+  * [1.10.4. Install Emscripten portable SDK](#step-install-emscripten)
 
-  * [1.9.1. Create build directory](#step-build-dir)
+
+  * [1.10.3. Create build directory](#step-build-dir)
+
+
+  * [1.5.3. Configure the build](#step-cfg)
+  * [1.5.4. Build application](#step-build)
+  * [1.5.5. Run application](#step-run)
+
+
+
   * [1.9.2. Launch CMake](#step-open-cmake)
   * [1.9.3. Specify build and source directories](#step-dirs)
   * [1.9.4. Configure osgNativeLib and OSG](#step-cfg)
@@ -35,6 +48,7 @@ under Linux for Web. The application displays provided model with simple GLSL sh
 
 **Note**: this tutorial requires
 * OpenSceneGraph model (see [1.1. Create a cube](../1.1.CreateCube))
+* CMake and git installations (see [1.2. Install OpenSceneGraph under Linux](../1.2.InstallUnderLinux))
 * OpenSceneGraph sources (see [1.2. Install OpenSceneGraph under Linux](../1.2.InstallUnderLinux))
 * sample OpenSceneGraph application sources (see [1.5. Build and run sample OpenSceneGraph application under Linux](../1.5.SampleUnderLinux))
 
@@ -46,7 +60,7 @@ Video
 [YouTube](todo) | [Download](readme/video.mp4)
 
 Video depicts running and building sample OpenSceneGraph application
-for Web under Xubuntu 16.04.
+under Xubuntu 16.04 with Emscripten 1.37.9 for Web.
 
 <a name="steps"/>
 
@@ -56,12 +70,67 @@ Steps
 **Note**: steps below use frames from the video as screenshots.
 Watch the video to see all details.
 
-<a name="step-build-dir"/>
+<a name="step-find-emscripten"/>
 
-1.9.1. Create build directory
------------------------------
+1.10.1. Find Emscripten site
+----------------------------
 
-  ![Screenshot](readme/f021.png)
+  ![Screenshot](readme/f?.png)
+
+  Find main Emscripten site.
+  
+  We need Emscripten portable SDK, because Xubuntu 16.04
+  ships an outdated version.
+
+<a name="step-dl-emscripten"/>
+
+1.10.2. Download Emscripten portable SDK archive
+------------------------------------------------
+
+  ![Screenshot](readme/f?.png)
+
+  Download the latest
+  [Emscripten portable SDK archive](http://kripken.github.io/emscripten-site/docs/getting_started/downloads.html).
+
+<a name="step-extract-emscripten"/>
+
+1.10.3. Extract Emscripten portable SDK
+---------------------------------------
+
+  ![Screenshot](readme/f?.png)
+
+  Unpack Emscripten portable SDK to your home directory.
+
+<a name="step-install-emscripten"/>
+
+1.10.4. Install Emscripten portable SDK
+---------------------------------------
+
+  ![Screenshot](readme/f?.png)
+
+  Install Emscripten portable SDK by running the following commands:
+
+  `cd ~/emsdk-portable`
+
+  `./emsdk update`
+
+  `./emsdk install latest`
+
+  `./emsdk activate latest`
+
+  `source ./emsdk_env.sh`
+
+  **Note**: the above commands come from the
+  [official Emscripten installation instructions](http://kripken.github.io/emscripten-site/docs/getting_started/downloads.html).
+
+
+
+
+
+
+
+
+
 
   Create build directory for iOS simulator build of osgNativeLib,
   a native C++ library to be used in Objective-C.
