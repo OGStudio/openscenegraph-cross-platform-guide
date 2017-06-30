@@ -164,8 +164,8 @@ Watch the video to see all details.
 
   Once the build has finished, you will have the following files:
   * `sample-ems.html` is the main file you should open in a web browser
+  * `sample-ems.html.mem` special Emscripten auxiliary file
   * `sample-ems.data` contains box.osgt (and other) resources
-  * `sample-ems.mem` special Emscripten auxiliary file
   * `sample-ems.js` is sample application compiled into JavaScript
 
 <a name="step-run-ff"/>
