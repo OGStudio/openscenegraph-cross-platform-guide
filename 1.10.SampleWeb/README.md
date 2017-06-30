@@ -204,5 +204,5 @@ Watch the video to see all details.
 
   You should see red cube displayed.
 
-  **Note**: link to sample application served by Github Pages: [todo](todo)
+  **Note**: link to sample application served by Github Pages: [https://ogstudio.github.io/openscenegraph-cross-platform-guide/sample-ems/sample-ems.html](https://ogstudio.github.io/openscenegraph-cross-platform-guide/sample-ems/sample-ems.html).
 
