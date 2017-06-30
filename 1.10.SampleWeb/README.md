@@ -14,6 +14,7 @@ Table of contents
   * [1.10.8. Build application](#step-build)
   * [1.10.9. Run application (Firefox only)](#step-run-ff)
   * [1.10.10. Run application (All browsers)](#step-run)
+* [Application](#app)
 
 <a name="overview"/>
 
@@ -204,5 +205,8 @@ Watch the video to see all details.
 
   You should see red cube displayed.
 
-  **Note**: [link to sample application served by Github Pages](https://ogstudio.github.io/openscenegraph-cross-platform-guide/).
+Application
+===========
+  
+  Here's the application [served by Github Pages](https://ogstudio.github.io/openscenegraph-cross-platform-guide/).
 
