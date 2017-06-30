@@ -36,7 +36,7 @@ under iOS. The application displays provided model with simple GLSL shaders.
 * OpenSceneGraph model (see [1.1. Create a cube](../1.1.CreateCube))
 * Xcode and CMake installations (see [1.4. Install OpenSceneGraph under macOS](../1.4.InstallUnderMacOS))
 * OpenSceneGraph sources (see [1.4. Install OpenSceneGraph under macOS](../1.4.InstallUnderMacOS))
-* sample OpenSceneGraph application sources (see [1.7. Build and run sample OpenSceneGraph application under macOS](../1.7.SampleUnderMacOS))
+* sample OpenSceneGraph application sources (see [1.7. Build and run sample OpenSceneGraph application under macOS](../1.7.SampleUnderMacOS)) **alongside OpenSceneGraph sources**
 
 <a name="video"/>
 

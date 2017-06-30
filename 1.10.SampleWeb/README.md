@@ -8,32 +8,12 @@ Table of contents
   * [1.10.2. Download Emscripten portable SDK archive](#step-dl-emscripten)
   * [1.10.3. Extract Emscripten portable SDK](#step-extract-emscripten)
   * [1.10.4. Install Emscripten portable SDK](#step-install-emscripten)
-
-
-  * [1.10.3. Create build directory](#step-build-dir)
-
-
-  * [1.5.3. Configure the build](#step-cfg)
-  * [1.5.4. Build application](#step-build)
-  * [1.5.5. Run application](#step-run)
-
-
-
-  * [1.9.2. Launch CMake](#step-open-cmake)
-  * [1.9.3. Specify build and source directories](#step-dirs)
-  * [1.9.4. Configure osgNativeLib and OSG](#step-cfg)
-  * [1.9.5. Generate Xcode project file](#step-generate)
-  * [1.9.6. Build osgNativeLib and OSG](#step-build)
-  * [1.9.7. Start a new Xcode project](#step-xcode)
-  * [1.9.8. Select Single View Application](#step-single-view)
-  * [1.9.9. Select Objective-C language](#step-objc)
-  * [1.9.10. Finish project creation](#step-proj)
-  * [1.9.11. Copy combined library](#step-copy-lib)
-  * [1.9.12. Copy view controller and model](#step-copy)
-  * [1.9.13. Add copied files to the project](#step-add)
-  * [1.9.14. Select RenderVC as the main interface](#step-main)
-  * [1.9.15. Reference osgNativeLib headers](#step-headers)
-  * [1.9.16. Run the project](#step-run)
+  * [1.10.5. Patch OpenSceneGraph](#step-patch)
+  * [1.10.6. Create build directory](#step-build-dir)
+  * [1.10.7. Configure the build](#step-cfg)
+  * [1.10.8. Build application](#step-build)
+  * [1.10.9. Run application (Firefox only)](#step-run-ff)
+  * [1.10.10. Run application (All browsers)](#step-run)
 
 <a name="overview"/>
 
@@ -50,7 +30,7 @@ under Linux for Web. The application displays provided model with simple GLSL sh
 * OpenSceneGraph model (see [1.1. Create a cube](../1.1.CreateCube))
 * CMake and git installations (see [1.2. Install OpenSceneGraph under Linux](../1.2.InstallUnderLinux))
 * OpenSceneGraph sources (see [1.2. Install OpenSceneGraph under Linux](../1.2.InstallUnderLinux))
-* sample OpenSceneGraph application sources (see [1.5. Build and run sample OpenSceneGraph application under Linux](../1.5.SampleUnderLinux))
+* sample OpenSceneGraph application sources (see [1.5. Build and run sample OpenSceneGraph application under Linux](../1.5.SampleUnderLinux)) **alongside OpenSceneGraph sources**
 
 <a name="video"/>
 
@@ -123,185 +103,106 @@ Watch the video to see all details.
   **Note**: the above commands come from the
   [official Emscripten installation instructions](http://kripken.github.io/emscripten-site/docs/getting_started/downloads.html).
 
+<a name="step-patch"/>
 
+1.10.5. Patch OpenSceneGraph
+----------------------------
 
+  ![Screenshot](readme/f?.png)
 
+  **Note**: this step is only necessary if my
+  [osgemscripten pull request](https://github.com/openscenegraph/OpenSceneGraph/pull/267)
+  is still not accepted into upstream OpenSceneGraph.
 
+  As of now, OpenSceneGraph cannot run under Emscripten unchanged.
 
+  Patch OpenSceneGraph by running the following commands:
 
+  `cd /path/to/OpenSceneGraph`
 
+  `patch -p1 < /path/to/openscenegraph-cross-platform-guide-application/web/OpenSceneGraph-Emscripten.patch`
 
+<a name="step-build-dir"/>
 
-  Create build directory for iOS simulator build of osgNativeLib,
-  a native C++ library to be used in Objective-C.
+1.10.6. Create build directory
+------------------------------
 
-  osgNativeLib also builds OpenSceneGraph inside
-  `/path/to/openscenegraph-cross-platform-guide-application/../OpenSceneGraph/build/Simulator`.
+  ![Screenshot](readme/f?.png)
 
-  **Note**: iOS simulator build only works under iOS simulator. If you need
-  to build for a real device, you need to build osgNativeLib
-  with `BUILD_SIMULATOR=NO` in a separate directory. In such a case
-  OpenSceneGraph is built inside
-  `/path/to/openscenegraph-cross-platform-guide-application/../OpenSceneGraph/build/Device`.
-
-<a name="step-open-cmake"/>
-
-1.9.2. Launch CMake
--------------------
-
-  ![Screenshot](readme/f033.png)
-
-  Open CMake
-
-<a name="step-dirs"/>
-
-1.9.3. Specify build and source directories
--------------------------------------------
-
-  ![Screenshot](readme/f068.png)
-
-  Specify build and source directories.
+  Create build directory for sample application.
 
 <a name="step-cfg"/>
 
-1.9.4. Configure osgNativeLib and OSG
--------------------------------------
+1.10.7. Configure the build
+---------------------------
 
-  ![Screenshot](readme/f083.png)
+  ![Screenshot](readme/f?.png)
 
-  Press `Configure`. Select `Xcode` generator when prompted.
+  Configure sample application build with the following commands:
+ 
+  `cd /path/to/build/dir`
 
-<a name="step-generate"/>
+  `cmake -DCMAKE_TOOLCHAIN_FILE=/path/to/emsdk-portable/emscripten/<version>/cmake/Modules/Platform/Emscripten.cmake /path/to/source/dir`
 
-1.9.5. Generate Xcode project file
------------------------------------
-
-  ![Screenshot](readme/f145.png)
-
-  Press `Generate` to generate Xcode specific project file.
+  **Note**: make sure to specify Emscripten CMake toolchain file.
 
 <a name="step-build"/>
 
-1.9.6. Build osgNativeLib and OSG
----------------------------------
+1.10.8. Build application
+-------------------------
 
-  ![Screenshot](readme/f180.png)
+  ![Screenshot](readme/f?.png)
 
-  Build osgNativeLib and OpenSceneGraph with the following commands:
+  Build sample application with the following commands:
 
   `cd /path/to/build/dir`
 
-  `xcodebuild -IDEBuildOperationMaxNumberOfConcurrentCompileTasks=8 -configuration Release`
+  `make -j10`
 
-  At the end the build process combines osgNativeLib and several OpenSceneGraph
-  libraries into single `libosglib.a` library. This is done for convenience.
+  This also builds OpenSceneGraph inside
+  `/path/to/openscenegraph-cross-platform-guide-application/../OpenSceneGraph/build/Emscripten`.
 
-<a name="step-xcode"/>
+  Once the build has finished, you will have the following files:
+  * `sample-ems.html` is the main file you should open in a web browser
+  * `sample-ems.data` contains box.osgt (and other) resources
+  * `sample-ems.mem` special Emscripten auxiliary file
+  * `sample-ems.js` is sample application compiled into JavaScript
 
-1.9.7. Start a new Xcode project
---------------------------------
+<a name="step-run-ff"/>
 
-  ![Screenshot](readme/f233.png)
-
-  Start a new Xcode project.
-
-<a name="step-single-view"/>
-
-1.9.8. Select Single View Application
---------------------------------
-
-  ![Screenshot](readme/f250.png)
-
-  Select Single View Application.
-
-<a name="step-objc"/>
-
-1.9.9. Select Objective-C language
-----------------------------------
-
-  ![Screenshot](readme/f280.png)
-
-  Select Objective-C language and provide application specific
-  information like title, organization, etc.
-
-<a name="step-proj"/>
-
-1.9.10. Finish project creation
--------------------------------
-
-  ![Screenshot](readme/f299.png)
-
-  Select project directory and finish project creation.
-
-<a name="step-copy-lib"/>
-
-1.9.11. Copy combined library
------------------------------
-
-  ![Screenshot](readme/f330.png)
-
-  Copy combined library into project directory with the following command:
-
-  `cp /path/to/build/dir/libosglib.a /path/to/xcode/project/subdir/`
-
-<a name="step-copy"/>
-
-1.9.12. Copy view controller and model
+1.10.9. Run application (Firefox only)
 --------------------------------------
 
-  ![Screenshot](readme/f365.png)
+  ![Screenshot](readme/f?.png)
 
-  Copy view controller and model with the following command:
+  To run sample application in Firefox web browser,
+  navigate to the build directory and open `sample-ems.html` file.
 
-  `cp -R /path/to/openscenegraph-cross-platform-guide-application/ios/project/* /path/to/xcode/project/subdir`
-  
-  Sample OpenSceneGraph application's *ios/project* directory contains
-  a box model and `RenderVC`. `RenderVC` is a view controller that renders
-  the model with osgNativeLib.
+  You should see red cube displayed.
 
-<a name="step-add"/>
-
-1.9.13. Add copied files to the project
----------------------------------------
-
-  ![Screenshot](readme/f382.png)
-
-  For Xcode to see the files, they should be added to the project.
-
-<a name="step-main"/>
-
-1.9.14. Select RenderVC as the main interface
----------------------------------------------
-
-  ![Screenshot](readme/f396.png)
-
-  Go to `General` project page and select `RenderVC.storyboard` as
-  the main interface.
-
-<a name="step-headers"/>
-
-1.9.15. Reference osgNativeLib headers
---------------------------------------
-
-  ![Screenshot](readme/f456.png)
-
-  Since we have not added osgNativeLib headers to the project, we should
-  reference them to be able to call osgNativeLib functions.
-
-  Go to project's `Build Settings`, find `Header Search Paths` section,
-  then add the following search paths:
-
-  `/path/to/openscenegraph-cross-platform-guide-application/ios/src`
-
-  `/path/to/openscenegraph-cross-platform-guide-application/ios/src-gen`
+  **Note**: you can simply open local file, because Firefox supports [XHR requests for local files](http://kripken.github.io/emscripten-site/docs/getting_started/Tutorial.html).
 
 <a name="step-run"/>
 
-1.9.16. Run the project
------------------------
+1.10.10. Run application (All browsers)
+--------------------------------------
 
-  ![Screenshot](readme/f527.png)
+  ![Screenshot](readme/f?.png)
 
-  Select iPhone simulator and run the project.
+  To see the result in any web browser (including Firefox), you need to serve sample
+  application with a web server.
+
+  If you have Python installed (Xubuntu 16.04 does), you can serve sample application
+  with the following commands:
+
+  `cd /path/to/build/dir`
+
+  `python -m SimpleHTTPServer`
+
+  Now you can open sample application with this link:
+  [http://localhost:8000/sample-ems.html](http://localhost:8000/sample-ems.html).
+
   You should see red cube displayed.
+
+  **Note**: link to sample application served by Github Pages: [todo](todo)
 
