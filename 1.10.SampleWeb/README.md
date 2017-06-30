@@ -205,6 +205,8 @@ Watch the video to see all details.
 
   You should see red cube displayed.
 
+<a name="app"/>
+
 Application
 ===========
   
