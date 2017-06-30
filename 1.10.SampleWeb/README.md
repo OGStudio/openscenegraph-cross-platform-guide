@@ -40,7 +40,7 @@ Video
 [YouTube](todo) | [Download](readme/video.mp4)
 
 Video depicts running and building sample OpenSceneGraph application
-under Xubuntu 16.04 with Emscripten 1.37.9 for Web.
+under Xubuntu 16.04 with Emscripten 1.37.14 for Web.
 
 <a name="steps"/>
 
@@ -57,7 +57,7 @@ Watch the video to see all details.
 
   ![Screenshot](readme/f030.png)
 
-  Find main Emscripten site.
+  Find main [Emscripten site](http://emscripten.org).
   
   We need Emscripten portable SDK, because Xubuntu 16.04
   ships an outdated version.
@@ -142,7 +142,7 @@ Watch the video to see all details.
  
   `cd /path/to/build/dir`
 
-  `cmake -DCMAKE_TOOLCHAIN_FILE=/path/to/emsdk-portable/emscripten/<version>/cmake/Modules/Platform/Emscripten.cmake /path/to/source/dir`
+  `cmake -DCMAKE_TOOLCHAIN_FILE=/path/to/emsdk-portable/emscripten/<version>/cmake/Modules/Platform/Emscripten.cmake /path/to/openscenegraph-cross-platform-guide-application/web`
 
   **Note**: make sure to specify Emscripten CMake toolchain file.
 
@@ -164,7 +164,7 @@ Watch the video to see all details.
 
   Once the build has finished, you will have the following files:
   * `sample-ems.html` is the main file you should open in a web browser
-  * `sample-ems.html.mem` special Emscripten auxiliary file
+  * `sample-ems.html.mem` is a special Emscripten auxiliary file
   * `sample-ems.data` contains box.osgt (and other) resources
   * `sample-ems.js` is sample application compiled into JavaScript
 
