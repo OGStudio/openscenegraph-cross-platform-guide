@@ -37,7 +37,7 @@ under Linux for Web. The application displays provided model with simple GLSL sh
 Video
 =====
 
-[YouTube](todo) | [Download](readme/video.mp4)
+[YouTube](https://youtu.be/ci2qZjnPEts) | [Download](readme/video.mp4)
 
 Video depicts running and building sample OpenSceneGraph application
 under Xubuntu 16.04 with Emscripten 1.37.14 for Web.
