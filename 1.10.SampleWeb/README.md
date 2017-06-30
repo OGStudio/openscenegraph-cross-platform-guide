@@ -55,7 +55,7 @@ Watch the video to see all details.
 1.10.1. Find Emscripten site
 ----------------------------
 
-  ![Screenshot](readme/f?.png)
+  ![Screenshot](readme/f030.png)
 
   Find main Emscripten site.
   
@@ -67,7 +67,7 @@ Watch the video to see all details.
 1.10.2. Download Emscripten portable SDK archive
 ------------------------------------------------
 
-  ![Screenshot](readme/f?.png)
+  ![Screenshot](readme/f049.png)
 
   Download the latest
   [Emscripten portable SDK archive](http://kripken.github.io/emscripten-site/docs/getting_started/downloads.html).
@@ -77,7 +77,7 @@ Watch the video to see all details.
 1.10.3. Extract Emscripten portable SDK
 ---------------------------------------
 
-  ![Screenshot](readme/f?.png)
+  ![Screenshot](readme/f076.png)
 
   Unpack Emscripten portable SDK to your home directory.
 
@@ -86,11 +86,11 @@ Watch the video to see all details.
 1.10.4. Install Emscripten portable SDK
 ---------------------------------------
 
-  ![Screenshot](readme/f?.png)
+  ![Screenshot](readme/f100.png)
 
   Install Emscripten portable SDK by running the following commands:
 
-  `cd ~/emsdk-portable`
+  `cd /path/to/emsdk-portable`
 
   `./emsdk update`
 
@@ -108,7 +108,7 @@ Watch the video to see all details.
 1.10.5. Patch OpenSceneGraph
 ----------------------------
 
-  ![Screenshot](readme/f?.png)
+  ![Screenshot](readme/f190.png)
 
   **Note**: this step is only necessary if my
   [osgemscripten pull request](https://github.com/openscenegraph/OpenSceneGraph/pull/267)
@@ -127,7 +127,7 @@ Watch the video to see all details.
 1.10.6. Create build directory
 ------------------------------
 
-  ![Screenshot](readme/f?.png)
+  ![Screenshot](readme/f207.png)
 
   Create build directory for sample application.
 
@@ -136,7 +136,7 @@ Watch the video to see all details.
 1.10.7. Configure the build
 ---------------------------
 
-  ![Screenshot](readme/f?.png)
+  ![Screenshot](readme/f263.png)
 
   Configure sample application build with the following commands:
  
@@ -151,7 +151,7 @@ Watch the video to see all details.
 1.10.8. Build application
 -------------------------
 
-  ![Screenshot](readme/f?.png)
+  ![Screenshot](readme/f298.png)
 
   Build sample application with the following commands:
 
@@ -173,7 +173,7 @@ Watch the video to see all details.
 1.10.9. Run application (Firefox only)
 --------------------------------------
 
-  ![Screenshot](readme/f?.png)
+  ![Screenshot](readme/f338.png)
 
   To run sample application in Firefox web browser,
   navigate to the build directory and open `sample-ems.html` file.
@@ -187,7 +187,7 @@ Watch the video to see all details.
 1.10.10. Run application (All browsers)
 --------------------------------------
 
-  ![Screenshot](readme/f?.png)
+  ![Screenshot](readme/f387.png)
 
   To see the result in any web browser (including Firefox), you need to serve sample
   application with a web server.
