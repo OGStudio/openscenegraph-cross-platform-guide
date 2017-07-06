@@ -14,6 +14,7 @@ Table of contents
   * [1.8. Build and run sample OpenSceneGraph application under Android](#tutorials-sample-android)
   * [1.9. Build and run sample OpenSceneGraph application under iOS](#tutorials-sample-ios)
   * [1.10. Build and run sample OpenSceneGraph application in Web](#tutorials-sample-web)
+* [Help](#help)
 
 <a name="overview"/>
 
@@ -139,3 +140,11 @@ Tutorials
 
   Build and run sample OpenSceneGraph application in Web.
 
+<a name="help"/>
+
+Help
+====
+
+If you have problems with any of the tutorials,
+[create an issue](https://github.com/OGStudio/openscenegraph-cross-platform-guide/issues).
+We'll sort it out together.
