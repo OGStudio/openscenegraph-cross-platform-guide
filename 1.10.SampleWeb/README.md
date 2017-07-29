@@ -8,7 +8,7 @@ Table of contents
   * [1.10.2. Download Emscripten portable SDK archive](#step-dl-emscripten)
   * [1.10.3. Extract Emscripten portable SDK](#step-extract-emscripten)
   * [1.10.4. Install Emscripten portable SDK](#step-install-emscripten)
-  * [1.10.5. Patch OpenSceneGraph](#step-patch)
+  * [1.10.5. (OBSOLETE) Patch OpenSceneGraph](#step-patch)
   * [1.10.6. Create build directory](#step-build-dir)
   * [1.10.7. Configure the build](#step-cfg)
   * [1.10.8. Build application](#step-build)
@@ -106,22 +106,16 @@ Watch the video to see all details.
 
 <a name="step-patch"/>
 
-1.10.5. Patch OpenSceneGraph
+1.10.5. (OBSOLETE) Patch OpenSceneGraph
 ----------------------------
 
   ![Screenshot](readme/f190.png)
 
-  **Note**: this step is only necessary if my
-  [osgemscripten pull request](https://github.com/openscenegraph/OpenSceneGraph/pull/267)
-  is still not accepted into upstream OpenSceneGraph.
+  **Note**: **this step is no longer necessary since 2017-07-29**, because
+  corresponding [osgemscripten pull request](https://github.com/openscenegraph/OpenSceneGraph/pull/267)
+  has been accepted into upstream OpenSceneGraph.
 
-  As of now, OpenSceneGraph cannot run under Emscripten unchanged.
-
-  Patch OpenSceneGraph by running the following commands:
-
-  `cd /path/to/OpenSceneGraph`
-
-  `patch -p1 < /path/to/openscenegraph-cross-platform-guide-application/web/OpenSceneGraph-Emscripten.patch`
+  Skip this step.
 
 <a name="step-build-dir"/>
 
