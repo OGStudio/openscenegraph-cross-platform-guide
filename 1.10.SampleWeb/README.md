@@ -109,8 +109,6 @@ Watch the video to see all details.
 1.10.5. (OBSOLETE) Patch OpenSceneGraph
 ----------------------------
 
-  ![Screenshot](readme/f190.png)
-
   **Note**: **this step is no longer necessary since 2017-07-29**, because
   corresponding [osgemscripten pull request](https://github.com/openscenegraph/OpenSceneGraph/pull/267)
   has been accepted into upstream OpenSceneGraph.
