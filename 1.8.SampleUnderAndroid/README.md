@@ -159,10 +159,6 @@ Watch the video to see all details.
 
   Select them in *SDK Tools* tab of *SDK Manager*.
 
-  **Note**: this guide uses NDK 14. Currently NDK 15 fails to build `osgDB/FileUtils.cpp`
-  See [issue #2](https://github.com/OGStudio/openscenegraph-cross-platform-guide/issues/2)
-  for information how to install NDK 14 manually.
-
 <a name="step-license"/>
 
 1.8.9. Accept license
