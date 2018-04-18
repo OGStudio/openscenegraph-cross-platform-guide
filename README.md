@@ -1,5 +1,4 @@
-Table of contents
-=================
+# Table of contents
 
 * [Overview](#overview)
 * [Continuous numbering convention](#numbering)
@@ -15,11 +14,11 @@ Table of contents
   * [1.9. Build and run sample OpenSceneGraph application under iOS](#tutorials-sample-ios)
   * [1.10. Build and run sample OpenSceneGraph application in Web](#tutorials-sample-web)
 * [Help](#help)
+* [Next](#next)
 
 <a name="overview"/>
 
-Overview
-========
+# Overview
 
 [OpenSceneGraph](http://openscenegraph.org) is an open source high performance
 3D graphics toolkit, used by application developers in fields such as visual
@@ -39,8 +38,7 @@ under the following platforms:
 
 <a name="numbering"/>
 
-Continuous numbering convention
-===============================
+# Continuous numbering convention
 
 This guide uses continuous numbering with topics denoted as
 **Number1**.**Number2** (e.g., **1.1**) and concrete steps denoted as
@@ -54,8 +52,7 @@ Here's what each number means:
 
 <a name="tutorials"/>
 
-Tutorials
-=========
+# Tutorials
 
 <a name="tutorials-cube"/>
 
@@ -142,9 +139,17 @@ Tutorials
 
 <a name="help"/>
 
-Help
-====
+# Help
 
 If you have problems with any of the tutorials,
 [create an issue](https://github.com/OGStudio/openscenegraph-cross-platform-guide/issues).
 We'll sort it out together.
+
+# Next
+
+Once you're done with the guide, which can be viewed as OpenSceneGraph introduction, you
+may have a look at [OpenSceneGraph cross-platform examples][osgcpe]. The examples show
+how to perform specific tasks. However, the examples are not tutorials, the examples don't provide
+videos and screenshots, only solutions for specific problems.
+
+[osgcpe]: https://github.com/OGStudio/openscenegraph-cross-platform-examples
